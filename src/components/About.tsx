@@ -3,7 +3,7 @@ const About = () => {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">About ERITAGE ENT CARE</h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">About ERITAGE ENT CARE</h2>
           <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
             ERITAGE ENT CARE is a premier medical facility specializing in ear, nose, and throat healthcare 
             in Entebbe. Our state-of-the-art clinic combines advanced medical technology with compassionate 

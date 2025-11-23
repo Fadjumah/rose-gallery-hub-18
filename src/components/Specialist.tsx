@@ -6,7 +6,7 @@ const Specialist = () => {
     <section id="specialist" className="py-20 bg-accent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our ENT Specialist</h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Meet Our ENT Specialist</h2>
           <p className="text-lg text-muted-foreground">
             Expert care from highly qualified professionals
           </p>
@@ -15,12 +15,12 @@ const Specialist = () => {
         <div className="max-w-4xl mx-auto">
           <Card className="overflow-hidden">
             <CardContent className="p-8">
-              <div className="text-center">
+              <div className="text-left">
                 <h3 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
                   ENT Specialist
                 </h3>
                 
-                <div className="space-y-4 max-w-2xl mx-auto">
+                <div className="space-y-4 max-w-2xl">
                   <div className="flex items-start gap-3">
                     <Award className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                     <div>
@@ -42,7 +42,7 @@ const Specialist = () => {
                   </div>
                 </div>
                 
-                <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
+                <p className="mt-6 text-muted-foreground max-w-2xl">
                   Lubega Fahad is dedicated to providing exceptional ENT care with a patient-first approach, 
                   ensuring comfort and optimal treatment outcomes.
                 </p>
