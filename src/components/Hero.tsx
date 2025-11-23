@@ -8,15 +8,9 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${clinicBuilding})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-background/85 to-background/70" />
-      </div>
-      
-      <div className="container relative z-10 px-4 py-20 mx-auto">
+    <section id="home" className="bg-background">
+      {/* Text content above the image */}
+      <div className="container mx-auto px-4 pt-12 pb-8">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
             Expert ENT Care in <span className="text-primary">Entebbe</span>
@@ -45,6 +39,15 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </div>
+      
+      {/* Clinic image below the text */}
+      <div className="relative min-h-[400px] overflow-hidden">
+        <img 
+          src={clinicBuilding} 
+          alt="Eritage ENT Care Clinic Building" 
+          className="w-full h-[400px] object-cover"
+        />
       </div>
     </section>
   );
