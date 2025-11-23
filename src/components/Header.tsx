@@ -18,37 +18,6 @@ const Header = () => {
   return (
     <header className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        {/* Top bar with phone numbers */}
-        <div className="flex items-center justify-between py-2 border-b border-border/50">
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
-            <span>0740166778</span>
-            <span className="hidden sm:inline">|</span>
-            <span className="hidden sm:inline">0769616091</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Button 
-              size="sm" 
-              variant="outline"
-              asChild
-            >
-              <a href="tel:0740166778">
-                <Phone className="h-4 w-4" />
-                <span className="hidden sm:inline ml-2">Call Now</span>
-              </a>
-            </Button>
-            <Button 
-              size="sm" 
-              className="bg-[#25D366] hover:bg-[#25D366]/90 text-white"
-              asChild
-            >
-              <a href="https://wa.me/256740166778" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="h-4 w-4" />
-                <span className="hidden sm:inline ml-2">WhatsApp</span>
-              </a>
-            </Button>
-          </div>
-        </div>
-        
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-3">
             <img src={logo} alt="ERITAGE ENT CARE" className="h-12 w-auto" />
