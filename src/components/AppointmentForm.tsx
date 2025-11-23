@@ -48,7 +48,7 @@ const AppointmentForm = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Book Your Appointment</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Book Your Appointment</h2>
             <p className="text-lg text-muted-foreground">
               Fill out the form and we'll get back to you shortly
             </p>
