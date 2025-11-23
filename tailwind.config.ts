@@ -65,6 +65,12 @@ export default {
           "blue-dark": "hsl(var(--medical-blue-dark))",
           "blue-light": "hsl(var(--medical-blue-light))",
         },
+        warm: {
+          teal: "hsl(var(--warm-teal))",
+        },
+        vibrant: {
+          green: "hsl(var(--vibrant-green))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
