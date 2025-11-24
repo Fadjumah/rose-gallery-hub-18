@@ -1,0 +1,141 @@
+import { useEffect } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { ArrowLeft, Calendar, User } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import FloatingContactButtons from '@/components/FloatingContactButtons';
+import { getArticleBySlug } from '@/utils/blogLoader';
+import { Helmet } from 'react-helmet-async';
+
+const BlogArticle = () => {
+  const { slug } = useParams<{ slug: string }>();
+  const navigate = useNavigate();
+  const article = slug ? getArticleBySlug(slug) : undefined;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
+  if (!article) {
+    return (
+      <div className="min-h-screen">
+        <Header />
+        <div className="container mx-auto px-4 py-20 text-center">
+          <h1 className="text-4xl font-serif font-bold mb-4">Article Not Found</h1>
+          <p className="text-muted-foreground mb-8">The article you're looking for doesn't exist.</p>
+          <Button onClick={() => navigate('/#blog')}>
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Back to Blog
+          </Button>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <Helmet>
+        <title>{article.title} | ERITAGE ENT CARE Blog</title>
+        <meta name="description" content={article.description} />
+        <meta property="og:title" content={article.title} />
+        <meta property="og:description" content={article.description} />
+        <meta property="og:type" content="article" />
+        <meta property="article:published_time" content={article.date} />
+        <meta property="article:author" content={article.author} />
+        <link rel="canonical" href={`https://yourdomain.com/blog/${article.slug}`} />
+      </Helmet>
+
+      <div className="min-h-screen">
+        <Header />
+        
+        <article className="py-20 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              {/* Back Button */}
+              <Button 
+                variant="ghost" 
+                onClick={() => navigate('/#blog')}
+                className="mb-8"
+              >
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Blog
+              </Button>
+
+              {/* Article Header */}
+              <header className="mb-12">
+                <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">
+                  {article.title}
+                </h1>
+                <p className="text-xl text-muted-foreground mb-6">
+                  {article.description}
+                </p>
+                <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="h-4 w-4" />
+                    <time dateTime={article.date}>
+                      {new Date(article.date).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                      })}
+                    </time>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <User className="h-4 w-4" />
+                    <span>{article.author}</span>
+                  </div>
+                </div>
+              </header>
+
+              {/* Article Content */}
+              <div className="prose prose-lg max-w-none">
+                <ReactMarkdown 
+                  remarkPlugins={[remarkGfm]}
+                  components={{
+                    h1: ({node, ...props}) => <h1 className="text-3xl font-serif font-bold mt-8 mb-4" {...props} />,
+                    h2: ({node, ...props}) => <h2 className="text-2xl font-serif font-bold mt-8 mb-4" {...props} />,
+                    h3: ({node, ...props}) => <h3 className="text-xl font-serif font-bold mt-6 mb-3" {...props} />,
+                    h4: ({node, ...props}) => <h4 className="text-lg font-serif font-bold mt-4 mb-2" {...props} />,
+                    p: ({node, ...props}) => <p className="mb-4 text-foreground leading-relaxed" {...props} />,
+                    ul: ({node, ...props}) => <ul className="list-disc list-inside mb-4 space-y-2" {...props} />,
+                    ol: ({node, ...props}) => <ol className="list-decimal list-inside mb-4 space-y-2" {...props} />,
+                    li: ({node, ...props}) => <li className="text-foreground" {...props} />,
+                    strong: ({node, ...props}) => <strong className="font-bold text-foreground" {...props} />,
+                    blockquote: ({node, ...props}) => (
+                      <blockquote className="border-l-4 border-primary pl-4 italic my-4 text-muted-foreground" {...props} />
+                    ),
+                    hr: ({node, ...props}) => <hr className="my-8 border-border" {...props} />,
+                    a: ({node, ...props}) => <a className="text-primary hover:underline" {...props} />,
+                  }}
+                >
+                  {article.content}
+                </ReactMarkdown>
+              </div>
+
+              {/* Back to Blog */}
+              <div className="mt-12 pt-8 border-t">
+                <Button 
+                  variant="outline" 
+                  onClick={() => navigate('/#blog')}
+                  className="w-full sm:w-auto"
+                >
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Read More Articles
+                </Button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <Footer />
+        <FloatingContactButtons />
+      </div>
+    </>
+  );
+};
+
+export default BlogArticle;
