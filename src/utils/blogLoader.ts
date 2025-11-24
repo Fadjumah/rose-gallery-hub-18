@@ -1,5 +1,3 @@
-import matter from 'gray-matter';
-
 export interface ArticleMetadata {
   title: string;
   description: string;
@@ -13,6 +11,33 @@ export interface Article extends ArticleMetadata {
   content: string;
 }
 
+// Simple frontmatter parser for browser
+const parseFrontmatter = (fileContent: string): { data: Record<string, string>; content: string } => {
+  const frontmatterRegex = /^---\s*\n([\s\S]*?)\n---\s*\n([\s\S]*)$/;
+  const match = fileContent.match(frontmatterRegex);
+  
+  if (!match) {
+    return { data: {}, content: fileContent };
+  }
+  
+  const frontmatterText = match[1];
+  const content = match[2];
+  
+  const data: Record<string, string> = {};
+  const lines = frontmatterText.split('\n');
+  
+  lines.forEach(line => {
+    const colonIndex = line.indexOf(':');
+    if (colonIndex > 0) {
+      const key = line.substring(0, colonIndex).trim();
+      const value = line.substring(colonIndex + 1).trim().replace(/^["']|["']$/g, '');
+      data[key] = value;
+    }
+  });
+  
+  return { data, content };
+};
+
 // Import all markdown files
 const articleModules = import.meta.glob('/src/content/articles/*.md', { 
   as: 'raw',
@@ -23,7 +48,7 @@ export const getAllArticles = (): Article[] => {
   const articles: Article[] = [];
 
   Object.entries(articleModules).forEach(([path, content]) => {
-    const { data, content: markdownContent } = matter(content as string);
+    const { data, content: markdownContent } = parseFrontmatter(content as string);
     
     articles.push({
       title: data.title,
