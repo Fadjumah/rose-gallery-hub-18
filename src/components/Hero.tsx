@@ -31,11 +31,15 @@ const Hero = () => {
           <div className="space-y-3 mt-6">
             <div className="flex items-center gap-3 text-foreground">
               <Phone className="h-5 w-5 text-primary" />
-              <span className="text-xl font-semibold">0740166778</span>
+              <span className="text-xl font-semibold">+256 740 166 778</span>
             </div>
             <div className="flex items-center gap-3 text-foreground">
               <Phone className="h-5 w-5 text-primary" />
-              <span className="text-xl font-semibold">0769616091</span>
+              <span className="text-xl font-semibold">+256 769 616 091</span>
+            </div>
+            <div className="flex items-center gap-3 text-foreground">
+              <Phone className="h-5 w-5 text-primary" />
+              <span className="text-xl font-semibold">+256 742 017 229</span>
             </div>
           </div>
         </div>
