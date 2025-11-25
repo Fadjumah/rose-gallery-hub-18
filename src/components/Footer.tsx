@@ -7,8 +7,11 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-4">ERITAGE ENT CARE</h3>
-          <p className="mb-6 max-w-2xl mx-auto">
+          <p className="mb-4 max-w-2xl mx-auto">
             Professional ear, nose, and throat care in Entebbe. Your trusted partner for ENT health.
+          </p>
+          <p className="mb-6 text-sm opacity-90">
+            Along Entebbe Road, Entebbe, Central Region, Uganda
           </p>
           
           <div className="mb-6">

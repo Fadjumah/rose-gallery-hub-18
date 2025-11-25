@@ -86,7 +86,6 @@ const AppointmentForm = () => {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="john@example.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 />
@@ -116,7 +115,7 @@ const AppointmentForm = () => {
               <p className="font-semibold">Phone: +256 769 616 091</p>
               <p className="font-semibold">Phone: +256 742 017 229</p>
               <p className="font-semibold">Email: info@eritageentcare.com</p>
-              <p className="font-semibold">Location: Entebbe, Uganda</p>
+              <p className="font-semibold">Location: Along Entebbe Road, Entebbe, Central Region, Uganda</p>
             </div>
           </div>
         </div>

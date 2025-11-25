@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Specialist from "@/components/Specialist";
 import HealthTips from "@/components/HealthTips";
 import AppointmentForm from "@/components/AppointmentForm";
+import GoogleMap from "@/components/GoogleMap";
 import Footer from "@/components/Footer";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
@@ -29,6 +30,7 @@ const Index = () => {
         <Specialist />
         <HealthTips />
         <AppointmentForm />
+        <GoogleMap />
         <Footer />
         <FloatingContactButtons />
       </div>

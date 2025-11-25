@@ -3,7 +3,7 @@ title: "Preventing Hearing Loss"
 description: "Discover effective strategies to protect your hearing and maintain ear health throughout your life."
 slug: "preventing-hearing-loss"
 icon: "Heart"
-date: "2025-01-23"
+date: "2025-11-23"
 author: "Fahad Juma ENT Specialist"
 ---
 

@@ -3,7 +3,7 @@ title: "Voice Care Tips"
 description: "Essential tips for maintaining vocal health, especially important for teachers, singers, and public speakers."
 slug: "voice-care-tips"
 icon: "Sparkles"
-date: "2025-01-25"
+date: "2025-11-25"
 author: "Fahad Juma ENT Specialist"
 ---
 

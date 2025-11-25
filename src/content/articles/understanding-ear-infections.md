@@ -3,7 +3,7 @@ title: "Understanding Ear Infections"
 description: "Learn about the causes, symptoms, and treatment options for common ear infections in children and adults."
 slug: "understanding-ear-infections"
 icon: "BookOpen"
-date: "2025-01-21"
+date: "2025-11-21"
 author: "Fahad Juma ENT Specialist"
 ---
 
