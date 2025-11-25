@@ -11,7 +11,7 @@ const FloatingContactButtons = () => {
           className="rounded-full shadow-lg hover:shadow-xl transition-shadow"
           asChild
         >
-          <a href="tel:0740166778" aria-label="Call Now">
+          <a href="tel:+256740166778" aria-label="Call Now">
             <Phone className="h-5 w-5" />
           </a>
         </Button>

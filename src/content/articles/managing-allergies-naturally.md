@@ -3,8 +3,8 @@ title: "Managing Allergies Naturally"
 description: "Explore natural remedies and lifestyle changes that can help reduce nasal allergy symptoms."
 slug: "managing-allergies-naturally"
 icon: "Shield"
-date: "2024-02-01"
-author: "Dr. ERITAGE ENT Team"
+date: "2025-01-24"
+author: "Fahad Juma ENT Specialist"
 ---
 
 # Managing Allergies Naturally
