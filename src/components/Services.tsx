@@ -31,6 +31,11 @@ const services = [
     icon: Pill,
     title: "Medical Treatment",
     description: "Evidence-based medical management for all ENT conditions with follow-up care."
+  },
+  {
+    icon: Search,
+    title: "Foreign Body Removal (Ear & Nose)",
+    description: "Safe and precise removal of common foreign bodies such as insects, beads, seeds, cotton swabs, paper, and other objects stuck in the ear or nose. Quick relief, no trauma, and handled with proper ENT equipment."
   }
 ];
 
