@@ -13,9 +13,11 @@ const Footer = () => {
           
           <div className="mb-6">
             <div className="flex items-center justify-center gap-4 text-sm mb-4">
-              <span>0740166778</span>
+              <span>+256 740 166 778</span>
               <span>|</span>
-              <span>0769616091</span>
+              <span>+256 769 616 091</span>
+              <span>|</span>
+              <span>+256 742 017 229</span>
             </div>
             <div className="flex items-center justify-center gap-3">
               <Button 
@@ -23,7 +25,7 @@ const Footer = () => {
                 className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
                 asChild
               >
-                <a href="tel:0740166778">
+                <a href="tel:+256740166778">
                   <Phone className="h-4 w-4 mr-2" />
                   Call Now
                 </a>

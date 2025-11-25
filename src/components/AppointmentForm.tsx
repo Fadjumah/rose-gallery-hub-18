@@ -27,11 +27,15 @@ const AppointmentForm = () => {
       return;
     }
 
-    // Here you would typically send the form data to a backend
-    // For now, we'll just show a success message
+    // Create WhatsApp message
+    const message = `*New Appointment Request*%0A%0A*Name:* ${encodeURIComponent(formData.fullName)}%0A*Phone:* ${encodeURIComponent(formData.phone)}%0A*Email:* ${encodeURIComponent(formData.email || 'Not provided')}%0A*Message:* ${encodeURIComponent(formData.message || 'Not provided')}`;
+    
+    // Send to WhatsApp
+    window.open(`https://wa.me/256740166778?text=${message}`, '_blank');
+
     toast({
-      title: "Appointment Request Received!",
-      description: "We'll get back to you shortly to confirm your appointment.",
+      title: "Redirecting to WhatsApp",
+      description: "Your appointment request will be sent via WhatsApp.",
     });
 
     // Reset form
@@ -60,7 +64,6 @@ const AppointmentForm = () => {
                 <Label htmlFor="fullName">Full Name *</Label>
                 <Input
                   id="fullName"
-                  placeholder="John Doe"
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                   required
@@ -72,7 +75,6 @@ const AppointmentForm = () => {
                 <Input
                   id="phone"
                   type="tel"
-                  placeholder="0700000000"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   required
@@ -110,7 +112,9 @@ const AppointmentForm = () => {
           <div className="mt-8 text-center">
             <p className="text-muted-foreground mb-4">You can also reach us at:</p>
             <div className="space-y-2">
-              <p className="font-semibold">Phone: +256769616091</p>
+              <p className="font-semibold">Phone: +256 740 166 778</p>
+              <p className="font-semibold">Phone: +256 769 616 091</p>
+              <p className="font-semibold">Phone: +256 742 017 229</p>
               <p className="font-semibold">Email: info@eritageentcare.com</p>
               <p className="font-semibold">Location: Entebbe, Uganda</p>
             </div>

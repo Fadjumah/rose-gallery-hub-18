@@ -3,8 +3,8 @@ title: "Preventing Hearing Loss"
 description: "Discover effective strategies to protect your hearing and maintain ear health throughout your life."
 slug: "preventing-hearing-loss"
 icon: "Heart"
-date: "2024-01-20"
-author: "Dr. ERITAGE ENT Team"
+date: "2025-01-23"
+author: "Fahad Juma ENT Specialist"
 ---
 
 # Preventing Hearing Loss
