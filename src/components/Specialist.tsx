@@ -16,9 +16,10 @@ const Specialist = () => {
           <Card className="overflow-hidden">
             <CardContent className="p-8">
               <div className="text-left">
-                <h3 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
+                <h3 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-2">
                   ENT Specialist
                 </h3>
+                <p className="text-2xl font-semibold text-foreground mb-8">Fahad Juma</p>
                 
                 <div className="space-y-4 max-w-2xl">
                   <div className="flex items-start gap-3">
