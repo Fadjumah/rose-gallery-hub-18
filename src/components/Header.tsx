@@ -19,12 +19,12 @@ const Header = () => {
     <header className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-3">
+          <a href="/" className="flex items-center gap-3 cursor-pointer">
             <img src={logo} alt="ERITAGE ENT CARE" className="h-12 w-auto" />
             <span className="text-xl font-bold text-primary hidden sm:inline">
               ERITAGE ENT CARE
             </span>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
