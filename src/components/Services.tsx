@@ -34,7 +34,7 @@ const services = [
   },
   {
     icon: Search,
-    title: "Foreign Body Removal (Ear & Nose)",
+    title: "Foreign Body Removal (Ear, Nose & Throat)",
     description: "Safe and precise removal of common foreign bodies such as insects, beads, seeds, cotton swabs, paper, and other objects stuck in the ear or nose. Quick relief, no trauma, and handled with proper ENT equipment."
   }
 ];
