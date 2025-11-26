@@ -44,9 +44,10 @@ const BlogArticle = () => {
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.description} />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content={`${window.location.origin}/blog/${article.slug}`} />
         <meta property="article:published_time" content={article.date} />
         <meta property="article:author" content={article.author} />
-        <link rel="canonical" href={`https://yourdomain.com/blog/${article.slug}`} />
+        <link rel="canonical" href={`${window.location.origin}/blog/${article.slug}`} />
       </Helmet>
 
       <div className="min-h-screen">
