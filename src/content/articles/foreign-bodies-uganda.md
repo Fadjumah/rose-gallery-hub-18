@@ -1,15 +1,15 @@
 ---
-title: "Common Ear and Nose Foreign Bodies in Uganda — When to See an ENT Specialist Immediately"
-description: "Learn about the most common foreign bodies found in ears and noses in Uganda, warning signs, and when emergency ENT care is needed for safe removal."
+title: "Common Ear, Nose & Throat Foreign Bodies in Uganda — When to See an ENT Specialist Immediately"
+description: "Learn about the most common foreign bodies found in ears, noses, and throats in Uganda, warning signs, and when emergency ENT care is needed for safe removal."
 slug: "foreign-bodies-uganda"
 icon: "Search"
 date: "November 22, 2025"
 author: "Fahad Juma ENT Specialist"
 ---
 
-# Common Ear and Nose Foreign Bodies in Uganda — When to See an ENT Specialist Immediately
+# Common Ear, Nose & Throat Foreign Bodies in Uganda — When to See an ENT Specialist Immediately
 
-Foreign bodies lodged in the ear or nose are surprisingly common medical emergencies in Uganda, affecting both children and adults. Understanding what objects commonly become stuck, recognizing warning signs, and knowing when to seek immediate ENT specialist care can prevent serious complications and ensure safe removal.
+Foreign bodies lodged in the ear, nose, or throat are surprisingly common medical emergencies in Uganda, affecting both children and adults. Understanding what objects commonly become stuck, recognizing warning signs, and knowing when to seek immediate ENT specialist care can prevent serious complications and ensure safe removal.
 
 ## Most Common Foreign Bodies in Uganda
 
@@ -37,6 +37,20 @@ Foreign bodies lodged in the ear or nose are surprisingly common medical emergen
 
 **Insects**: Flying insects can accidentally enter the nasal cavity, causing distress.
 
+### In the Throat
+
+**Fish Bones**: The most common throat foreign body in Uganda, particularly tilapia and Nile perch bones. These can lodge in the tonsils, throat base, or food pipe.
+
+**Meat Bones**: Chicken bones and goat bones are frequently swallowed accidentally, especially when eating without proper chewing.
+
+**Food Bolus**: Large pieces of meat, cassava, matooke, or posho can become stuck in the throat or esophagus, especially in people with swallowing difficulties.
+
+**Coins**: Children commonly swallow coins, which can lodge in the throat or upper food pipe.
+
+**Sharp Objects**: Needles, pins, toothpicks, and safety pins can cause serious injury when swallowed.
+
+**Plastic and Metal Objects**: Bottle caps, pen caps, and small toys are common, especially among children.
+
 ## Warning Signs Requiring Immediate ENT Attention
 
 ### Ear Foreign Bodies
@@ -60,15 +74,31 @@ Foreign bodies lodged in the ear or nose are surprisingly common medical emergen
 - **Fever** (suggests infection)
 - **Button battery presence** (medical emergency requiring immediate removal)
 
+### Throat Foreign Bodies
+
+- **Sensation of something stuck** in the throat that won't go away
+- **Pain when swallowing** (odynophagia)
+- **Difficulty swallowing** or inability to swallow (dysphagia)
+- **Drooling** or inability to swallow saliva
+- **Painful neck movements** or neck swelling
+- **Breathing difficulties** (partial airway obstruction)
+- **Coughing or choking** that doesn't resolve
+- **Vomiting or regurgitation** of food
+- **Blood in saliva** or vomit
+- **Chest pain** (suggests food pipe involvement)
+- **Fever** (indicates infection or perforation risk)
+
 ## Why You Should Never Attempt Home Removal
 
-Many Ugandans try home remedies or use improvised tools like matchsticks, pins, or tweezers. This is extremely dangerous because:
+Many Ugandans try home remedies or use improvised tools like matchsticks, pins, or tweezers for ear and nose foreign bodies, or attempt to swallow food, water, or bananas to push down throat foreign bodies. This is extremely dangerous because:
 
-1. **You can push the object deeper**, making professional removal more difficult
-2. **You risk perforating the eardrum** or damaging nasal tissues
+1. **You can push the object deeper**, making professional removal more difficult or impossible
+2. **You risk perforating the eardrum, nasal tissues, or food pipe** causing severe complications
 3. **Untrained removal can cause bleeding** and introduce infection
-4. **Sharp objects can lacerate** delicate ear canal or nasal lining
-5. **Oil or water instillation** for insects can cause complications if not done correctly
+4. **Sharp objects can lacerate** delicate tissues in the ear, nose, or throat
+5. **Swallowing food or water with throat foreign bodies** can cause perforation of the food pipe
+6. **Fish bones can migrate** deeper into tissues, causing abscesses or infections
+7. **Oil or water instillation** for insects can cause complications if not done correctly
 
 ## The Professional ENT Approach at ERITAGE ENT CARE
 
@@ -114,6 +144,14 @@ While cleaning your ear, the cotton swab broke and left cotton deep in your ear 
 
 Your child swallowed or inserted a button battery (from toys, watches, or remotes). **What to do**: This is a MEDICAL EMERGENCY. Chemical burns can occur within hours. Seek immediate ENT or emergency care.
 
+### Case 5: The Fish Bone
+
+While eating fish (tilapia or Nile perch), you swallowed a bone that is now stuck in your throat. You can feel it with every swallow. **What to do**: Do not swallow bread, bananas, or water to push it down. Come to the ENT clinic immediately for safe removal.
+
+### Case 6: The Meat Bolus
+
+A large piece of meat or food became stuck while eating, and now you cannot swallow properly. **What to do**: This is an emergency requiring immediate ENT assessment, especially if you're drooling or having breathing difficulties.
+
 ## Prevention Tips for Ugandan Families
 
 1. **Supervise young children** during play with small objects
@@ -122,30 +160,41 @@ Your child swallowed or inserted a button battery (from toys, watches, or remote
 4. **Use mosquito nets and screens** to prevent insects from entering ears during sleep
 5. **Educate children** about the dangers of inserting objects into body openings
 6. **Regular home safety checks** to remove small hazards
-7. **Seek immediate help** rather than attempting home removal
+7. **Chew food thoroughly**, especially fish and meat with bones
+8. **Remove bones carefully** when eating fish; supervise children during fish meals
+9. **Cut food into smaller pieces** for young children and elderly persons
+10. **Avoid talking or laughing** with food in your mouth
+11. **Seek immediate help** rather than attempting home removal or swallowing remedies
 
 ## Potential Complications of Delayed Treatment
 
-Leaving foreign bodies in the ear or nose can lead to:
-- **Infection and abscess formation**
+Leaving foreign bodies in the ear, nose, or throat can lead to:
+- **Infection and abscess formation** (all sites)
 - **Chronic sinusitis** (nasal foreign bodies)
 - **Eardrum perforation** (ear foreign bodies)
 - **Hearing loss** (temporary or permanent)
 - **Chemical burns** (button batteries)
 - **Aspiration risk** (nasal foreign bodies moving to airways)
+- **Food pipe perforation** (throat foreign bodies)
+- **Deep neck infections and abscesses** (throat foreign bodies)
+- **Airway obstruction** (large throat foreign bodies)
+- **Mediastinitis** (life-threatening chest infection from food pipe perforation)
 - **Tissue necrosis** in severe cases
 
 ## When Is It Truly an Emergency?
 
 Seek **immediate ENT care** if:
-- A **button battery** is suspected
-- There is **severe bleeding** from the ear or nose
-- The patient has **difficulty breathing**
+- A **button battery** is suspected or swallowed
+- There is **severe bleeding** from the ear, nose, or throat
+- The patient has **difficulty breathing** or airway compromise
 - There is **severe pain** not relieved by simple measures
 - A **live insect** is causing significant distress
 - **Previous removal attempts** have failed
 - The patient is a **very young child** or infant
-- There are **signs of infection** (fever, foul discharge)
+- There are **signs of infection** (fever, foul discharge, neck swelling)
+- **Sharp objects** (fish bones, needles, pins) are stuck in the throat
+- **Inability to swallow** saliva (drooling)
+- **Food bolus** is completely obstructing swallowing
 
 ## Why Choose ERITAGE ENT CARE for Foreign Body Removal
 
@@ -160,9 +209,9 @@ At ERITAGE ENT CARE in Entebbe, we handle foreign body emergencies daily with:
 
 ## Conclusion
 
-Foreign bodies in the ear and nose are common but require professional ENT care for safe removal. Never attempt home removal with improvised tools. At ERITAGE ENT CARE, we provide immediate, safe, and trauma-free foreign body removal using proper ENT equipment and techniques.
+Foreign bodies in the ear, nose, and throat are common medical emergencies that require professional ENT care for safe removal. Never attempt home removal with improvised tools or home remedies like swallowing food or water. At ERITAGE ENT CARE, we provide immediate, safe, and trauma-free foreign body removal using proper ENT equipment and techniques.
 
-**If you or your child has a foreign object stuck in the ear or nose, contact us immediately at +256 740 166 778 or visit our clinic along Entebbe Road, Entebbe, for prompt professional care.**
+**If you or your child has a foreign object stuck in the ear, nose, or throat, contact us immediately at +256 740 166 778 or visit our clinic along Entebbe Road, Entebbe, for prompt professional care.**
 
 ---
 
