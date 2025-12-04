@@ -74,10 +74,10 @@ const BlogArticle = () => {
                 <p className="text-xl text-muted-foreground mb-6">
                   {article.description}
                 </p>
-                <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+              <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4" />
-                    <time dateTime={article.date}>
+                    <time dateTime={article.date} className="font-serif">
                       {new Date(article.date).toLocaleDateString('en-US', {
                         year: 'numeric',
                         month: 'long',
@@ -87,7 +87,7 @@ const BlogArticle = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <User className="h-4 w-4" />
-                    <span>{article.author}</span>
+                    <span className="font-serif">{article.author}</span>
                   </div>
                 </div>
               </header>
