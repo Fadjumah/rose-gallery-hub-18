@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Ear, Activity, Stethoscope, Wind, Pill, Search } from "lucide-react";
+import { Ear, Activity, Stethoscope, Wind, Pill, Search, RotateCcw } from "lucide-react";
 
 const services = [
   {
@@ -36,6 +36,11 @@ const services = [
     icon: Search,
     title: "Foreign Body Removal (Ear, Nose & Throat)",
     description: "Safe and precise removal of common foreign bodies such as insects, beads, seeds, cotton swabs, paper, and other objects stuck in the ear or nose. Quick relief, no trauma, and handled with proper ENT equipment."
+  },
+  {
+    icon: RotateCcw,
+    title: "Balance & Dizziness Treatment",
+    description: "Expert diagnosis and treatment for vertigo, Meniere's disease, and other vestibular disorders causing balance problems and frequent dizziness."
   }
 ];
 
