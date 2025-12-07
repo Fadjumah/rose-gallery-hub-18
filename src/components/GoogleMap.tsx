@@ -11,7 +11,7 @@ const GoogleMap = () => {
         
         <div className="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63836.89843940836!2d32.43986649999999!3d0.054389000000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dba3c7e5e5555%3A0x5555555555555555!2sEritage%20ENT%20Care!5e0!3m2!1sen!2sug!4v1234567890123!5m2!1sen!2sug"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7584444444444!2d32.4580556!3d0.0527778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d8a4b5c6d7e8f%3A0x1234567890abcdef!2sEritage%20Ear%2C%20Nose%20and%20throat%20home%20%E2%80%93Entebbe%20road!5e0!3m2!1sen!2sug!4v1701907200000!5m2!1sen!2sug"
             width="100%"
             height="450"
             style={{ border: 0 }}
@@ -24,7 +24,7 @@ const GoogleMap = () => {
         
         <div className="text-center mt-6">
           <a
-            href="https://maps.app.goo.gl/3zxRWd4YfZDah94eA"
+            href="https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline font-semibold"
