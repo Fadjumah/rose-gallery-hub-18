@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
+import FAQSection from "@/components/FAQSection";
 
 const HearingTests = () => {
   const services = [
@@ -248,6 +249,9 @@ const HearingTests = () => {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <FAQSection variant="compact" />
 
         <Footer />
         <FloatingContactButtons />
