@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 import FAQSection from "@/components/FAQSection";
+import AskENTQuestion from "@/components/AskENTQuestion";
 
 const FAQ = () => {
   return (
@@ -34,6 +35,9 @@ const FAQ = () => {
 
         {/* Full FAQ Section */}
         <FAQSection variant="full" className="bg-background" />
+
+        {/* Ask ENT Question Form */}
+        <AskENTQuestion />
 
         {/* Map Section */}
         <section className="py-16 bg-accent/20">

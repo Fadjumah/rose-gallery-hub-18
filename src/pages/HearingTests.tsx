@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 import FAQSection from "@/components/FAQSection";
+import AskENTQuestion from "@/components/AskENTQuestion";
 
 const HearingTests = () => {
   const services = [
@@ -252,6 +253,9 @@ const HearingTests = () => {
 
         {/* FAQ Section */}
         <FAQSection variant="compact" />
+
+        {/* Ask ENT Question Form */}
+        <AskENTQuestion />
 
         <Footer />
         <FloatingContactButtons />
