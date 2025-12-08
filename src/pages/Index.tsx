@@ -8,6 +8,7 @@ import HealthTips from "@/components/HealthTips";
 import AppointmentForm from "@/components/AppointmentForm";
 import GoogleMap from "@/components/GoogleMap";
 import FAQSection from "@/components/FAQSection";
+import AskENTQuestion from "@/components/AskENTQuestion";
 import Footer from "@/components/Footer";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
@@ -33,6 +34,7 @@ const Index = () => {
         <AppointmentForm />
         <GoogleMap />
         <FAQSection variant="compact" />
+        <AskENTQuestion />
         <Footer />
         <FloatingContactButtons />
       </div>
