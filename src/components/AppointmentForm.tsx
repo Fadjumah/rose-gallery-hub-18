@@ -4,9 +4,19 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import { Calendar } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const AppointmentForm = () => {
   const { toast } = useToast();
+  const [open, setOpen] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -17,7 +27,6 @@ const AppointmentForm = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Basic validation
     if (!formData.fullName || !formData.phone) {
       toast({
         title: "Missing Information",
@@ -27,10 +36,8 @@ const AppointmentForm = () => {
       return;
     }
 
-    // Create WhatsApp message
     const message = `*New Appointment Request*%0A%0A*Name:* ${encodeURIComponent(formData.fullName)}%0A*Phone:* ${encodeURIComponent(formData.phone)}%0A*Email:* ${encodeURIComponent(formData.email || 'Not provided')}%0A*Message:* ${encodeURIComponent(formData.message || 'Not provided')}`;
     
-    // Send to WhatsApp
     window.open(`https://wa.me/256740166778?text=${message}`, '_blank');
 
     toast({
@@ -38,86 +45,98 @@ const AppointmentForm = () => {
       description: "Your appointment request will be sent via WhatsApp.",
     });
 
-    // Reset form
     setFormData({
       fullName: "",
       phone: "",
       email: "",
       message: ""
     });
+    setOpen(false);
   };
 
   return (
-    <section id="appointment" className="py-20 bg-accent">
+    <section id="appointment" className="py-16 bg-accent">
       <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Book Your Appointment</h2>
-            <p className="text-lg text-muted-foreground">
-              Fill out the form and we'll get back to you shortly
-            </p>
-          </div>
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Ready to Book?</h2>
+          <p className="text-lg text-muted-foreground mb-8">
+            Schedule your consultation with our ENT specialists today
+          </p>
           
-          <div className="bg-card rounded-lg shadow-lg p-8">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="space-y-2">
-                <Label htmlFor="fullName">Full Name *</Label>
-                <Input
-                  id="fullName"
-                  value={formData.fullName}
-                  onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                  required
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number *</Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  required
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="email">Email Address</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="message">Message / Reason for Visit</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Please describe your symptoms or reason for consultation..."
-                  rows={5}
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                />
-              </div>
-              
-              <Button type="submit" className="w-full" size="lg">
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <Button size="lg" className="gap-2">
+                <Calendar className="w-5 h-5" />
                 Request Appointment
               </Button>
-            </form>
-          </div>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-full sm:max-w-md overflow-y-auto">
+              <SheetHeader>
+                <SheetTitle className="font-serif">Book Your Appointment</SheetTitle>
+                <SheetDescription>
+                  Fill out the form and we'll get back to you shortly
+                </SheetDescription>
+              </SheetHeader>
+              
+              <form onSubmit={handleSubmit} className="space-y-5 mt-6">
+                <div className="space-y-2">
+                  <Label htmlFor="fullName">Full Name *</Label>
+                  <Input
+                    id="fullName"
+                    value={formData.fullName}
+                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                    required
+                  />
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Phone Number *</Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    required
+                  />
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email Address</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  />
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="message">Message / Reason for Visit</Label>
+                  <Textarea
+                    id="message"
+                    placeholder="Please describe your symptoms or reason for consultation..."
+                    rows={4}
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  />
+                </div>
+                
+                <Button type="submit" className="w-full" size="lg">
+                  Submit Request
+                </Button>
+              </form>
+              
+              <div className="mt-6 pt-6 border-t text-sm text-muted-foreground space-y-1">
+                <p><span className="font-medium">Phone:</span> +256 740 166 778</p>
+                <p><span className="font-medium">Email:</span> info@eritageentcare.com</p>
+                <p><span className="font-medium">Location:</span> Along Entebbe Road, Entebbe</p>
+              </div>
+            </SheetContent>
+          </Sheet>
           
-          <div className="mt-8 text-center">
-            <p className="text-muted-foreground mb-4">You can also reach us at:</p>
-            <div className="space-y-2">
-              <p className="font-semibold">Phone: +256 740 166 778</p>
-              <p className="font-semibold">Phone: +256 769 616 091</p>
-              <p className="font-semibold">Phone: +256 742 017 229</p>
-              <p className="font-semibold">Email: info@eritageentcare.com</p>
-              <p className="font-semibold">Location: Along Entebbe Road, Entebbe, Central Region, Uganda</p>
-            </div>
-          </div>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Or call us directly: <a href="tel:+256740166778" className="text-primary font-medium hover:underline">+256 740 166 778</a>
+          </p>
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
+import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
 import HearingTests from "./pages/HearingTests";
 import Reviews from "./pages/Reviews";
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/hearing-tests" element={<HearingTests />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogArticle />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

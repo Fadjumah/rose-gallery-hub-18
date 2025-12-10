@@ -44,7 +44,7 @@ serve(async (req) => {
 
     console.log('Question saved, generating AI response...');
 
-    // Generate AI response using GPT-5 via Lovable AI Gateway
+    // Generate AI response using Gemini Flash for faster responses
     const aiResponse = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -52,7 +52,7 @@ serve(async (req) => {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'openai/gpt-5',
+        model: 'google/gemini-2.5-flash',
         messages: [
           {
             role: 'system',
