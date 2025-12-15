@@ -4,20 +4,17 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { MessageCircle, Send, Bot } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { MessageCircle, Send } from "lucide-react";
 
 const AskENTQuestion = () => {
   const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [aiResponse, setAiResponse] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     question: "",
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.name || !formData.phone || !formData.question) {
@@ -29,46 +26,17 @@ const AskENTQuestion = () => {
       return;
     }
 
-    setIsSubmitting(true);
-    setAiResponse(null);
+    // Send to WhatsApp
+    const message = `New ENT Question:\n\nName: ${formData.name}\nPhone: ${formData.phone}\nQuestion: ${formData.question}`;
+    const whatsappUrl = `https://wa.me/256740166778?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
 
-    try {
-      const response = await supabase.functions.invoke('ask-ent-question', {
-        body: {
-          name: formData.name,
-          phone: formData.phone,
-          question: formData.question,
-        },
-      });
+    toast({
+      title: "Redirecting to WhatsApp",
+      description: "Your question is being sent to our ENT specialist.",
+    });
 
-      if (response.error) {
-        throw new Error(response.error.message || 'Failed to submit question');
-      }
-
-      const data = response.data;
-
-      if (data.error) {
-        throw new Error(data.error);
-      }
-
-      setAiResponse(data.response);
-      
-      toast({
-        title: "Question Submitted!",
-        description: "Our AI assistant has provided a response below.",
-      });
-
-      setFormData({ name: "", phone: "", question: "" });
-    } catch (error) {
-      console.error('Error submitting question:', error);
-      toast({
-        title: "Error",
-        description: error instanceof Error ? error.message : "Failed to submit question. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
+    setFormData({ name: "", phone: "", question: "" });
   };
 
   return (
@@ -83,25 +51,9 @@ const AskENTQuestion = () => {
               Ask an ENT Question
             </h2>
             <p className="text-muted-foreground">
-              Have a question about ear, nose, or throat health? Submit your question and our AI-powered assistant will respond instantly.
+              Have a question about ear, nose, or throat health? Submit your question and our specialist will respond via WhatsApp.
             </p>
           </div>
-
-          {aiResponse && (
-            <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 mb-6">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Bot className="w-5 h-5 text-primary" />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-foreground mb-2">AI Response</h3>
-                  <div className="text-muted-foreground whitespace-pre-wrap leading-relaxed">
-                    {aiResponse}
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
 
           <form onSubmit={handleSubmit} className="bg-card rounded-2xl shadow-lg p-8 space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -150,15 +102,14 @@ const AskENTQuestion = () => {
 
             <Button
               type="submit"
-              disabled={isSubmitting}
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg"
             >
               <Send className="w-5 h-5 mr-2" />
-              {isSubmitting ? "Getting AI Response..." : "Ask Our AI Assistant"}
+              Send via WhatsApp
             </Button>
 
             <p className="text-center text-sm text-muted-foreground">
-              Powered by GPT-5 AI. For urgent concerns, please call +256 740 166 778.
+              For urgent concerns, please call +256 740 166 778.
             </p>
           </form>
         </div>
