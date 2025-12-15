@@ -5,16 +5,18 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { MessageCircle, Send } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 const AskENTQuestion = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     question: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!formData.name || !formData.phone || !formData.question) {
@@ -26,17 +28,37 @@ const AskENTQuestion = () => {
       return;
     }
 
-    // Send to WhatsApp
-    const message = `New ENT Question:\n\nName: ${formData.name}\nPhone: ${formData.phone}\nQuestion: ${formData.question}`;
-    const whatsappUrl = `https://wa.me/256740166778?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, "_blank");
+    setIsSubmitting(true);
 
-    toast({
-      title: "Redirecting to WhatsApp",
-      description: "Your question is being sent to our ENT specialist.",
-    });
+    try {
+      const response = await supabase.functions.invoke('send-ent-question', {
+        body: {
+          name: formData.name,
+          phone: formData.phone,
+          question: formData.question,
+        },
+      });
 
-    setFormData({ name: "", phone: "", question: "" });
+      if (response.error) {
+        throw new Error(response.error.message || 'Failed to send question');
+      }
+
+      toast({
+        title: "Question Sent!",
+        description: "We've received your question and will respond soon.",
+      });
+
+      setFormData({ name: "", phone: "", question: "" });
+    } catch (error) {
+      console.error('Error sending question:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send question. Please try again or call us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -102,10 +124,11 @@ const AskENTQuestion = () => {
 
             <Button
               type="submit"
+              disabled={isSubmitting}
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg"
             >
               <Send className="w-5 h-5 mr-2" />
-              Send via WhatsApp
+              {isSubmitting ? "Sending..." : "Send Question"}
             </Button>
 
             <p className="text-center text-sm text-muted-foreground">
