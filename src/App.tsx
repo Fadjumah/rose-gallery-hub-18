@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import BlogArticle from "./pages/BlogArticle";
 import HearingTests from "./pages/HearingTests";
+import ENTServices from "./pages/ENTServices";
 import Reviews from "./pages/Reviews";
 import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
@@ -23,6 +24,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/ent-services" element={<ENTServices />} />
             <Route path="/hearing-tests" element={<HearingTests />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/faq" element={<FAQ />} />
