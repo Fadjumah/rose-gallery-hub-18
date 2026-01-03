@@ -74,6 +74,22 @@ const Blog = () => {
                 );
               })}
             </div>
+
+            {/* Related Services Section */}
+            <div className="mt-16 max-w-4xl mx-auto">
+              <h2 className="text-2xl font-serif font-bold mb-6 text-center">Related ENT Services</h2>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <a href="/ent-services" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
+                  <span className="font-medium text-foreground">ENT Services in Entebbe</span>
+                </a>
+                <a href="/hearing-tests" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
+                  <span className="font-medium text-foreground">Hearing Tests & Audiology</span>
+                </a>
+                <a href="/urgent-ent-guidance" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
+                  <span className="font-medium text-foreground">Urgent ENT Guidance</span>
+                </a>
+              </div>
+            </div>
           </div>
         </main>
         

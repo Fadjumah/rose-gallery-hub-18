@@ -1,3 +1,7 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <section id="about" className="py-20 bg-background">
@@ -14,10 +18,16 @@ const About = () => {
             comprehensive ENT services, from routine check-ups to complex surgical procedures. 
             Our mission is to improve the quality of life for every patient who walks through our doors.
           </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
             We believe in patient-centered care, taking the time to listen, diagnose accurately, 
             and create personalized treatment plans that address each patient's unique needs.
           </p>
+          <Button asChild variant="outline" className="gap-2">
+            <Link to="/about">
+              Learn More About Us
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

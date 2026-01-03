@@ -253,6 +253,26 @@ const HearingTests = () => {
           </div>
         </section>
 
+        {/* Related Services */}
+        <section className="py-12 bg-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-xl font-bold text-foreground mb-6 text-center">Related ENT Services</h2>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <a href="/ent-services" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
+                  <span className="font-medium text-foreground">ENT Services in Entebbe</span>
+                </a>
+                <a href="/blog/preventing-hearing-loss" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
+                  <span className="font-medium text-foreground">Preventing Hearing Loss</span>
+                </a>
+                <a href="/blog/balance-problems-dizziness" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
+                  <span className="font-medium text-foreground">Balance & Dizziness Guide</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <FAQSection variant="compact" />
 
