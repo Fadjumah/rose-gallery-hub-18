@@ -128,15 +128,15 @@ const ENTServices = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
                 What is an ENT Specialist?
               </h2>
-              <div className="prose prose-lg max-w-none text-muted-foreground">
-                <p className="mb-4">
+              <div className="space-y-4 text-muted-foreground">
+                <p className="text-base leading-relaxed">
                   An ENT (Ear, Nose, and Throat) specialist, also known as an Otolaryngologist, is a medical doctor who specializes in diagnosing and treating conditions affecting the ears, nose, throat, and related structures of the head and neck.
                 </p>
-                <p className="mb-4">
-                  At <strong>Eritage ENT Care in Entebbe</strong>, our ENT specialists are trained to handle both medical and surgical treatments for a wide range of conditions. Whether you're experiencing hearing difficulties, chronic sinusitis, or throat problems, our team provides comprehensive care tailored to your needs.
+                <p className="text-base leading-relaxed">
+                  At <span className="font-semibold text-foreground">Eritage ENT Care in Entebbe</span>, our ENT specialists are trained to handle both medical and surgical treatments for a wide range of conditions. Whether you're experiencing hearing difficulties, chronic sinusitis, or throat problems, our team provides comprehensive care tailored to your needs.
                 </p>
-                <p>
-                  As the leading <strong>ENT clinic in Entebbe</strong>, we combine modern diagnostic equipment with compassionate patient care to ensure the best outcomes for our patients across Uganda.
+                <p className="text-base leading-relaxed">
+                  As the leading <span className="font-semibold text-foreground">ENT clinic in Entebbe</span>, we combine modern diagnostic equipment with compassionate patient care to ensure the best outcomes for our patients across Uganda.
                 </p>
               </div>
             </div>

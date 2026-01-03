@@ -9,6 +9,7 @@ const Header = () => {
   const navItems = [
     { href: "/#home", label: "Home" },
     { href: "/ent-services", label: "ENT Services" },
+    { href: "/urgent-ent-guidance", label: "Urgent ENT" },
     { href: "/hearing-tests", label: "Hearing Tests" },
     { href: "/reviews", label: "Reviews" },
     { href: "/faq", label: "FAQ" },
