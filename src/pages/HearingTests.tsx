@@ -75,7 +75,7 @@ const HearingTests = () => {
 
       <div className="min-h-screen bg-background">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1241677876393680"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
         <Header />
 
         {/* Hero Section */}

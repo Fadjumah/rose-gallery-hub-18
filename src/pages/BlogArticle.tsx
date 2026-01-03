@@ -23,7 +23,7 @@ const BlogArticle = () => {
     return (
       <div className="min-h-screen">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1241677876393680"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
         <Header />
         <div className="container mx-auto px-4 py-20 text-center">
           <h1 className="text-4xl font-serif font-bold mb-4">Article Not Found</h1>
