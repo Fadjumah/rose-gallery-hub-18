@@ -16,7 +16,8 @@ import {
   HeartPulse,
   AudioLines,
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  AlertCircle
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -89,7 +90,7 @@ const ENTServices = () => {
 
       <div className="min-h-screen bg-background">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1241677876393680"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
         <Header />
         
         {/* Hero Section */}
@@ -523,7 +524,15 @@ const ENTServices = () => {
               <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
                 Helpful Resources
               </h2>
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <Link to="/urgent-ent-guidance" className="block">
+                  <Card className="hover:shadow-md transition-shadow h-full border-primary/30 bg-primary/5">
+                    <CardContent className="p-4 flex items-center gap-3">
+                      <AlertCircle className="h-5 w-5 text-primary" />
+                      <span className="text-foreground font-medium">Urgent ENT Guidance</span>
+                    </CardContent>
+                  </Card>
+                </Link>
                 <Link to="/hearing-tests" className="block">
                   <Card className="hover:shadow-md transition-shadow h-full">
                     <CardContent className="p-4 flex items-center gap-3">
