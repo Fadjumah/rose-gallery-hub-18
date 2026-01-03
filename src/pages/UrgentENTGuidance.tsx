@@ -207,14 +207,14 @@ const UrgentENTGuidance = () => {
         <section className="py-16 bg-secondary/20">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4 mb-8">
                 <Link 
                   to="/ent-services" 
                   className="flex items-center justify-between p-4 bg-background rounded-lg border border-border hover:border-primary transition-colors"
                 >
                   <div>
                     <p className="text-sm text-muted-foreground">Need a full assessment?</p>
-                    <p className="font-semibold text-foreground">ENT Services</p>
+                    <p className="font-semibold text-foreground">ENT Services in Entebbe</p>
                   </div>
                   <ArrowRight className="h-5 w-5 text-primary" />
                 </Link>
@@ -228,6 +228,22 @@ const UrgentENTGuidance = () => {
                   </div>
                   <ArrowRight className="h-5 w-5 text-primary" />
                 </Link>
+              </div>
+
+              {/* Additional Related Links */}
+              <div className="text-center">
+                <p className="text-muted-foreground mb-4">Related Health Articles:</p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <Link to="/blog/understanding-ear-infections" className="text-primary hover:underline text-sm">
+                    Understanding Ear Infections
+                  </Link>
+                  <Link to="/blog/voice-care-tips" className="text-primary hover:underline text-sm">
+                    Voice Care Tips
+                  </Link>
+                  <Link to="/about" className="text-primary hover:underline text-sm">
+                    About Our ENT Clinic
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

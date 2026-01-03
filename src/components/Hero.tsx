@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import clinicBuilding from "@/assets/clinic-building.jpg";
 
 const Hero = () => {
@@ -19,13 +20,26 @@ const Hero = () => {
             Professional treatment for ear, nose, and throat conditions. 
             Experienced specialist care for adults and children in a modern, comfortable clinic environment.
           </p>
-          <Button 
-            size="lg" 
-            onClick={scrollToAppointment}
-            className="text-lg px-8 py-6 mb-6"
-          >
-            Book Appointment
-          </Button>
+          <div className="flex flex-wrap gap-4 mb-6">
+            <Button 
+              size="lg" 
+              onClick={scrollToAppointment}
+              className="text-lg px-8 py-6"
+            >
+              Book Appointment
+            </Button>
+            <Button 
+              size="lg" 
+              variant="outline"
+              asChild
+              className="gap-2"
+            >
+              <Link to="/ent-services">
+                Our ENT Services
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
           
           {/* Phone numbers below button */}
           <div className="space-y-3 mt-6">

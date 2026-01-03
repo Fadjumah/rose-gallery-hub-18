@@ -1,5 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Ear, Activity, Stethoscope, Wind, Pill, Search, RotateCcw } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Ear, Activity, Stethoscope, Wind, Pill, Search, RotateCcw, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -69,6 +71,15 @@ const Services = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <Button asChild variant="outline" className="gap-2">
+            <Link to="/ent-services">
+              View All ENT Services in Entebbe
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
