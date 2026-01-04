@@ -16,7 +16,6 @@ import {
   CheckCircle2
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import doctorProfile from "@/assets/doctor-profile.jpg";
 
 const About = () => {
   const values = [
@@ -81,29 +80,20 @@ const About = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                    Dedicated ENT Care in Entebbe
-                  </h2>
-                  <div className="space-y-4 text-muted-foreground">
-                    <p className="text-base leading-relaxed">
-                      <span className="font-semibold text-foreground">Eritage ENT Care – Entebbe</span> is a specialized medical facility dedicated to diagnosing and treating conditions of the ear, nose, and throat. Located along Entebbe Road, we provide accessible, high-quality ENT care to patients of all ages.
-                    </p>
-                    <p className="text-base leading-relaxed">
-                      Our clinic combines clinical expertise with compassionate patient care. Whether you're experiencing hearing difficulties, chronic sinus problems, or throat conditions, our team delivers personalized treatment plans designed to improve your quality of life.
-                    </p>
-                    <p className="text-base leading-relaxed text-muted-foreground/80 italic">
-                      Note: This service is listed on Google Business Profile as "Eritage Ear, Nose and Throat Home – Entebbe road" — both names refer to the same trusted ENT clinic.
-                    </p>
-                  </div>
-                </div>
-                <div className="relative">
-                  <img 
-                    src={doctorProfile} 
-                    alt="Fahad Juma - ENT Specialist at Eritage ENT Care Entebbe" 
-                    className="rounded-lg shadow-lg w-full h-auto object-cover"
-                  />
+              <div className="max-w-3xl mx-auto">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                  Dedicated ENT Care in Entebbe
+                </h2>
+                <div className="space-y-4 text-muted-foreground">
+                  <p className="text-base leading-relaxed">
+                    <span className="font-semibold text-foreground">Eritage ENT Care – Entebbe</span> is a specialized medical facility dedicated to diagnosing and treating conditions of the ear, nose, and throat. Located along Entebbe Road, we provide accessible, high-quality ENT care to patients of all ages.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    Our clinic combines clinical expertise with compassionate patient care. Whether you're experiencing hearing difficulties, chronic sinus problems, or throat conditions, our team delivers personalized treatment plans designed to improve your quality of life.
+                  </p>
+                  <p className="text-base leading-relaxed text-muted-foreground/80 italic">
+                    Note: This service is listed on Google Business Profile as "Eritage Ear, Nose and Throat Home – Entebbe road" — both names refer to the same trusted ENT clinic.
+                  </p>
                 </div>
               </div>
             </div>
