@@ -234,11 +234,14 @@ const UrgentENTGuidance = () => {
               <div className="text-center">
                 <p className="text-muted-foreground mb-4">Related Health Articles:</p>
                 <div className="flex flex-wrap justify-center gap-4">
+                  <Link to="/blog/ear-discharge-otorrhea" className="text-primary hover:underline text-sm font-medium">
+                    Ear Discharge — When to Seek Urgent Care
+                  </Link>
                   <Link to="/blog/understanding-ear-infections" className="text-primary hover:underline text-sm">
                     Understanding Ear Infections
                   </Link>
-                  <Link to="/blog/voice-care-tips" className="text-primary hover:underline text-sm">
-                    Voice Care Tips
+                  <Link to="/blog/foreign-bodies-uganda" className="text-primary hover:underline text-sm">
+                    Foreign Bodies in ENT
                   </Link>
                   <Link to="/about" className="text-primary hover:underline text-sm">
                     About Our ENT Clinic

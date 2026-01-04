@@ -165,11 +165,15 @@ const ENTServices = () => {
                 </Card>
               ))}
             </div>
-            <div className="text-center mt-8">
-              <p className="text-muted-foreground mb-4">
-                Experiencing ear problems? Read our guide on{" "}
+            <div className="text-center mt-8 space-y-2">
+              <p className="text-muted-foreground">
+                Experiencing ear problems? Read our guides on{" "}
                 <Link to="/blog/understanding-ear-infections" className="text-primary hover:underline font-medium">
                   Understanding Ear Infections
+                </Link>
+                {" "}and{" "}
+                <Link to="/blog/ear-discharge-otorrhea" className="text-primary hover:underline font-medium">
+                  Ear Discharge: When to Seek Urgent Care
                 </Link>
               </p>
             </div>

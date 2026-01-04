@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, Heart, Shield, Sparkles, Activity, LucideIcon } from "lucide-react";
+import { BookOpen, Heart, Shield, Sparkles, Activity, Search, Droplets, LucideIcon } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { getArticleMetadata } from "@/utils/blogLoader";
 import Header from "@/components/Header";
@@ -13,6 +13,8 @@ const iconMap: Record<string, LucideIcon> = {
   Shield,
   Sparkles,
   Activity,
+  Search,
+  Droplets,
 };
 
 const Blog = () => {

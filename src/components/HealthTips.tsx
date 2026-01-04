@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Heart, Shield, Sparkles, Activity, LucideIcon, ArrowRight } from "lucide-react";
+import { BookOpen, Heart, Shield, Sparkles, Activity, Search, Droplets, LucideIcon, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { getArticleMetadata } from "@/utils/blogLoader";
 
@@ -10,6 +10,8 @@ const iconMap: Record<string, LucideIcon> = {
   Shield,
   Sparkles,
   Activity,
+  Search,
+  Droplets,
 };
 
 const HealthTips = () => {
