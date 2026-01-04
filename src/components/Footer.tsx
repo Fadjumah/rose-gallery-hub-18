@@ -34,6 +34,9 @@ const Footer = () => {
               <Link to="/about" className="block hover:underline opacity-90 hover:opacity-100">
                 About Us
               </Link>
+              <Link to="/contact" className="block hover:underline opacity-90 hover:opacity-100">
+                Contact Us
+              </Link>
               <Link to="/blog" className="block hover:underline opacity-90 hover:opacity-100">
                 Health Articles
               </Link>
