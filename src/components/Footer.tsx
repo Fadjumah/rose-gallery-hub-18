@@ -52,7 +52,6 @@ const Footer = () => {
             <div className="space-y-2 text-sm mb-4">
               <p>+256 740 166 778</p>
               <p>+256 769 616 091</p>
-              <p>+256 742 017 229</p>
             </div>
             <div className="flex items-center justify-center md:justify-end gap-3">
               <Button 

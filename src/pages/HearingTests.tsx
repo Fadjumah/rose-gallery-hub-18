@@ -196,7 +196,7 @@ const HearingTests = () => {
                       className="flex items-center gap-3 p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors"
                     >
                       <Phone className="h-5 w-5 text-primary" />
-                      <span className="text-foreground font-medium">+256 742 017 229</span>
+                      <span className="text-foreground font-medium">+256 740 166 778</span>
                     </a>
                     <button 
                       onClick={openWhatsApp}
