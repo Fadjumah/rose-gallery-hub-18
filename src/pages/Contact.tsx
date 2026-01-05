@@ -21,7 +21,7 @@ const Contact = () => {
       icon: Phone,
       title: "Phone",
       primary: "+256 740 166 778",
-      secondary: "+256 742 017 229",
+      secondary: "+256 769 616 091",
       action: "tel:+256740166778",
       actionText: "Call Now"
     },

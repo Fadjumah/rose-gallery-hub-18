@@ -28,7 +28,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "How can I book an appointment?",
-    answer: "You can easily book an appointment by calling us at +256 740 166 778 or +256 742 017 229. You can also reach us via WhatsApp for quick appointment scheduling. We recommend booking in advance, though walk-ins are also welcome."
+    answer: "You can easily book an appointment by calling us at +256 740 166 778 or +256 769 616 091. You can also reach us via WhatsApp for quick appointment scheduling. We recommend booking in advance, though walk-ins are also welcome."
   },
   {
     question: "Where is the clinic located?",
