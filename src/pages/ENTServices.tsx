@@ -20,6 +20,7 @@ import {
   AlertCircle
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import entSpecialistImage from "@/assets/ent-specialist-doctor.jpg";
 
 const ENTServices = () => {
   const earConditions = [
@@ -124,20 +125,30 @@ const ENTServices = () => {
         {/* What is ENT Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
                 What is an ENT Specialist?
               </h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p className="text-base leading-relaxed">
-                  An ENT (Ear, Nose, and Throat) specialist, also known as an Otolaryngologist, is a medical doctor who specializes in diagnosing and treating conditions affecting the ears, nose, throat, and related structures of the head and neck.
-                </p>
-                <p className="text-base leading-relaxed">
-                  At <span className="font-semibold text-foreground">Eritage ENT Care in Entebbe</span>, our ENT specialists are trained to handle both medical and surgical treatments for a wide range of conditions. Whether you're experiencing hearing difficulties, chronic sinusitis, or throat problems, our team provides comprehensive care tailored to your needs.
-                </p>
-                <p className="text-base leading-relaxed">
-                  As the leading <span className="font-semibold text-foreground">ENT clinic in Entebbe</span>, we combine modern diagnostic equipment with compassionate patient care to ensure the best outcomes for our patients across Uganda.
-                </p>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="space-y-4 text-muted-foreground">
+                  <p className="text-base leading-relaxed">
+                    An ENT (Ear, Nose, and Throat) specialist, also known as an Otolaryngologist, is a medical doctor who specializes in diagnosing and treating conditions affecting the ears, nose, throat, and related structures of the head and neck.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    At <span className="font-semibold text-foreground">Eritage ENT Care in Entebbe</span>, our ENT specialists are trained to handle both medical and surgical treatments for a wide range of conditions. Whether you're experiencing hearing difficulties, chronic sinusitis, or throat problems, our team provides comprehensive care tailored to your needs.
+                  </p>
+                  <p className="text-base leading-relaxed">
+                    As the leading <span className="font-semibold text-foreground">ENT clinic in Entebbe</span>, we combine modern diagnostic equipment with compassionate patient care to ensure the best outcomes for our patients across Uganda.
+                  </p>
+                </div>
+                <div className="flex justify-center">
+                  <img 
+                    src={entSpecialistImage} 
+                    alt="ENT Specialist Doctor performing ear examination at Eritage ENT Care Clinic Entebbe Uganda" 
+                    className="rounded-lg shadow-lg w-full max-w-md object-cover"
+                    loading="lazy"
+                  />
+                </div>
               </div>
             </div>
           </div>
