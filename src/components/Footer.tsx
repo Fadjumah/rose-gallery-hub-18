@@ -13,8 +13,11 @@ const Footer = () => {
             <p className="mb-4 max-w-md">
               Professional ear, nose, and throat care in Entebbe. Your trusted partner for ENT health.
             </p>
-            <p className="text-sm opacity-90">
+            <p className="text-sm opacity-90 mb-2">
               Along Entebbe Road, Entebbe, Central Region, Uganda
+            </p>
+            <p className="text-sm font-medium">
+              Open 24 hours, 7 days a week
             </p>
           </div>
 

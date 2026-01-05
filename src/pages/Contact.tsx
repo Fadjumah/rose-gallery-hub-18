@@ -44,9 +44,13 @@ const Contact = () => {
   ];
 
   const clinicHours = [
-    { day: "Monday – Friday", hours: "8:00 AM – 6:00 PM" },
-    { day: "Saturday", hours: "9:00 AM – 2:00 PM" },
-    { day: "Sunday", hours: "Closed (Emergencies via WhatsApp)" }
+    { day: "Monday", hours: "Open 24 hours" },
+    { day: "Tuesday", hours: "Open 24 hours" },
+    { day: "Wednesday", hours: "Open 24 hours" },
+    { day: "Thursday", hours: "Open 24 hours" },
+    { day: "Friday", hours: "Open 24 hours" },
+    { day: "Saturday", hours: "Open 24 hours" },
+    { day: "Sunday", hours: "Open 24 hours" }
   ];
 
   // JSON-LD Schema for Local Business
@@ -73,15 +77,9 @@ const Contact = () => {
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "08:00",
-        "closes": "18:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "09:00",
-        "closes": "14:00"
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
       }
     ],
     "medicalSpecialty": "Otolaryngology"
@@ -176,7 +174,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
               <p className="text-sm text-muted-foreground mt-4">
-                For urgent ENT concerns outside clinic hours, please use our{" "}
+                We are available 24/7 for your ENT needs. For urgent guidance, visit our{" "}
                 <Link to="/urgent-ent-guidance" className="text-primary hover:underline font-medium">
                   urgent ENT guidance service
                 </Link>.
