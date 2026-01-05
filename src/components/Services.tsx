@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Ear, Activity, Stethoscope, Wind, Pill, Search, RotateCcw, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import entExaminationImage from "@/assets/ent-examination.jpg";
 
 const services = [
   {
@@ -50,11 +51,22 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-accent">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Our ENT Services</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive ear, nose, and throat care with state-of-the-art facilities and experienced specialists.
-          </p>
+        {/* Hero Image Banner */}
+        <div className="relative rounded-2xl overflow-hidden shadow-xl mb-16 max-w-5xl mx-auto">
+          <img 
+            src={entExaminationImage} 
+            alt="ENT Doctor Performing Ear Examination with Otoscope at ERITAGE ENT CARE Clinic Entebbe Uganda - Professional Ear Nose Throat Healthcare" 
+            className="w-full h-64 md:h-80 object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40 flex items-center">
+            <div className="p-8 md:p-12 text-white max-w-2xl">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Our ENT Services</h2>
+              <p className="text-lg text-white/90">
+                Comprehensive ear, nose, and throat care with state-of-the-art facilities and experienced specialists in Entebbe, Uganda.
+              </p>
+            </div>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
