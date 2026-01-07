@@ -34,6 +34,14 @@ const Contact = () => {
       actionText: "Message on WhatsApp"
     },
     {
+      icon: Mail,
+      title: "Email",
+      primary: "info@trendexhub.com",
+      secondary: "For inquiries and appointments",
+      action: "mailto:info@trendexhub.com",
+      actionText: "Send Email"
+    },
+    {
       icon: MapPin,
       title: "Location",
       primary: "Along Entebbe Road",
@@ -126,7 +134,7 @@ const Contact = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
                 Get in Touch
               </h2>
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {contactMethods.map((method, index) => (
                   <Card key={index} className="bg-secondary/10 border-border hover:shadow-lg transition-shadow">
                     <CardContent className="p-6 text-center">

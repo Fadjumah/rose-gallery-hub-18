@@ -52,6 +52,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm mb-4">
               <p>+256 740 166 778</p>
               <p>+256 769 616 091</p>
+              <a href="mailto:info@trendexhub.com" className="block hover:underline">info@trendexhub.com</a>
             </div>
             <div className="flex items-center justify-center md:justify-end gap-3">
               <Button 
