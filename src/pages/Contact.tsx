@@ -66,7 +66,6 @@ const Contact = () => {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Eritage ENT Care – Entebbe",
-    "alternateName": "Eritage Ear, Nose and Throat Home",
     "description": "Professional ENT clinic in Entebbe, Uganda offering expert ear, nose, and throat care.",
     "url": "https://eritageentcare.com/contact",
     "telephone": "+256740166778",

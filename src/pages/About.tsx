@@ -91,9 +91,6 @@ const About = () => {
                   <p className="text-base leading-relaxed">
                     Our clinic combines clinical expertise with compassionate patient care. Whether you're experiencing hearing difficulties, chronic sinus problems, or throat conditions, our team delivers personalized treatment plans designed to improve your quality of life.
                   </p>
-                  <p className="text-base leading-relaxed text-muted-foreground/80 italic">
-                    Note: This service is listed on Google Business Profile as "Eritage Ear, Nose and Throat Home – Entebbe road" — both names refer to the same trusted ENT clinic.
-                  </p>
                 </div>
               </div>
             </div>
