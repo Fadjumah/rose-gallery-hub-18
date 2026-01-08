@@ -61,6 +61,71 @@ const HearingTests = () => {
     window.open(`https://wa.me/256740166778?text=${message}`, '_blank');
   };
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Eritage ENT Care – Entebbe",
+    "description": "Professional hearing tests in Entebbe including PTA, tympanometry, OAE, ABR, and full audiology screening services.",
+    "url": "https://www.trendexhub.com/hearing-tests",
+    "telephone": "+256740166778",
+    "email": "info@trendexhub.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Along Entebbe Road",
+      "addressLocality": "Entebbe",
+      "addressRegion": "Central Region",
+      "addressCountry": "UG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "0.0512",
+      "longitude": "32.4637"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "medicalSpecialty": ["Otolaryngology", "Audiology"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Hearing Test Services",
+      "itemListElement": [
+        {
+          "@type": "MedicalTest",
+          "name": "Pure Tone Audiometry (PTA)",
+          "description": "Standard test for measuring hearing sensitivity across different frequencies"
+        },
+        {
+          "@type": "MedicalTest",
+          "name": "Tympanometry",
+          "description": "Assesses middle ear function by measuring eardrum movement"
+        },
+        {
+          "@type": "MedicalTest",
+          "name": "Otoacoustic Emissions (OAE)",
+          "description": "Non-invasive test measuring inner ear cochlear function"
+        },
+        {
+          "@type": "MedicalTest",
+          "name": "Auditory Brainstem Response (ABR)",
+          "description": "Evaluates auditory nerve pathway from ear to brainstem"
+        },
+        {
+          "@type": "MedicalTest",
+          "name": "Newborn Hearing Screening",
+          "description": "Early detection screening for infants to identify hearing issues at birth"
+        }
+      ]
+    },
+    "sameAs": [
+      "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -70,7 +135,10 @@ const HearingTests = () => {
         <meta property="og:title" content="Hearing Tests in Entebbe – PTA, Tympanometry & Audiology | Eritage ENT Care" />
         <meta property="og:description" content="Professional hearing tests in Entebbe including PTA, tympanometry, OAE, ABR, and full audiology screening." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://yourdomain.com/hearing-tests" />
+        <link rel="canonical" href="https://www.trendexhub.com/hearing-tests" />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
