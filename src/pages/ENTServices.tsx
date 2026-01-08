@@ -77,6 +77,75 @@ const ENTServices = () => {
     "Unexplained neck lumps or swelling"
   ];
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Eritage ENT Care – Entebbe",
+    "description": "Expert ENT clinic in Entebbe offering comprehensive ear, nose, and throat care. Experienced ENT specialist for hearing tests, sinus treatment, and throat conditions.",
+    "url": "https://www.trendexhub.com/ent-services",
+    "telephone": "+256740166778",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Along Entebbe Road",
+      "addressLocality": "Entebbe",
+      "addressRegion": "Central Region",
+      "addressCountry": "UG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "0.0512",
+      "longitude": "32.4637"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "medicalSpecialty": "Otolaryngology",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "ENT Services",
+      "itemListElement": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Ear Infection Treatment",
+          "procedureType": "http://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Hearing Tests & Audiometry",
+          "procedureType": "http://schema.org/DiagnosticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Sinus Treatment",
+          "procedureType": "http://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Tonsillitis Treatment",
+          "procedureType": "http://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Foreign Body Removal",
+          "procedureType": "http://schema.org/TherapeuticProcedure"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Voice Disorder Treatment",
+          "procedureType": "http://schema.org/TherapeuticProcedure"
+        }
+      ]
+    },
+    "sameAs": [
+      "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -86,7 +155,10 @@ const ENTServices = () => {
         <meta property="og:description" content="Trusted ENT specialist in Entebbe. Expert treatment for ear infections, hearing loss, sinus problems, tonsillitis, and all ENT conditions." />
         <meta property="og:type" content="website" />
         <meta name="keywords" content="ENT clinic Entebbe, ENT specialist near me, ear doctor Entebbe, nose doctor Entebbe, throat doctor Entebbe, hearing test Entebbe, sinus treatment Uganda, tonsillitis treatment, audiology Entebbe" />
-        <link rel="canonical" href="https://yourdomain.com/ent-services" />
+        <link rel="canonical" href="https://www.trendexhub.com/ent-services" />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
