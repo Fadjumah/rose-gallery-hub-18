@@ -89,7 +89,10 @@ const Contact = () => {
         "closes": "23:59"
       }
     ],
-    "medicalSpecialty": "Otolaryngology"
+    "medicalSpecialty": "Otolaryngology",
+    "sameAs": [
+      "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
+    ]
   };
 
   return (
