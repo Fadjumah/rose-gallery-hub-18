@@ -6,6 +6,61 @@ import FAQSection from "@/components/FAQSection";
 import AskENTQuestion from "@/components/AskENTQuestion";
 
 const FAQ = () => {
+  const faqSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What services does Eritage EntCare offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eritage ENT Care provides comprehensive ear, nose, and throat treatments for both children and adults. Our services include ENT consultations, hearing tests through partnered audiology centers, treatment for infections, allergies, sinus conditions, voice disorders, and surgical referrals when needed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you perform Hearing Tests (PTA, Tympanometry, OAE)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! We partner with certified audiology centers in Entebbe to provide comprehensive hearing tests including Pure Tone Audiometry (PTA), Tympanometry, Otoacoustic Emissions (OAE), Auditory Brainstem Response (ABR), and newborn hearing screening. Our ENT specialist interprets results and provides personalized care plans."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I book an appointment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can easily book an appointment by calling us at +256 740 166 778 or +256 769 616 091. You can also reach us via WhatsApp for quick appointment scheduling. We recommend booking in advance, though walk-ins are also welcome."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is the clinic located?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eritage ENT Care is conveniently located along Entebbe Road, Entebbe, Central Region, Uganda. You can find us easily on Google Maps for directions to our clinic."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you treat both children and adults?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Our ENT specialist is experienced in treating patients of all ages, from newborns requiring hearing screening to elderly patients with age-related hearing concerns. We provide gentle, compassionate care tailored to each age group."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept walk-ins?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we welcome walk-in patients! However, to ensure minimal waiting time and guarantee availability, we recommend scheduling an appointment in advance by calling or messaging us on WhatsApp."
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -15,7 +70,10 @@ const FAQ = () => {
         <meta property="og:title" content="FAQ – Eritage ENT Care Entebbe" />
         <meta property="og:description" content="Find answers to common questions about our ENT services in Entebbe." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://yourdomain.com/faq" />
+        <link rel="canonical" href="https://www.trendexhub.com/faq" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchemaData)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
