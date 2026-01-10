@@ -326,3 +326,17 @@ However, trust your instincts. If the sensation persists, worsens, or is accompa
 ---
 
 *Concerned about a lump sensation under your jaw? Contact Eritage ENT Care in Entebbe at +256 740 166 778 for a comprehensive evaluation. Our specialist can determine whether further investigation is needed and provide personalized guidance for your specific situation. For questions about your symptoms, visit our [FAQ page](/faq) or send us a message via [WhatsApp](https://wa.me/256740166778).*
+
+---
+
+## Related Articles
+
+Explore more expert guidance from Eritage ENT Care in Entebbe:
+
+- **[Voice Care Tips](/blog/voice-care-tips)** – Essential practices for maintaining vocal health, including hydration, warm-up exercises, and when to seek specialist care for hoarseness or voice changes.
+
+- **[Ear Discharge (Otorrhea): Causes, Warning Signs & When to Seek Urgent ENT Care](/blog/ear-discharge-otorrhea)** – Understanding different types of ear discharge, common causes in Uganda, and red flags that require immediate attention.
+
+- **[Balance Problems and Dizziness](/blog/balance-problems-dizziness)** – Expert guidance on Meniere's disease, vertigo, and balance disorders with treatment options available at our Entebbe clinic.
+
+- **[Nasal Polyps and Chronic Sinusitis](/blog/nasal-polyps-chronic-sinusitis)** – Learn about nasal obstruction, polyp symptoms, and effective treatment approaches for chronic sinus conditions.
