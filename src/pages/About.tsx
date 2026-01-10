@@ -45,6 +45,56 @@ const About = () => {
     "ENT emergency guidance"
   ];
 
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Eritage ENT Care – Entebbe",
+    "description": "Trusted ENT clinic in Entebbe with over 10 years of experience providing comprehensive ear, nose, and throat care for families in Uganda.",
+    "url": "https://www.trendexhub.com/about",
+    "telephone": "+256740166778",
+    "email": "info@trendexhub.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Fahad Juma",
+      "jobTitle": "ENT Specialist",
+      "description": "ENT specialist with over 10 years of clinical experience in ear, nose, and throat medicine."
+    },
+    "employee": {
+      "@type": "Physician",
+      "name": "Fahad Juma",
+      "medicalSpecialty": "Otolaryngology",
+      "description": "ENT specialist providing expert diagnosis and treatment for a wide range of ENT conditions."
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Along Entebbe Road",
+      "addressLocality": "Entebbe",
+      "addressRegion": "Central Region",
+      "addressCountry": "UG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "0.0512",
+      "longitude": "32.4637"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "medicalSpecialty": "Otolaryngology",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Entebbe, Central Region, Uganda"
+    },
+    "sameAs": [
+      "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -54,7 +104,10 @@ const About = () => {
         <meta property="og:description" content="Trusted ENT specialist in Entebbe with over 10 years of clinical experience. Comprehensive ear, nose, and throat care for all ages." />
         <meta property="og:type" content="website" />
         <meta name="keywords" content="about Eritage ENT Care, ENT clinic Entebbe, ENT specialist Uganda, ear nose throat doctor Entebbe, Fahad Juma ENT" />
-        <link rel="canonical" href="https://eritageentcare.com/about" />
+        <link rel="canonical" href="https://www.trendexhub.com/about" />
+        <script type="application/ld+json">
+          {JSON.stringify(schemaData)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">
