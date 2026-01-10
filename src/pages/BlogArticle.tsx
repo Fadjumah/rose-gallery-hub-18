@@ -38,6 +38,47 @@ const BlogArticle = () => {
     );
   }
 
+  const articleSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.description,
+    "datePublished": article.date,
+    "dateModified": article.date,
+    "author": {
+      "@type": "Person",
+      "name": article.author,
+      "jobTitle": "ENT Specialist",
+      "worksFor": {
+        "@type": "MedicalBusiness",
+        "name": "Eritage ENT Care – Entebbe"
+      }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Eritage ENT Care – Entebbe",
+      "url": "https://www.trendexhub.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.trendexhub.com/favicon.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.trendexhub.com/blog/${article.slug}`
+    },
+    "url": `https://www.trendexhub.com/blog/${article.slug}`,
+    "isPartOf": {
+      "@type": "Blog",
+      "name": "Eritage ENT Care Health Blog",
+      "url": "https://www.trendexhub.com/blog"
+    },
+    "about": {
+      "@type": "MedicalSpecialty",
+      "name": "Otolaryngology"
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -46,10 +87,13 @@ const BlogArticle = () => {
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.description} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`${window.location.origin}/blog/${article.slug}`} />
+        <meta property="og:url" content={`https://www.trendexhub.com/blog/${article.slug}`} />
         <meta property="article:published_time" content={article.date} />
         <meta property="article:author" content={article.author} />
-        <link rel="canonical" href={`${window.location.origin}/blog/${article.slug}`} />
+        <link rel="canonical" href={`https://www.trendexhub.com/blog/${article.slug}`} />
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchemaData)}
+        </script>
       </Helmet>
 
       <div className="min-h-screen">
