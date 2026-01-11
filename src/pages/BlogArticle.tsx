@@ -38,6 +38,36 @@ const BlogArticle = () => {
     );
   }
 
+  // Extract FAQ data from article content for schema markup
+  const extractFAQs = (content: string) => {
+    const faqSection = content.match(/## Frequently Asked Questions[\s\S]*?(?=## |---\s*$|$)/);
+    if (!faqSection) return [];
+    
+    const faqs: { question: string; answer: string }[] = [];
+    const faqText = faqSection[0];
+    
+    // Match ### questions and their answers
+    const questionMatches = faqText.matchAll(/### ([^\n]+)\n\n([\s\S]*?)(?=### |$)/g);
+    
+    for (const match of questionMatches) {
+      const question = match[1].trim();
+      // Clean up the answer - remove markdown formatting
+      const answer = match[2]
+        .replace(/\*\*([^*]+)\*\*/g, '$1') // Remove bold
+        .replace(/- /g, '') // Remove list markers
+        .replace(/\n+/g, ' ') // Replace newlines with spaces
+        .trim();
+      
+      if (question && answer) {
+        faqs.push({ question, answer });
+      }
+    }
+    
+    return faqs;
+  };
+
+  const faqs = extractFAQs(article.content);
+
   const breadcrumbSchemaData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -104,6 +134,19 @@ const BlogArticle = () => {
     }
   };
 
+  const faqSchemaData = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null;
+
   return (
     <>
       <Helmet>
@@ -122,6 +165,11 @@ const BlogArticle = () => {
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchemaData)}
         </script>
+        {faqSchemaData && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchemaData)}
+          </script>
+        )}
       </Helmet>
 
       <div className="min-h-screen">
