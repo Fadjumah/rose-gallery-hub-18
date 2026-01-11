@@ -38,6 +38,31 @@ const BlogArticle = () => {
     );
   }
 
+  const breadcrumbSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.trendexhub.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.trendexhub.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": article.title,
+        "item": `https://www.trendexhub.com/blog/${article.slug}`
+      }
+    ]
+  };
+
   const articleSchemaData = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -93,6 +118,9 @@ const BlogArticle = () => {
         <link rel="canonical" href={`https://www.trendexhub.com/blog/${article.slug}`} />
         <script type="application/ld+json">
           {JSON.stringify(articleSchemaData)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchemaData)}
         </script>
       </Helmet>
 
