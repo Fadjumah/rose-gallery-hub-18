@@ -20,6 +20,11 @@ export type Database = {
           created_at: string
           id: string
           name: string
+          payment_amount: number | null
+          payment_network: string | null
+          payment_phone: string | null
+          payment_reference: string | null
+          payment_status: string | null
           phone: string
           question: string
           responded_at: string | null
@@ -29,6 +34,11 @@ export type Database = {
           created_at?: string
           id?: string
           name: string
+          payment_amount?: number | null
+          payment_network?: string | null
+          payment_phone?: string | null
+          payment_reference?: string | null
+          payment_status?: string | null
           phone: string
           question: string
           responded_at?: string | null
@@ -38,11 +48,69 @@ export type Database = {
           created_at?: string
           id?: string
           name?: string
+          payment_amount?: number | null
+          payment_network?: string | null
+          payment_phone?: string | null
+          payment_reference?: string | null
+          payment_status?: string | null
           phone?: string
           question?: string
           responded_at?: string | null
         }
         Relationships: []
+      }
+      payments: {
+        Row: {
+          amount: number
+          created_at: string
+          currency: string
+          flw_ref: string | null
+          id: string
+          payment_type: string | null
+          phone_number: string
+          question_id: string | null
+          status: string
+          tx_ref: string
+          updated_at: string
+          webhook_payload: Json | null
+        }
+        Insert: {
+          amount?: number
+          created_at?: string
+          currency?: string
+          flw_ref?: string | null
+          id?: string
+          payment_type?: string | null
+          phone_number: string
+          question_id?: string | null
+          status?: string
+          tx_ref: string
+          updated_at?: string
+          webhook_payload?: Json | null
+        }
+        Update: {
+          amount?: number
+          created_at?: string
+          currency?: string
+          flw_ref?: string | null
+          id?: string
+          payment_type?: string | null
+          phone_number?: string
+          question_id?: string | null
+          status?: string
+          tx_ref?: string
+          updated_at?: string
+          webhook_payload?: Json | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "payments_question_id_fkey"
+            columns: ["question_id"]
+            isOneToOne: false
+            referencedRelation: "ent_questions"
+            referencedColumns: ["id"]
+          },
+        ]
       }
     }
     Views: {
