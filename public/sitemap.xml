@@ -52,6 +52,20 @@
     <priority>0.9</priority>
   </url>
   
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://www.trendexhub.com/privacy-policy</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.trendexhub.com/terms-of-service</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
   <!-- Blog Index -->
   <url>
     <loc>https://www.trendexhub.com/blog</loc>

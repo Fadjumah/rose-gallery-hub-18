@@ -6,6 +6,7 @@ import { getArticleMetadata } from "@/utils/blogLoader";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
+import AdSense from "@/components/AdSense";
 
 const iconMap: Record<string, LucideIcon> = {
   BookOpen,
@@ -76,9 +77,6 @@ const Blog = () => {
       </Helmet>
 
       <div className="min-h-screen">
-       
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1241677876393680"
-     crossOrigin="anonymous"></script>
         <Header />
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4">
@@ -115,6 +113,11 @@ const Blog = () => {
                   </Card>
                 );
               })}
+            </div>
+
+            {/* Strategic Ad Placement - After article grid */}
+            <div className="max-w-4xl mx-auto mt-12">
+              <AdSense adSlot="1122334455" adFormat="auto" />
             </div>
 
             {/* Related Services Section */}
