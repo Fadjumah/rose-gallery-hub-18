@@ -80,10 +80,21 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-primary-foreground/20 pt-6 text-center">
-          <p className="text-sm opacity-80">
-            © {new Date().getFullYear()} ERITAGE ENT CARE. All rights reserved.
-          </p>
+        <div className="border-t border-primary-foreground/20 pt-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm opacity-80">
+              © {new Date().getFullYear()} ERITAGE ENT CARE. All rights reserved.
+            </p>
+            <nav className="flex items-center gap-4 text-sm">
+              <Link to="/privacy-policy" className="opacity-80 hover:opacity-100 hover:underline">
+                Privacy Policy
+              </Link>
+              <span className="opacity-50">|</span>
+              <Link to="/terms-of-service" className="opacity-80 hover:opacity-100 hover:underline">
+                Terms of Service
+              </Link>
+            </nav>
+          </div>
         </div>
       </div>
     </footer>

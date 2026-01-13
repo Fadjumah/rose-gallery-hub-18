@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingContactButtons from '@/components/FloatingContactButtons';
+import AdSense from '@/components/AdSense';
 import { getArticleBySlug } from '@/utils/blogLoader';
 import { Helmet } from 'react-helmet-async';
 
@@ -22,8 +23,6 @@ const BlogArticle = () => {
   if (!article) {
     return (
       <div className="min-h-screen">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1241677876393680"
-     crossOrigin="anonymous"></script>
         <Header />
         <div className="container mx-auto px-4 py-20 text-center">
           <h1 className="text-4xl font-serif font-bold mb-4">Article Not Found</h1>
@@ -214,6 +213,9 @@ const BlogArticle = () => {
                 </div>
               </header>
 
+              {/* Strategic Ad Placement - After article header */}
+              <AdSense adSlot="1234567890" adFormat="horizontal" className="mb-8" />
+
               {/* Article Content */}
               <div className="prose prose-lg max-w-none">
                 <ReactMarkdown 
@@ -238,6 +240,9 @@ const BlogArticle = () => {
                   {article.content}
                 </ReactMarkdown>
               </div>
+
+              {/* Strategic Ad Placement - After article content */}
+              <AdSense adSlot="0987654321" adFormat="auto" className="mt-8" />
 
               {/* Back to Blog */}
               <div className="mt-12 pt-8 border-t">
