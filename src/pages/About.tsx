@@ -26,13 +26,13 @@ const About = () => {
     },
     {
       icon: Award,
-      title: "Clinical Excellence",
-      description: "Over 10 years of specialized ENT experience with continuous professional development."
+      title: "Evidence-Based Practice",
+      description: "Over 10 years of specialized ENT experience with continuous professional development and medical education."
     },
     {
       icon: Users,
-      title: "Community Trust",
-      description: "Serving families in Entebbe and across Uganda with reliable, accessible ENT healthcare."
+      title: "Global Accessibility",
+      description: "Extending expert ENT guidance beyond borders through digital consultations and health education resources."
     }
   ];
 
@@ -45,14 +45,13 @@ const About = () => {
     "ENT emergency guidance"
   ];
 
-  const schemaData = {
+  const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Eritage ENT Care – Entebbe",
-    "description": "Trusted ENT clinic in Entebbe with over 10 years of experience providing comprehensive ear, nose, and throat care for families in Uganda.",
+    "@type": "MedicalOrganization",
+    "name": "Eritage ENT Care",
+    "description": "Specialist-led ENT platform providing evidence-based ear, nose, and throat care with over 10 years of clinical experience.",
     "url": "https://www.trendexhub.com/about",
-    "telephone": "+256740166778",
-    "email": "info@trendexhub.com",
+    "medicalSpecialty": "Otolaryngology",
     "founder": {
       "@type": "Person",
       "name": "Fahad Juma",
@@ -65,6 +64,19 @@ const About = () => {
       "medicalSpecialty": "Otolaryngology",
       "description": "ENT specialist providing expert diagnosis and treatment for a wide range of ENT conditions."
     },
+    "sameAs": [
+      "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
+    ]
+  };
+
+  const locationSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Eritage ENT Care – Entebbe",
+    "description": "Professional ENT clinic in Entebbe providing comprehensive ear, nose, and throat care.",
+    "url": "https://www.trendexhub.com/about",
+    "telephone": "+256740166778",
+    "email": "info@trendexhub.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Along Entebbe Road",
@@ -86,9 +98,9 @@ const About = () => {
       }
     ],
     "medicalSpecialty": "Otolaryngology",
-    "areaServed": {
-      "@type": "Place",
-      "name": "Entebbe, Central Region, Uganda"
+    "parentOrganization": {
+      "@type": "MedicalOrganization",
+      "name": "Eritage ENT Care"
     },
     "sameAs": [
       "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
@@ -98,15 +110,18 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Us | Eritage ENT Care – Entebbe | Trusted ENT Specialist</title>
-        <meta name="description" content="Learn about Eritage ENT Care in Entebbe – your trusted ENT clinic with over 10 years of experience. Expert ear, nose, and throat care for families in Uganda." />
-        <meta property="og:title" content="About Eritage ENT Care – Entebbe | ENT Specialist" />
-        <meta property="og:description" content="Trusted ENT specialist in Entebbe with over 10 years of clinical experience. Comprehensive ear, nose, and throat care for all ages." />
+        <title>About Us | Eritage ENT Care | Expert ENT Specialists</title>
+        <meta name="description" content="Meet the specialists behind Eritage ENT Care. Over 10 years of clinical experience delivering evidence-based ear, nose, and throat care to patients worldwide." />
+        <meta property="og:title" content="About Eritage ENT Care | ENT Specialists" />
+        <meta property="og:description" content="Specialist-led ENT platform with over 10 years of clinical experience. Evidence-based care and patient education for all ages." />
         <meta property="og:type" content="website" />
-        <meta name="keywords" content="about Eritage ENT Care, ENT clinic Entebbe, ENT specialist Uganda, ear nose throat doctor Entebbe, Fahad Juma ENT" />
+        <meta name="keywords" content="about Eritage ENT Care, ENT specialists, ear nose throat experts, Fahad Juma ENT, evidence-based ENT care" />
         <link rel="canonical" href="https://www.trendexhub.com/about" />
         <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
+          {JSON.stringify(organizationSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(locationSchema)}
         </script>
       </Helmet>
 
@@ -117,11 +132,14 @@ const About = () => {
         <section className="relative bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
+              <p className="text-sm font-medium text-primary mb-3 uppercase tracking-wide">
+                Our Mission & Values
+              </p>
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                About Eritage ENT Care – Entebbe
+                About Eritage ENT Care
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Your trusted partner for comprehensive ear, nose, and throat healthcare in Entebbe and across Uganda.
+                Specialist-led ENT education and evidence-based care. Trusted by patients for expert diagnosis and treatment.
               </p>
             </div>
           </div>
@@ -133,14 +151,14 @@ const About = () => {
             <div className="max-w-4xl mx-auto">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  Dedicated ENT Care in Entebbe
+                  Our Approach to ENT Care
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold text-foreground">Eritage ENT Care – Entebbe</span> is a specialized medical facility dedicated to diagnosing and treating conditions of the ear, nose, and throat. Located along Entebbe Road, we provide accessible, high-quality ENT care to patients of all ages.
+                    <span className="font-semibold text-foreground">Eritage ENT Care</span> is a specialist-led medical platform dedicated to evidence-based diagnosis and treatment of ear, nose, and throat conditions. We combine clinical expertise with patient education to empower informed healthcare decisions.
                   </p>
                   <p className="text-base leading-relaxed">
-                    Our clinic combines clinical expertise with compassionate patient care. Whether you're experiencing hearing difficulties, chronic sinus problems, or throat conditions, our team delivers personalized treatment plans designed to improve your quality of life.
+                    Our team delivers personalized treatment plans designed to improve quality of life. Through digital consultations and comprehensive health resources, we extend expert ENT guidance to patients worldwide while maintaining the highest standards of medical care.
                   </p>
                 </div>
               </div>
@@ -153,7 +171,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-                Meet Our ENT Specialist
+                Meet Our Lead Specialist
               </h2>
               <Card className="bg-background max-w-2xl mx-auto">
                 <CardContent className="p-8">
@@ -161,12 +179,12 @@ const About = () => {
                     <Stethoscope className="h-8 w-8 text-primary" />
                     <h3 className="text-xl font-bold text-foreground">Fahad Juma</h3>
                   </div>
-                  <p className="text-primary font-medium mb-4">ENT Specialist</p>
+                  <p className="text-primary font-medium mb-4">ENT Specialist | Clinical Otolaryngology</p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    With over 10 years of clinical experience in ear, nose, and throat medicine, Fahad Juma provides expert diagnosis and treatment for a wide range of ENT conditions. His patient-centered approach ensures that every individual receives the care and attention they deserve.
+                    With over 10 years of clinical experience in ear, nose, and throat medicine, Fahad Juma leads our specialist team in delivering evidence-based diagnosis and treatment. His approach combines thorough clinical assessment with patient education to ensure informed healthcare decisions.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Specializing in both medical and procedural treatments, he serves patients across Entebbe and the greater Central Region of Uganda.
+                    Specializing in both medical and procedural treatments, he provides expert care through in-person consultations and digital health guidance for patients worldwide.
                   </p>
                 </CardContent>
               </Card>
@@ -223,27 +241,40 @@ const About = () => {
           </div>
         </section>
 
-        {/* Location */}
+        {/* Entebbe Location */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Visit Our Clinic
-              </h2>
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <MapPin className="h-6 w-6 text-primary" />
-                <p className="text-lg text-muted-foreground">
-                  Along Entebbe Road, Entebbe, Central Region, Uganda
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-8">
+                <p className="text-sm font-medium text-primary mb-2 uppercase tracking-wide">
+                  Our Physical Location
+                </p>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                  Eritage ENT Care – Entebbe
+                </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Visit our flagship clinic in Entebbe, Uganda for in-person consultations, examinations, and procedures.
                 </p>
               </div>
-              <a 
-                href="https://maps.app.goo.gl/jyV5xBRkD95u2i4B8" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-primary hover:underline font-medium"
-              >
-                Get Directions on Google Maps →
-              </a>
+              <Card className="max-w-xl mx-auto">
+                <CardContent className="p-6 text-center">
+                  <div className="flex items-center justify-center gap-3 mb-4">
+                    <MapPin className="h-6 w-6 text-primary" />
+                    <p className="text-lg text-foreground font-medium">
+                      Along Entebbe Road, Entebbe, Central Region, Uganda
+                    </p>
+                  </div>
+                  <p className="text-muted-foreground mb-4">Open 24 hours, 7 days a week</p>
+                  <a 
+                    href="https://maps.app.goo.gl/jyV5xBRkD95u2i4B8" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline font-medium"
+                  >
+                    Get Directions on Google Maps →
+                  </a>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -253,10 +284,10 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Ready to Get Started?
+                Start Your Consultation
               </h2>
               <p className="text-muted-foreground mb-8">
-                Book a consultation with our ENT specialist today. We're here to help with all your ear, nose, and throat concerns.
+                Connect with our ENT specialists today. Whether you prefer an in-person visit or digital consultation, we're here to help with all your ear, nose, and throat concerns.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="gap-2" asChild>

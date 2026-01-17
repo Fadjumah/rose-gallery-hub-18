@@ -13,7 +13,20 @@ import Footer from "@/components/Footer";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 const Index = () => {
-  const schemaData = {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "Eritage ENT Care",
+    "description": "Specialist-led ENT education and evidence-based ear, nose, and throat care. Expert diagnosis and treatment for patients worldwide.",
+    "url": "https://www.trendexhub.com",
+    "logo": "https://www.trendexhub.com/eritage-logo.png",
+    "medicalSpecialty": "Otolaryngology",
+    "sameAs": [
+      "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
+    ]
+  };
+
+  const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Eritage ENT Care – Entebbe",
@@ -43,6 +56,10 @@ const Index = () => {
     ],
     "medicalSpecialty": "Otolaryngology",
     "priceRange": "$$",
+    "parentOrganization": {
+      "@type": "MedicalOrganization",
+      "name": "Eritage ENT Care"
+    },
     "sameAs": [
       "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
     ]
@@ -51,14 +68,17 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>ERITAGE ENT CARE | Expert ENT Care in Entebbe</title>
-        <meta name="description" content="Professional ENT care in Entebbe. Expert treatment for ear, nose, and throat conditions. Book your appointment with our experienced ENT specialists today." />
-        <meta property="og:title" content="ERITAGE ENT CARE | Expert ENT Care in Entebbe" />
-        <meta property="og:description" content="Professional ENT care in Entebbe. Expert treatment for ear, nose, and throat conditions." />
+        <title>Eritage ENT Care | Expert Ear, Nose & Throat Specialists</title>
+        <meta name="description" content="Evidence-based ENT care from experienced specialists. Expert diagnosis and treatment for ear, nose, and throat conditions. Book your consultation today." />
+        <meta property="og:title" content="Eritage ENT Care | Expert ENT Specialists" />
+        <meta property="og:description" content="Specialist-led ENT education and evidence-based care. Expert treatment for ear, nose, and throat conditions." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.trendexhub.com/" />
         <script type="application/ld+json">
-          {JSON.stringify(schemaData)}
+          {JSON.stringify(organizationSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessSchema)}
         </script>
       </Helmet>
       

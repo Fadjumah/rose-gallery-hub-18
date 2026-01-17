@@ -13,12 +13,15 @@ const Hero = () => {
       {/* Text content above the image */}
       <div className="container mx-auto px-4 pt-12 pb-8">
         <div className="max-w-3xl">
+          <p className="text-sm font-medium text-primary mb-3 uppercase tracking-wide">
+            Specialist-Led ENT Education & Care
+          </p>
           <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 text-foreground">
-            Expert ENT Care in <span className="text-primary">Entebbe</span>
+            Evidence-Based <span className="text-primary">ENT Care</span> You Can Trust
           </h1>
           <p className="text-lg md:text-xl mb-8 text-muted-foreground max-w-2xl">
-            Professional treatment for ear, nose, and throat conditions. 
-            Experienced specialist care for adults and children in a modern, comfortable clinic environment.
+            Expert diagnosis and treatment for ear, nose, and throat conditions. 
+            Combining clinical excellence with patient education to deliver personalized care for adults and children worldwide.
           </p>
           <div className="flex flex-wrap gap-4 mb-6">
             <Button 
@@ -26,7 +29,7 @@ const Hero = () => {
               onClick={scrollToAppointment}
               className="text-lg px-8 py-6"
             >
-              Book Appointment
+              Book Consultation
             </Button>
             <Button 
               size="lg" 
@@ -35,26 +38,20 @@ const Hero = () => {
               className="gap-2"
             >
               <Link to="/ent-services">
-                Our ENT Services
+                Explore ENT Services
                 <ArrowRight className="h-5 w-5" />
               </Link>
             </Button>
           </div>
           
-          {/* Phone numbers below button */}
-          <div className="space-y-3 mt-6">
-            <div className="flex items-center gap-3 text-foreground">
-              <Phone className="h-5 w-5 text-primary" />
-              <span className="text-xl font-semibold">+256 740 166 778</span>
+          {/* Contact info */}
+          <div className="flex flex-wrap items-center gap-6 mt-6 text-muted-foreground">
+            <div className="flex items-center gap-2">
+              <Phone className="h-4 w-4 text-primary" />
+              <span className="font-medium">+256 740 166 778</span>
             </div>
-            <div className="flex items-center gap-3 text-foreground">
-              <Phone className="h-5 w-5 text-primary" />
-              <span className="text-xl font-semibold">+256 769 616 091</span>
-            </div>
-            <div className="flex items-center gap-3 text-foreground">
-              <Phone className="h-5 w-5 text-primary" />
-              <span className="text-xl font-semibold">+256 740 166 778</span>
-            </div>
+            <span className="hidden sm:inline text-border">|</span>
+            <span className="text-sm">Available 24/7 for consultations</span>
           </div>
         </div>
       </div>

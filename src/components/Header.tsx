@@ -21,9 +21,9 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <a href="/" className="flex items-center gap-3 cursor-pointer">
-            <img src={logo} alt="ERITAGE ENT CARE" className="h-14 md:h-16 w-auto" />
+            <img src={logo} alt="Eritage ENT Care" className="h-14 md:h-16 w-auto" />
             <span className="text-xl md:text-2xl font-bold text-primary hidden sm:inline">
-              ERITAGE ENT CARE
+              Eritage ENT Care
             </span>
           </a>
 
