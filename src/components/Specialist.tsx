@@ -24,9 +24,12 @@ const Specialist = () => {
     <section id="specialist" className="py-20 bg-accent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
+          <p className="text-sm font-medium text-primary mb-2 uppercase tracking-wide">
+            Our Team
+          </p>
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Meet Our Specialists</h2>
-          <p className="text-lg text-muted-foreground">
-            Expert care from highly qualified professionals
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Experienced ENT professionals delivering evidence-based care with a patient-first approach
           </p>
         </div>
         
@@ -40,7 +43,7 @@ const Specialist = () => {
                     <div className="relative h-64 bg-muted flex items-center justify-center">
                       <img 
                         src={specialist.image} 
-                        alt={`ENT Specialist ${specialist.name} at ERITAGE ENT CARE Clinic Entebbe Uganda`} 
+                        alt={`ENT Specialist ${specialist.name} - Eritage ENT Care`} 
                         className="w-48 h-48 object-cover rounded-full border-4 border-primary/20"
                         loading="lazy"
                       />
@@ -76,8 +79,7 @@ const Specialist = () => {
           </div>
           
           <p className="mt-8 text-center text-muted-foreground max-w-2xl mx-auto">
-            Our specialists are dedicated to providing exceptional ENT care with a patient-first approach, 
-            ensuring comfort and optimal treatment outcomes.
+            Our specialists combine clinical expertise with patient education to ensure informed healthcare decisions and optimal treatment outcomes.
           </p>
         </div>
       </div>

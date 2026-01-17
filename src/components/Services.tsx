@@ -55,15 +55,15 @@ const Services = () => {
         <div className="relative rounded-2xl overflow-hidden shadow-xl mb-16 max-w-5xl mx-auto">
           <img 
             src={entExaminationImage} 
-            alt="ENT Doctor Performing Ear Examination with Otoscope at ERITAGE ENT CARE Clinic Entebbe Uganda - Professional Ear Nose Throat Healthcare" 
+            alt="ENT Specialist Performing Professional Ear Examination - Eritage ENT Care Clinical Services" 
             className="w-full h-64 md:h-80 object-cover"
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40 flex items-center">
             <div className="p-8 md:p-12 text-white max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Our ENT Services</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Comprehensive ENT Services</h2>
               <p className="text-lg text-white/90">
-                Comprehensive ear, nose, and throat care with state-of-the-art facilities and experienced specialists in Entebbe, Uganda.
+                Evidence-based ear, nose, and throat care delivered by experienced specialists using advanced diagnostic equipment.
               </p>
             </div>
           </div>
@@ -88,7 +88,7 @@ const Services = () => {
         <div className="text-center mt-10">
           <Button asChild variant="outline" className="gap-2">
             <Link to="/ent-services">
-              View All ENT Services in Entebbe
+              Explore All ENT Services
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>

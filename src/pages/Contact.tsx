@@ -67,7 +67,7 @@ const Contact = () => {
     "@type": "MedicalBusiness",
     "name": "Eritage ENT Care – Entebbe",
     "description": "Professional ENT clinic in Entebbe, Uganda offering expert ear, nose, and throat care.",
-    "url": "https://eritageentcare.com/contact",
+    "url": "https://www.trendexhub.com/contact",
     "telephone": "+256740166778",
     "address": {
       "@type": "PostalAddress",
@@ -90,6 +90,10 @@ const Contact = () => {
       }
     ],
     "medicalSpecialty": "Otolaryngology",
+    "parentOrganization": {
+      "@type": "MedicalOrganization",
+      "name": "Eritage ENT Care"
+    },
     "sameAs": [
       "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
     ]
@@ -98,13 +102,13 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Eritage ENT Care – Entebbe | Book ENT Appointment</title>
-        <meta name="description" content="Contact Eritage ENT Care in Entebbe for ear, nose, and throat consultations. Call +256 740 166 778, WhatsApp us, or visit our clinic along Entebbe Road, Uganda." />
-        <meta property="og:title" content="Contact Eritage ENT Care – Entebbe | ENT Clinic" />
-        <meta property="og:description" content="Get in touch with Eritage ENT Care for professional ear, nose, and throat services in Entebbe, Uganda. Multiple contact options available." />
+        <title>Contact & Locations | Eritage ENT Care | Book Consultation</title>
+        <meta name="description" content="Contact Eritage ENT Care for ear, nose, and throat consultations. Reach our Entebbe clinic at +256 740 166 778, via WhatsApp, or schedule a digital consultation." />
+        <meta property="og:title" content="Contact Eritage ENT Care | ENT Consultations" />
+        <meta property="og:description" content="Get in touch with Eritage ENT Care for professional ear, nose, and throat services. In-person and digital consultation options available." />
         <meta property="og:type" content="website" />
-        <meta name="keywords" content="contact ENT clinic Entebbe, ENT doctor phone number Uganda, book ENT appointment Entebbe, Eritage ENT Care contact" />
-        <link rel="canonical" href="https://eritageentcare.com/contact" />
+        <meta name="keywords" content="contact ENT specialist, book ENT appointment, Eritage ENT Care contact, ENT consultation" />
+        <link rel="canonical" href="https://www.trendexhub.com/contact" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>
@@ -117,11 +121,14 @@ const Contact = () => {
         <section className="relative bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
+              <p className="text-sm font-medium text-primary mb-3 uppercase tracking-wide">
+                Get in Touch
+              </p>
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Contact Eritage ENT Care – Entebbe
+                Contact Eritage ENT Care
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                We're here to help with your ear, nose, and throat health concerns. Reach out to book an appointment or get answers to your questions.
+                We're here to help with your ear, nose, and throat health concerns. Book an in-person consultation at our Entebbe clinic or connect with us digitally.
               </p>
             </div>
           </div>
@@ -191,13 +198,19 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Map Section */}
+        {/* Map Section - Entebbe Location */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
-                Find Our Clinic
-              </h2>
+              <div className="text-center mb-6">
+                <p className="text-sm font-medium text-primary mb-2 uppercase tracking-wide">
+                  Entebbe Clinic
+                </p>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                  Eritage ENT Care – Entebbe
+                </h2>
+                <p className="text-muted-foreground">Our flagship location for in-person consultations</p>
+              </div>
               <div className="aspect-video rounded-lg overflow-hidden shadow-lg mb-6">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7582621366!2d32.4637!3d0.0512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDMnMDQuMyJOIDMywrAyNyc0OS4zIkU!5e0!3m2!1sen!2sug!4v1234567890"
@@ -218,7 +231,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                   >
                     <MapPin className="h-5 w-5" />
-                    Open in Google Maps
+                    Get Directions
                   </a>
                 </Button>
               </div>
