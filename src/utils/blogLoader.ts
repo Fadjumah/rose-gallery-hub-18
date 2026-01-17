@@ -5,6 +5,8 @@ export interface ArticleMetadata {
   icon: string;
   date: string;
   author: string;
+  authorTitle: string;
+  authorExperience: string;
 }
 
 export interface Article extends ArticleMetadata {
@@ -57,6 +59,8 @@ export const getAllArticles = (): Article[] => {
       icon: data.icon,
       date: data.date,
       author: data.author,
+      authorTitle: data.authorTitle || 'ENT Specialist',
+      authorExperience: data.authorExperience || '10+ years of clinical experience',
       content: markdownContent,
     });
   });
