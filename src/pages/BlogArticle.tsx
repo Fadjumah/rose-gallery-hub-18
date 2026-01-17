@@ -8,6 +8,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import FloatingContactButtons from '@/components/FloatingContactButtons';
 import AdSense from '@/components/AdSense';
+import AuthorSection from '@/components/AuthorSection';
 import { getArticleBySlug } from '@/utils/blogLoader';
 import { Helmet } from 'react-helmet-async';
 
@@ -240,6 +241,13 @@ const BlogArticle = () => {
                   {article.content}
                 </ReactMarkdown>
               </div>
+
+              {/* Author Section with E-E-A-T signals */}
+              <AuthorSection 
+                authorName={article.author} 
+                authorTitle={article.authorTitle}
+                authorExperience={article.authorExperience}
+              />
 
               {/* Strategic Ad Placement - After article content */}
               <AdSense adSlot="0987654321" adFormat="auto" className="mt-8" />
