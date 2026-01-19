@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Menu, X, Phone, MessageCircle } from "lucide-react";
+import { Menu, X, MapPin } from "lucide-react";
 import logo from "@/assets/eritage-logo.png";
-import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +10,7 @@ const Header = () => {
     { href: "/ent-services", label: "ENT Services" },
     { href: "/urgent-ent-guidance", label: "Urgent ENT" },
     { href: "/hearing-tests", label: "Hearing Tests" },
-    { href: "/reviews", label: "Reviews" },
+    { href: "/#locations", label: "Locations" },
     { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact" },
   ];

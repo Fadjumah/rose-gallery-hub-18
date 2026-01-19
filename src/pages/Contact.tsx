@@ -21,7 +21,7 @@ const Contact = () => {
       icon: Phone,
       title: "Phone",
       primary: "+256 740 166 778",
-      secondary: "+256 769 616 091",
+      secondary: "Available nationwide",
       action: "tel:+256740166778",
       actionText: "Call Now"
     },
@@ -43,57 +43,46 @@ const Contact = () => {
     },
     {
       icon: MapPin,
-      title: "Location",
-      primary: "Along Entebbe Road",
-      secondary: "Entebbe, Central Region, Uganda",
-      action: "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8",
-      actionText: "Get Directions"
+      title: "Locations",
+      primary: "Multiple locations across Uganda",
+      secondary: "See our clinics below",
+      action: "#locations",
+      actionText: "View Locations"
     }
   ];
 
-  const clinicHours = [
-    { day: "Monday", hours: "Open 24 hours" },
-    { day: "Tuesday", hours: "Open 24 hours" },
-    { day: "Wednesday", hours: "Open 24 hours" },
-    { day: "Thursday", hours: "Open 24 hours" },
-    { day: "Friday", hours: "Open 24 hours" },
-    { day: "Saturday", hours: "Open 24 hours" },
-    { day: "Sunday", hours: "Open 24 hours" }
+  const locations = [
+    {
+      name: "Entebbe",
+      address: "Along Entebbe Road, Entebbe, Central Region",
+      phone: "+256 740 166 778",
+      hours: "Open 24 hours",
+      mapLink: "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8",
+      isOpen: true
+    },
+    {
+      name: "Kampala",
+      address: "Coming Soon",
+      phone: "+256 740 166 778",
+      hours: "Opening Soon",
+      mapLink: "",
+      isOpen: false
+    }
   ];
 
-  // JSON-LD Schema for Local Business
+  // JSON-LD Schema for Organization
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Eritage ENT Care – Entebbe",
-    "description": "Professional ENT clinic in Entebbe, Uganda offering expert ear, nose, and throat care.",
+    "@type": "MedicalOrganization",
+    "name": "Eritage ENT Care",
+    "description": "Professional ENT care across Uganda offering expert ear, nose, and throat services.",
     "url": "https://www.trendexhub.com/contact",
     "telephone": "+256740166778",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Along Entebbe Road",
-      "addressLocality": "Entebbe",
-      "addressRegion": "Central Region",
-      "addressCountry": "UG"
+    "areaServed": {
+      "@type": "Country",
+      "name": "Uganda"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "0.0512",
-      "longitude": "32.4637"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
     "medicalSpecialty": "Otolaryngology",
-    "parentOrganization": {
-      "@type": "MedicalOrganization",
-      "name": "Eritage ENT Care"
-    },
     "sameAs": [
       "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
     ]
@@ -102,12 +91,12 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contact & Locations | Eritage ENT Care | Book Consultation</title>
-        <meta name="description" content="Contact Eritage ENT Care for ear, nose, and throat consultations. Reach our Entebbe clinic at +256 740 166 778, via WhatsApp, or schedule a digital consultation." />
-        <meta property="og:title" content="Contact Eritage ENT Care | ENT Consultations" />
-        <meta property="og:description" content="Get in touch with Eritage ENT Care for professional ear, nose, and throat services. In-person and digital consultation options available." />
+        <title>Contact & Locations | Eritage ENT Care | Book Consultation in Uganda</title>
+        <meta name="description" content="Contact Eritage ENT Care for ear, nose, and throat consultations across Uganda. Reach us at +256 740 166 778, via WhatsApp, or visit our clinics." />
+        <meta property="og:title" content="Contact Eritage ENT Care | ENT Consultations in Uganda" />
+        <meta property="og:description" content="Get in touch with Eritage ENT Care for professional ear, nose, and throat services. Multiple locations and digital consultation options available across Uganda." />
         <meta property="og:type" content="website" />
-        <meta name="keywords" content="contact ENT specialist, book ENT appointment, Eritage ENT Care contact, ENT consultation" />
+        <meta name="keywords" content="contact ENT specialist Uganda, book ENT appointment, Eritage ENT Care contact, ENT consultation Uganda" />
         <link rel="canonical" href="https://www.trendexhub.com/contact" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
@@ -128,7 +117,7 @@ const Contact = () => {
                 Contact Eritage ENT Care
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                We're here to help with your ear, nose, and throat health concerns. Book an in-person consultation at our Entebbe clinic or connect with us digitally.
+                We're here to help with your ear, nose, and throat health concerns. Book an in-person consultation at one of our clinics or connect with us digitally.
               </p>
             </div>
           </div>
@@ -152,8 +141,8 @@ const Contact = () => {
                       <Button asChild variant="outline" className="w-full">
                         <a 
                           href={method.action} 
-                          target={method.title === "Location" ? "_blank" : undefined}
-                          rel={method.title === "Location" ? "noopener noreferrer" : undefined}
+                          target={method.action.startsWith("http") ? "_blank" : undefined}
+                          rel={method.action.startsWith("http") ? "noopener noreferrer" : undefined}
                         >
                           {method.actionText}
                         </a>
@@ -166,34 +155,67 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Clinic Hours */}
-        <section className="py-16 bg-secondary/20">
+        {/* Our Locations */}
+        <section id="locations" className="py-16 bg-secondary/20">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <Clock className="h-8 w-8 text-primary" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  Clinic Hours
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-8">
+                <p className="text-sm font-medium text-primary mb-2 uppercase tracking-wide">
+                  Visit Us
+                </p>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                  Our Locations
                 </h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Eritage ENT Care serves patients across Uganda. Visit one of our clinics for in-person consultations.
+                </p>
               </div>
-              <Card className="bg-background">
-                <CardContent className="p-6">
-                  <div className="space-y-3">
-                    {clinicHours.map((schedule, index) => (
-                      <div key={index} className="flex justify-between items-center py-2 border-b border-border last:border-0">
-                        <span className="text-foreground font-medium">{schedule.day}</span>
-                        <span className="text-muted-foreground">{schedule.hours}</span>
+              <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                {locations.map((location, index) => (
+                  <Card key={index} className={`${!location.isOpen ? 'opacity-75' : ''}`}>
+                    <CardContent className="p-6">
+                      <div className="flex items-center gap-2 mb-3">
+                        <MapPin className="h-5 w-5 text-primary" />
+                        <h3 className="font-bold text-foreground text-lg">
+                          Eritage ENT Care – {location.name}
+                        </h3>
                       </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-              <p className="text-sm text-muted-foreground mt-4">
-                We are available 24/7 for your ENT needs. For urgent guidance, visit our{" "}
-                <Link to="/urgent-ent-guidance" className="text-primary hover:underline font-medium">
-                  urgent ENT guidance service
-                </Link>.
-              </p>
+                      {!location.isOpen && (
+                        <span className="inline-block bg-primary/10 text-primary text-xs font-medium px-2 py-1 rounded-full mb-3">
+                          Coming Soon
+                        </span>
+                      )}
+                      <div className="space-y-2 mb-4">
+                        <p className="text-muted-foreground">{location.address}</p>
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Phone className="h-4 w-4" />
+                          <span>{location.phone}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-muted-foreground">
+                          <Clock className="h-4 w-4" />
+                          <span>{location.hours}</span>
+                        </div>
+                      </div>
+                      {location.isOpen && location.mapLink && (
+                        <Button asChild className="w-full">
+                          <a 
+                            href={location.mapLink} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            Get Directions
+                          </a>
+                        </Button>
+                      )}
+                      {!location.isOpen && (
+                        <Button variant="outline" className="w-full" disabled>
+                          Notify Me When Open
+                        </Button>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -203,9 +225,6 @@ const Contact = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-6">
-                <p className="text-sm font-medium text-primary mb-2 uppercase tracking-wide">
-                  Entebbe Clinic
-                </p>
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
                   Eritage ENT Care – Entebbe
                 </h2>
@@ -220,7 +239,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Eritage ENT Care Location - Entebbe Road, Uganda"
+                  title="Eritage ENT Care Location - Entebbe, Uganda"
                 ></iframe>
               </div>
               <div className="text-center">
@@ -247,7 +266,7 @@ const Contact = () => {
                 Ready to Book Your ENT Consultation?
               </h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Contact us today for expert ear, nose, and throat care. Our specialist is ready to help you with personalized treatment.
+                Contact us today for expert ear, nose, and throat care. Our specialist is ready to help you with personalized treatment at any of our locations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="gap-2" asChild>
