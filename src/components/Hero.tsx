@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-foreground leading-tight">
-              Evidence-Based <span className="text-primary">ENT Care</span> You Can Trust
+              <span className="text-primary">Eritage</span> ENT Care
             </h1>
             
             <p className="text-lg md:text-xl mb-4 text-muted-foreground max-w-xl leading-relaxed">
