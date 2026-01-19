@@ -11,10 +11,10 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold mb-4">Eritage ENT Care</h3>
             <p className="mb-4 max-w-md">
-              Specialist-led ENT education and evidence-based care. Trusted by patients for expert ear, nose, and throat treatment.
+              Specialist-led ENT education and evidence-based care. Trusted by patients across Uganda for expert ear, nose, and throat treatment.
             </p>
             <p className="text-sm opacity-90">
-              Delivering clinical excellence through patient-centered care and continuous medical education.
+              Delivering clinical excellence through patient-centered care nationwide.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact Us</h4>
             <div className="space-y-2 text-sm mb-4">
               <p>+256 740 166 778</p>
-              <p>+256 769 616 091</p>
+              <p>Available Nationwide</p>
               <a href="mailto:info@trendexhub.com" className="block hover:underline">info@trendexhub.com</a>
             </div>
             <div className="flex items-center justify-center md:justify-end gap-3">
@@ -80,7 +80,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm opacity-80">
-              © {new Date().getFullYear()} Eritage ENT Care. All rights reserved.
+              © {new Date().getFullYear()} Eritage ENT Care. All rights reserved. Serving patients across Uganda.
             </p>
             <nav className="flex items-center gap-4 text-sm">
               <Link to="/privacy-policy" className="opacity-80 hover:opacity-100 hover:underline">
