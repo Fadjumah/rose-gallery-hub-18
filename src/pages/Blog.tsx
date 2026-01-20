@@ -50,11 +50,11 @@ const Blog = () => {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Eritage ENT Care Health Blog",
-    "description": "Expert ENT health articles and tips from Eritage ENT Care in Entebbe.",
+    "description": "Expert ENT health articles and tips from Eritage ENT Care specialists.",
     "url": "https://www.trendexhub.com/blog",
     "publisher": {
       "@type": "Organization",
-      "name": "Eritage ENT Care – Entebbe",
+      "name": "Eritage ENT Care",
       "url": "https://www.trendexhub.com"
     }
   };
@@ -62,10 +62,10 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Health Articles & Tips | Eritage ENT Care Entebbe</title>
-        <meta name="description" content="Expert ENT health articles and tips from Eritage ENT Care in Entebbe. Learn about ear infections, hearing loss prevention, allergies, and voice care." />
-        <meta property="og:title" content="Health Articles & Tips | Eritage ENT Care Entebbe" />
-        <meta property="og:description" content="Expert ENT health articles and tips from Eritage ENT Care in Entebbe." />
+        <title>Health Articles & Tips | Eritage ENT Care</title>
+        <meta name="description" content="Expert ENT health articles and tips from Eritage ENT Care specialists. Learn about ear infections, hearing loss prevention, allergies, and voice care." />
+        <meta property="og:title" content="Health Articles & Tips | Eritage ENT Care" />
+        <meta property="og:description" content="Expert ENT health articles and tips from Eritage ENT Care specialists." />
         <meta property="og:url" content="https://www.trendexhub.com/blog" />
         <link rel="canonical" href="https://www.trendexhub.com/blog" />
         <script type="application/ld+json">
@@ -125,7 +125,7 @@ const Blog = () => {
               <h2 className="text-2xl font-serif font-bold mb-6 text-center">Related ENT Services</h2>
               <div className="grid sm:grid-cols-3 gap-4">
                 <a href="/ent-services" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
-                  <span className="font-medium text-foreground">ENT Services in Entebbe</span>
+                  <span className="font-medium text-foreground">All ENT Services</span>
                 </a>
                 <a href="/hearing-tests" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
                   <span className="font-medium text-foreground">Hearing Tests & Audiology</span>

@@ -63,32 +63,16 @@ const HearingTests = () => {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Eritage ENT Care – Entebbe",
-    "description": "Professional hearing tests in Entebbe including PTA, tympanometry, OAE, ABR, and full audiology screening services.",
+    "@type": "MedicalOrganization",
+    "name": "Eritage ENT Care",
+    "description": "Professional hearing tests including PTA, tympanometry, OAE, ABR, and full audiology screening services across Uganda.",
     "url": "https://www.trendexhub.com/hearing-tests",
     "telephone": "+256740166778",
     "email": "info@trendexhub.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Along Entebbe Road",
-      "addressLocality": "Entebbe",
-      "addressRegion": "Central Region",
-      "addressCountry": "UG"
+    "areaServed": {
+      "@type": "Country",
+      "name": "Uganda"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "0.0512",
-      "longitude": "32.4637"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
     "medicalSpecialty": ["Otolaryngology", "Audiology"],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -129,11 +113,11 @@ const HearingTests = () => {
   return (
     <>
       <Helmet>
-        <title>Hearing Tests in Entebbe – PTA, Tympanometry & Audiology Screening | Eritage ENT Care</title>
-        <meta name="description" content="Professional hearing tests in Entebbe including PTA, tympanometry, OAE, ABR, and full audiology screening. Book your hearing test at Eritage ENT Care today." />
-        <meta name="keywords" content="hearing test Entebbe, PTA Entebbe, tympanometry Entebbe, audiology Entebbe, ENT hearing test, hearing screening Uganda, audiometry Uganda, newborn hearing screening Entebbe" />
-        <meta property="og:title" content="Hearing Tests in Entebbe – PTA, Tympanometry & Audiology | Eritage ENT Care" />
-        <meta property="og:description" content="Professional hearing tests in Entebbe including PTA, tympanometry, OAE, ABR, and full audiology screening." />
+        <title>Hearing Tests – PTA, Tympanometry & Audiology Screening | Eritage ENT Care</title>
+        <meta name="description" content="Professional hearing tests including PTA, tympanometry, OAE, ABR, and full audiology screening. Book your hearing test at Eritage ENT Care today." />
+        <meta name="keywords" content="hearing test Uganda, PTA hearing test, tympanometry, audiology, ENT hearing test, hearing screening Uganda, audiometry Uganda, newborn hearing screening" />
+        <meta property="og:title" content="Hearing Tests – PTA, Tympanometry & Audiology | Eritage ENT Care" />
+        <meta property="og:description" content="Professional hearing tests including PTA, tympanometry, OAE, ABR, and full audiology screening across Uganda." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.trendexhub.com/hearing-tests" />
         <script type="application/ld+json">
@@ -148,7 +132,7 @@ const HearingTests = () => {
         <section className="relative bg-gradient-to-br from-primary/10 via-secondary to-accent/20 py-20 md:py-28">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground mb-6">
-              Hearing Tests in Entebbe
+              Professional Hearing Tests
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               PTA, Tympanometry, OAE, ABR & Full Audiology Screening
@@ -171,7 +155,7 @@ const HearingTests = () => {
                 Comprehensive Audiology Services
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                At <strong className="text-primary">Eritage ENT Care in Entebbe</strong>, we partner with certified audiology centers 
+                At <strong className="text-primary">Eritage ENT Care</strong>, we partner with certified audiology centers 
                 to provide high-quality, accurate hearing tests. Our collaborative approach ensures you receive 
                 comprehensive diagnostic services with expert interpretation and personalized care for all your 
                 hearing health needs.
@@ -273,7 +257,7 @@ const HearingTests = () => {
                     </button>
                     <div className="flex items-start gap-3 p-4 bg-secondary/50 rounded-lg">
                       <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span className="text-foreground">Along Entebbe Road, Entebbe, Central Region, Uganda</span>
+                      <span className="text-foreground">Multiple locations across Uganda — <a href="/#locations" className="text-primary hover:underline">View our clinics</a></span>
                     </div>
                   </CardContent>
                 </Card>
@@ -313,7 +297,7 @@ const HearingTests = () => {
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-lg md:text-xl text-foreground italic">
                 "We collaborate with trusted audiology centers to ensure accurate and reliable hearing testing 
-                for all our ENT patients at <strong className="text-primary">Eritage ENT Care in Entebbe</strong>."
+                for all our ENT patients at <strong className="text-primary">Eritage ENT Care</strong>."
               </p>
             </div>
           </div>
@@ -326,7 +310,7 @@ const HearingTests = () => {
               <h2 className="text-xl font-bold text-foreground mb-6 text-center">Related ENT Services</h2>
               <div className="grid sm:grid-cols-3 gap-4">
                 <a href="/ent-services" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
-                  <span className="font-medium text-foreground">ENT Services in Entebbe</span>
+                  <span className="font-medium text-foreground">All ENT Services</span>
                 </a>
                 <a href="/blog/preventing-hearing-loss" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors text-center">
                   <span className="font-medium text-foreground">Preventing Hearing Loss</span>

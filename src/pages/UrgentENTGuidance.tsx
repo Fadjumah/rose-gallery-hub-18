@@ -33,13 +33,13 @@ const UrgentENTGuidance = () => {
   return (
     <>
       <Helmet>
-        <title>Urgent ENT Guidance | Ear, Nose & Throat Help in Entebbe | Eritage ENT Care</title>
-        <meta name="description" content="Get urgent ENT guidance for sudden ear pain, throat bleeding, blocked ears, or hearing changes. Professional symptom review via WhatsApp. Fast, private, professional care from Eritage ENT Care Entebbe." />
-        <meta property="og:title" content="Urgent ENT Guidance | Ear, Nose & Throat Help in Entebbe" />
+        <title>Urgent ENT Guidance | Ear, Nose & Throat Help | Eritage ENT Care</title>
+        <meta name="description" content="Get urgent ENT guidance for sudden ear pain, throat bleeding, blocked ears, or hearing changes. Professional symptom review via WhatsApp. Fast, private, professional care from Eritage ENT Care." />
+        <meta property="og:title" content="Urgent ENT Guidance | Ear, Nose & Throat Help" />
         <meta property="og:description" content="Professional ENT guidance for urgent symptoms. Review your symptoms via WhatsApp and get clear direction on next steps." />
         <meta property="og:type" content="website" />
-        <meta name="keywords" content="urgent ENT help, ear pain guidance, throat bleeding help, blocked ear advice, hearing changes, ENT symptoms Entebbe, ENT WhatsApp consultation" />
-        <link rel="canonical" href="https://eritageentcare.com/urgent-ent-guidance" />
+        <meta name="keywords" content="urgent ENT help, ear pain guidance, throat bleeding help, blocked ear advice, hearing changes, ENT symptoms Uganda, ENT WhatsApp consultation" />
+        <link rel="canonical" href="https://www.trendexhub.com/urgent-ent-guidance" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -195,7 +195,7 @@ const UrgentENTGuidance = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                This service is provided by an ENT specialist based in Entebbe, with clinical experience in ear, nose, and throat conditions, and coordinated care through Eritage ENT Care.
+                This service is provided by ENT specialists with clinical experience in ear, nose, and throat conditions, coordinated through Eritage ENT Care.
               </p>
             </div>
           </div>
@@ -212,7 +212,7 @@ const UrgentENTGuidance = () => {
                 >
                   <div>
                     <p className="text-sm text-muted-foreground">Need a full assessment?</p>
-                    <p className="font-semibold text-foreground">ENT Services in Entebbe</p>
+                    <p className="font-semibold text-foreground">All ENT Services</p>
                   </div>
                   <ArrowRight className="h-5 w-5 text-primary" />
                 </Link>
