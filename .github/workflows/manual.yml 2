@@ -1,0 +1,29 @@
+name: Manual homepage update
+
+on:
+  workflow_dispatch:
+    inputs:
+      note:
+        description: 'Describe the homepage change'
+        default: 'Transform homepage bottom resources into dropdown'
+        required: true
+        type: string
+
+jobs:
+  update-homepage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Write update note to file
+        run: |
+          echo "Update on $(date): ${{ inputs.note }}" >> site-log.txt
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add site-log.txt
+          git commit -m "Automated site update: ${{ inputs.note }}"
+          git push
