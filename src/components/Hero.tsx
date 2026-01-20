@@ -33,7 +33,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl mb-4 text-muted-foreground max-w-xl leading-relaxed">
-              Expert diagnosis and treatment for ear, nose, and throat conditions. Personalized care for adults and children nationwide.
+              Uganda's trusted ENT specialists delivering expert diagnosis and personalized treatment for ear, nose, and throat conditions—caring for adults and children across the nation.
             </p>
             
             {/* Trust Signals */}
