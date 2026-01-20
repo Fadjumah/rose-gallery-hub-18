@@ -64,11 +64,11 @@ const FAQ = () => {
   return (
     <>
       <Helmet>
-        <title>FAQ – Eritage ENT Care Entebbe | Common Questions About ENT Services</title>
-        <meta name="description" content="Find answers to frequently asked questions about Eritage ENT Care in Entebbe. Learn about our ENT services, hearing tests, appointments, and clinic location." />
-        <meta name="keywords" content="ENT FAQ Entebbe, Eritage EntCare questions, hearing test FAQ Uganda, ENT clinic questions, ENT services information" />
-        <meta property="og:title" content="FAQ – Eritage ENT Care Entebbe" />
-        <meta property="og:description" content="Find answers to common questions about our ENT services in Entebbe." />
+        <title>FAQ – Eritage ENT Care | Common Questions About ENT Services</title>
+        <meta name="description" content="Find answers to frequently asked questions about Eritage ENT Care. Learn about our ENT services, hearing tests, appointments, and clinic locations across Uganda." />
+        <meta name="keywords" content="ENT FAQ Uganda, Eritage EntCare questions, hearing test FAQ, ENT clinic questions, ENT services information" />
+        <meta property="og:title" content="FAQ – Eritage ENT Care" />
+        <meta property="og:description" content="Find answers to common questions about our ENT services across Uganda." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.trendexhub.com/faq" />
         <script type="application/ld+json">
@@ -86,7 +86,7 @@ const FAQ = () => {
               Frequently Asked Questions
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-              Everything you need to know about our ENT services in Entebbe
+              Everything you need to know about our ENT services across Uganda
             </p>
           </div>
         </section>

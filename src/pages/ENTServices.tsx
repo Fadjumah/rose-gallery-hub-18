@@ -79,31 +79,15 @@ const ENTServices = () => {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Eritage ENT Care – Entebbe",
-    "description": "Expert ENT clinic in Entebbe offering comprehensive ear, nose, and throat care. Experienced ENT specialist for hearing tests, sinus treatment, and throat conditions.",
+    "@type": "MedicalOrganization",
+    "name": "Eritage ENT Care",
+    "description": "Specialist-led ENT care providing comprehensive ear, nose, and throat services across Uganda. Expert diagnosis and treatment for all ENT conditions.",
     "url": "https://www.trendexhub.com/ent-services",
     "telephone": "+256740166778",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Along Entebbe Road",
-      "addressLocality": "Entebbe",
-      "addressRegion": "Central Region",
-      "addressCountry": "UG"
+    "areaServed": {
+      "@type": "Country",
+      "name": "Uganda"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "0.0512",
-      "longitude": "32.4637"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
     "medicalSpecialty": "Otolaryngology",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -149,12 +133,12 @@ const ENTServices = () => {
   return (
     <>
       <Helmet>
-        <title>ENT Clinic in Entebbe | Ear, Nose & Throat Specialist | Eritage ENT Care</title>
-        <meta name="description" content="Expert ENT clinic in Entebbe offering comprehensive ear, nose, and throat care. Experienced ENT specialist near you for hearing tests, sinus treatment, throat conditions. Book your appointment today." />
-        <meta property="og:title" content="ENT Clinic in Entebbe | Ear, Nose & Throat Specialist" />
-        <meta property="og:description" content="Trusted ENT specialist in Entebbe. Expert treatment for ear infections, hearing loss, sinus problems, tonsillitis, and all ENT conditions." />
+        <title>ENT Specialist Services | Ear, Nose & Throat Care | Eritage ENT Care</title>
+        <meta name="description" content="Comprehensive ear, nose, and throat care from experienced ENT specialists. Expert diagnosis and treatment for hearing loss, sinus conditions, throat disorders, and more. Book your consultation today." />
+        <meta property="og:title" content="ENT Specialist Services | Ear, Nose & Throat Care" />
+        <meta property="og:description" content="Trusted ENT specialists providing expert treatment for ear infections, hearing loss, sinus problems, tonsillitis, and all ENT conditions across Uganda." />
         <meta property="og:type" content="website" />
-        <meta name="keywords" content="ENT clinic Entebbe, ENT specialist near me, ear doctor Entebbe, nose doctor Entebbe, throat doctor Entebbe, hearing test Entebbe, sinus treatment Uganda, tonsillitis treatment, audiology Entebbe" />
+        <meta name="keywords" content="ENT specialist Uganda, ENT clinic, ear doctor, nose doctor, throat doctor, hearing test, sinus treatment Uganda, tonsillitis treatment, audiology Uganda" />
         <link rel="canonical" href="https://www.trendexhub.com/ent-services" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
@@ -169,10 +153,10 @@ const ENTServices = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-                Ear, Nose and Throat (ENT) Special Clinic in Entebbe
+                Comprehensive Ear, Nose & Throat Specialist Services
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Eritage ENT Care is your trusted ENT clinic in Entebbe, providing expert diagnosis and treatment for all ear, nose, and throat conditions. Our experienced ENT specialists are dedicated to improving your quality of life.
+                Eritage ENT Care provides expert diagnosis and treatment for all ear, nose, and throat conditions. Our experienced ENT specialists are dedicated to improving your quality of life with evidence-based care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="gap-2" asChild>
@@ -205,10 +189,10 @@ const ENTServices = () => {
                     An ENT (Ear, Nose, and Throat) specialist, also known as an Otolaryngologist, is a medical doctor who specializes in diagnosing and treating conditions affecting the ears, nose, throat, and related structures of the head and neck.
                   </p>
                   <p className="text-base leading-relaxed">
-                    At <span className="font-semibold text-foreground">Eritage ENT Care in Entebbe</span>, our ENT specialists are trained to handle both medical and surgical treatments for a wide range of conditions. Whether you're experiencing hearing difficulties, chronic sinusitis, or throat problems, our team provides comprehensive care tailored to your needs.
+                    At <span className="font-semibold text-foreground">Eritage ENT Care</span>, our ENT specialists are trained to handle both medical and surgical treatments for a wide range of conditions. Whether you're experiencing hearing difficulties, chronic sinusitis, or throat problems, our team provides comprehensive care tailored to your needs.
                   </p>
                   <p className="text-base leading-relaxed">
-                    As the leading <span className="font-semibold text-foreground">ENT clinic in Entebbe</span>, we combine modern diagnostic equipment with compassionate patient care to ensure the best outcomes for our patients across Uganda.
+                    We combine modern diagnostic equipment with compassionate patient care to ensure the best outcomes for our patients across Uganda.
                   </p>
                 </div>
                 <div className="flex justify-center">
@@ -234,7 +218,7 @@ const ENTServices = () => {
               </h2>
             </div>
             <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Our ear doctors in Entebbe specialize in diagnosing and treating all ear-related conditions, from common infections to complex hearing disorders.
+              Our ear specialists diagnose and treat all ear-related conditions, from common infections to complex hearing disorders.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
               {earConditions.map((condition, index) => (
@@ -304,7 +288,7 @@ const ENTServices = () => {
               </h2>
             </div>
             <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Our throat doctors in Entebbe offer comprehensive care for voice, swallowing, and throat disorders.
+              Our throat specialists offer comprehensive care for voice, swallowing, and throat disorders.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
               {throatConditions.map((condition, index) => (
@@ -335,7 +319,7 @@ const ENTServices = () => {
                 <div className="flex items-center gap-3 justify-center mb-4">
                   <AudioLines className="h-10 w-10 text-primary" />
                   <CardTitle className="text-2xl md:text-3xl font-bold text-foreground">
-                    Audiology & Hearing Tests in Entebbe
+                    Audiology & Hearing Tests
                   </CardTitle>
                 </div>
               </CardHeader>
@@ -458,7 +442,7 @@ const ENTServices = () => {
                 </h2>
               </div>
               <p className="text-center text-muted-foreground mb-8">
-                Not sure if you need to see an ENT doctor? Here are signs that indicate you should book an appointment with our ENT specialist in Entebbe:
+                Not sure if you need to see an ENT doctor? Here are signs that indicate you should book an appointment with our ENT specialists:
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 {whenToSeeENT.map((sign, index) => (
@@ -532,7 +516,7 @@ const ENTServices = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-                Why Choose Eritage ENT Care in Entebbe?
+                Why Choose Eritage ENT Care?
               </h2>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <Card className="bg-secondary/10">
@@ -569,7 +553,7 @@ const ENTServices = () => {
                 Book Your ENT Consultation Today
               </h2>
               <p className="text-muted-foreground mb-8">
-                Don't let ENT problems affect your quality of life. Our ENT specialist in Entebbe is ready to help you. Contact us now to schedule your appointment.
+                Don't let ENT problems affect your quality of life. Our ENT specialists are ready to help you. Contact us now to schedule your appointment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="gap-2" asChild>
@@ -586,17 +570,7 @@ const ENTServices = () => {
                 </Button>
               </div>
               <p className="text-sm text-muted-foreground mt-6">
-                Located along Entebbe Road, Entebbe, Central Region, Uganda
-              </p>
-              <p className="text-sm mt-4">
-                <a 
-                  href="https://maps.app.goo.gl/jyV5xBRkD95u2i4B8" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Get Directions on Google Maps →
-                </a>
+                Multiple locations across Uganda — <a href="/#locations" className="text-primary hover:underline">View our clinics</a>
               </p>
             </div>
           </div>

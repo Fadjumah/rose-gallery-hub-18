@@ -220,15 +220,15 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Map Section - Entebbe Location */}
+        {/* Map Section - Primary Location */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-6">
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                  Eritage ENT Care – Entebbe
+                  Find Our Flagship Clinic
                 </h2>
-                <p className="text-muted-foreground">Our flagship location for in-person consultations</p>
+                <p className="text-muted-foreground">Eritage ENT Care – Entebbe for in-person consultations</p>
               </div>
               <div className="aspect-video rounded-lg overflow-hidden shadow-lg mb-6">
                 <iframe
@@ -239,7 +239,7 @@ const Contact = () => {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Eritage ENT Care Location - Entebbe, Uganda"
+                  title="Eritage ENT Care – Entebbe Location"
                 ></iframe>
               </div>
               <div className="text-center">
@@ -250,7 +250,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                   >
                     <MapPin className="h-5 w-5" />
-                    Get Directions
+                    Get Directions to Entebbe Clinic
                   </a>
                 </Button>
               </div>
