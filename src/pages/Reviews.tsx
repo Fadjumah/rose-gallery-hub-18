@@ -101,13 +101,13 @@ const Reviews = () => {
   return (
     <>
       <Helmet>
-        <title>Patient Reviews – Eritage EntCare Entebbe | ENT Clinic Reviews Uganda</title>
-        <meta name="description" content="Read patient reviews and testimonials about Eritage ENT Care in Entebbe. See what our patients say about our ENT services, hearing tests, and medical care." />
-        <meta name="keywords" content="ENT clinic reviews Entebbe, Eritage EntCare reviews, ENT doctor Uganda reviews, hearing test Entebbe reviews, patient testimonials" />
-        <meta property="og:title" content="Patient Reviews – Eritage EntCare Entebbe" />
-        <meta property="og:description" content="Read what our ENT patients in Entebbe say about Eritage EntCare." />
+        <title>Patient Reviews – Eritage ENT Care | ENT Clinic Reviews Uganda</title>
+        <meta name="description" content="Read patient reviews and testimonials about Eritage ENT Care. See what our patients say about our ENT services, hearing tests, and medical care." />
+        <meta name="keywords" content="ENT clinic reviews, Eritage ENT Care reviews, ENT doctor Uganda reviews, hearing test reviews, patient testimonials" />
+        <meta property="og:title" content="Patient Reviews – Eritage ENT Care" />
+        <meta property="og:description" content="Read what our ENT patients say about Eritage ENT Care." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://yourdomain.com/reviews" />
+        <link rel="canonical" href="https://www.trendexhub.com/reviews" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -120,7 +120,7 @@ const Reviews = () => {
               Patient Reviews
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-              What our ENT patients in Entebbe say about Eritage EntCare
+              What our ENT patients say about Eritage ENT Care
             </p>
           </div>
         </section>

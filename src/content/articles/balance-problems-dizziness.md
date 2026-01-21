@@ -1,6 +1,6 @@
 ---
-title: "Balance Problems and Dizziness: Expert ENT Solutions at Eritage ENT Care in Entebbe"
-description: "Comprehensive guide to understanding balance disorders, vertigo, and dizziness. Expert diagnosis and treatment from Eritage ENT Care in Entebbe."
+title: "Balance Problems and Dizziness: Expert ENT Solutions"
+description: "Comprehensive guide to understanding balance disorders, vertigo, and dizziness. Expert diagnosis and treatment from ENT specialists."
 slug: "balance-problems-dizziness"
 icon: "activity"
 date: "2025-12-04"
@@ -9,7 +9,7 @@ author: "Fahad Juma ENT Specialist"
 
 # Balance Problems and Dizziness: Understanding, Diagnosis & Treatment
 
-Balance problems and frequent dizziness are among the most common and concerning complaints we encounter at Eritage ENT Care in Entebbe. These symptoms can significantly impact your quality of life, affecting your ability to work, drive, and perform daily activities safely.
+Balance problems and frequent dizziness are among the most common and concerning complaints we encounter in ENT practice. These symptoms can significantly impact your quality of life, affecting your ability to work, drive, and perform daily activities safely.
 
 ## Understanding Balance and the Inner Ear
 
@@ -383,10 +383,10 @@ For severe cases not responding to other treatments:
 
 ## Conclusion
 
-Balance problems and dizziness can be frightening and life-disrupting, but most causes are treatable. The key is accurate diagnosis and appropriate treatment. At Eritage ENT Care in Entebbe, our experienced specialists provide comprehensive evaluation and personalized treatment plans for all vestibular disorders.
+Balance problems and dizziness can be frightening and life-disrupting, but most causes are treatable. The key is accurate diagnosis and appropriate treatment. At Eritage ENT Care, our experienced specialists provide comprehensive evaluation and personalized treatment plans for all vestibular disorders.
 
 Don't let dizziness control your life. Early diagnosis and proper treatment can significantly improve your symptoms and quality of life.
 
 ---
 
-*Experiencing balance problems or dizziness? Schedule a comprehensive evaluation at Eritage ENT Care in Entebbe. Call +256 740 166 778 or visit our clinic. For urgent symptoms, explore our [Urgent ENT Guidance Service](/urgent-ent-guidance) for immediate specialist advice.*
+*Experiencing balance problems or dizziness? Schedule a comprehensive evaluation at Eritage ENT Care. Call +256 740 166 778 or visit our clinic. For urgent symptoms, explore our [Urgent ENT Guidance Service](/urgent-ent-guidance) for immediate specialist advice.*

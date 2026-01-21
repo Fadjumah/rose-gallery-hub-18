@@ -1,6 +1,6 @@
 ---
-title: "Ear Discharge (Otorrhea): Causes, Warning Signs & When to Seek Urgent ENT Care in Entebbe"
-description: "Understanding ear discharge symptoms, causes, and when you need urgent ENT specialist attention. Expert guidance from Eritage ENT Care in Entebbe."
+title: "Ear Discharge (Otorrhea): Causes, Warning Signs & When to Seek Urgent ENT Care"
+description: "Understanding ear discharge symptoms, causes, and when you need urgent ENT specialist attention. Expert guidance from ENT specialists."
 slug: "ear-discharge-otorrhea"
 icon: "Droplets"
 date: "2026-01-04"
@@ -9,7 +9,7 @@ author: "Fahad Juma ENT Specialist"
 
 # Ear Discharge (Otorrhea): Causes, Warning Signs & When to Seek Urgent ENT Care
 
-Ear discharge, medically known as otorrhea, is one of the most concerning symptoms that brings patients to our clinic at Eritage ENT Care in Entebbe. While some causes are mild and easily treatable, others require urgent attention to prevent serious complications.
+Ear discharge, medically known as otorrhea, is one of the most concerning symptoms that brings patients to an ENT clinic. While some causes are mild and easily treatable, others require urgent attention to prevent serious complications.
 
 ## Understanding Ear Discharge
 
@@ -53,7 +53,7 @@ The most common cause in children and adults:
 
 ### 2. Otitis Externa (Swimmer's Ear)
 
-Common in Uganda's humid climate:
+Common in humid climates:
 - **Risk factors**: Swimming, humid weather, excessive ear cleaning
 - **Symptoms**: Intense itching, pain, swelling, discharge
 - **Prevention**: Keep ears dry, avoid cotton swabs
@@ -74,7 +74,7 @@ An abnormal skin growth in the middle ear:
 
 ### 5. Trauma and Foreign Bodies
 
-Common scenarios in Uganda:
+Common scenarios:
 - **Cotton swab injuries**: Pushing wax deeper or puncturing eardrum
 - **Insect entry**: Cockroaches and other insects causing damage
 - **Foreign objects**: Especially in children during play
@@ -240,7 +240,7 @@ When medical treatment isn't enough:
 
 **Prevention tips for Ugandan families:**
 - Keep sleeping areas clean and use bed nets
-- Dry ears thoroughly after swimming in Lake Victoria
+- Dry ears thoroughly after swimming
 - Seek ENT care rather than using traditional remedies
 - Supervise children during play to prevent foreign body insertion
 
@@ -273,10 +273,10 @@ When medical treatment isn't enough:
 
 ## Conclusion
 
-Ear discharge should never be ignored. While some causes are minor and easily treated, others can lead to serious complications including permanent hearing loss, facial paralysis, or life-threatening infections. At Eritage ENT Care in Entebbe, we provide expert evaluation and treatment for all causes of ear discharge.
+Ear discharge should never be ignored. While some causes are minor and easily treated, others can lead to serious complications including permanent hearing loss, facial paralysis, or life-threatening infections. At Eritage ENT Care, we provide expert evaluation and treatment for all causes of ear discharge.
 
 If you or a family member is experiencing ear discharge, don't wait for it to worsen. Early diagnosis and proper treatment can prevent complications and preserve your hearing.
 
 ---
 
-*Experiencing ear discharge? Don't delay—contact Eritage ENT Care in Entebbe at +256 740 166 778 or visit our clinic for immediate professional evaluation. For remote guidance on urgent ENT symptoms, explore our [Urgent ENT Guidance Service](/urgent-ent-guidance) for same-day specialist advice.*
+*Experiencing ear discharge? Don't delay—contact Eritage ENT Care at +256 740 166 778 or visit our clinic for immediate professional evaluation. For remote guidance on urgent ENT symptoms, explore our [Urgent ENT Guidance Service](/urgent-ent-guidance) for same-day specialist advice.*
