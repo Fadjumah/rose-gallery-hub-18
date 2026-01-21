@@ -1,6 +1,6 @@
 ---
-title: "Understanding Ear Infections: Causes, Symptoms & Expert Treatment at Eritage ENT Care in Entebbe"
-description: "Comprehensive guide to ear infections covering causes, symptoms in adults and children, treatment options, and prevention strategies from Eritage ENT Care in Entebbe."
+title: "Understanding Ear Infections: Causes, Symptoms & Expert Treatment"
+description: "Comprehensive guide to ear infections covering causes, symptoms in adults and children, treatment options, and prevention strategies from ENT specialists."
 slug: "understanding-ear-infections"
 icon: "BookOpen"
 date: "2025-11-21"
@@ -9,7 +9,7 @@ author: "Fahad Juma ENT Specialist"
 
 # Understanding Ear Infections: Complete Guide to Diagnosis and Treatment
 
-Ear infections are one of the most common reasons patients visit our ENT clinic at Eritage ENT Care in Entebbe. Understanding the causes, recognizing symptoms early, and knowing when to seek treatment can prevent complications and ensure a quicker recovery.
+Ear infections are one of the most common reasons patients visit an ENT clinic. Understanding the causes, recognizing symptoms early, and knowing when to seek treatment can prevent complications and ensure a quicker recovery.
 
 ## What Are Ear Infections?
 
@@ -276,8 +276,8 @@ Flying with an active ear infection is not recommended due to pressure changes t
 
 Ear infections, while common and often painful, are highly treatable with proper care. Recognizing symptoms early, seeking appropriate treatment, and following prevention strategies can protect your hearing and overall ear health.
 
-At Eritage ENT Care in Entebbe, our experienced ENT specialists provide comprehensive diagnosis and treatment for all types of ear infections. Don't let ear pain disrupt your life—seek professional care for proper evaluation and treatment.
+At Eritage ENT Care, our experienced ENT specialists provide comprehensive diagnosis and treatment for all types of ear infections. Don't let ear pain disrupt your life—seek professional care for proper evaluation and treatment.
 
 ---
 
-*Experiencing ear pain or suspect an ear infection? Schedule an appointment with our ENT team at Eritage ENT Care in Entebbe. Early treatment leads to faster recovery. Contact us at +256 740 166 778 or visit our clinic for expert care.*
+*Experiencing ear pain or suspect an ear infection? Schedule an appointment with our ENT team at Eritage ENT Care. Early treatment leads to faster recovery. Contact us at +256 740 166 778 or visit our clinic for expert care.*

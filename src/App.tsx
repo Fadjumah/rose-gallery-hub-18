@@ -16,6 +16,8 @@ import Reviews from "./pages/Reviews";
 import FAQ from "./pages/FAQ";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import LocationEntebbe from "./pages/LocationEntebbe";
+import LocationKampala from "./pages/LocationKampala";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
@@ -39,6 +41,8 @@ const App = () => (
             <Route path="/faq" element={<FAQ />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/locations/entebbe" element={<LocationEntebbe />} />
+            <Route path="/locations/kampala" element={<LocationKampala />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogArticle />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
