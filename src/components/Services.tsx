@@ -7,42 +7,42 @@ import entExaminationImage from "@/assets/ent-examination.jpg";
 const services = [
   {
     icon: Ear,
-    title: "Ear Care",
-    description: "Comprehensive ear examinations, hearing tests, and treatment for ear infections and disorders."
+    title: "ENT Specialist Ear Care",
+    description: "Comprehensive ear examinations, hearing tests, and treatment for ear infections and disorders by experienced ENT specialists."
   },
   {
     icon: Search,
-    title: "Nasal Care",
-    description: "Treatment for sinusitis, nasal allergies, and breathing difficulties. Expert care for nasal health."
+    title: "ENT Specialist Nasal Care",
+    description: "Expert treatment for sinusitis, nasal allergies, and breathing difficulties by our ENT specialists."
   },
   {
     icon: Activity,
-    title: "Throat Care",
-    description: "Diagnosis and treatment of throat conditions, voice disorders, and swallowing difficulties."
+    title: "ENT Specialist Throat Care",
+    description: "Diagnosis and treatment of throat conditions, voice disorders, and swallowing difficulties by ENT specialists."
   },
   {
     icon: Stethoscope,
-    title: "ENT Surgery",
-    description: "Advanced surgical procedures for complex ear, nose, and throat conditions."
+    title: "ENT Specialist Surgery",
+    description: "Advanced surgical procedures for complex ear, nose, and throat conditions performed by experienced ENT specialists."
   },
   {
     icon: Wind,
-    title: "Allergy Testing",
-    description: "Comprehensive allergy testing and personalized treatment plans for respiratory allergies."
+    title: "ENT Specialist Allergy Testing",
+    description: "Comprehensive allergy testing and personalized treatment plans by our ENT specialists."
   },
   {
     icon: Pill,
-    title: "Medical Treatment",
-    description: "Evidence-based medical management for all ENT conditions with follow-up care."
+    title: "ENT Specialist Medical Treatment",
+    description: "Evidence-based medical management for all ENT conditions with follow-up care from our specialists."
   },
   {
     icon: Search,
-    title: "Foreign Body Removal (Ear, Nose & Throat)",
-    description: "Safe and precise removal of common foreign bodies such as insects, beads, seeds, cotton swabs, paper, and other objects stuck in the ear or nose. Quick relief, no trauma, and handled with proper ENT equipment."
+    title: "ENT Specialist Foreign Body Removal",
+    description: "Safe and precise removal of common foreign bodies such as insects, beads, seeds, cotton swabs, and other objects stuck in the ear or nose by our ENT specialists."
   },
   {
     icon: RotateCcw,
-    title: "Balance & Dizziness Treatment",
+    title: "ENT Specialist Balance & Dizziness Treatment",
     description: "Expert diagnosis and treatment for vertigo, Meniere's disease, and other vestibular disorders causing balance problems and frequent dizziness."
   }
 ];
@@ -61,9 +61,9 @@ const Services = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40 flex items-center">
             <div className="p-8 md:p-12 text-white max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Comprehensive ENT Services</h2>
+              <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Comprehensive ENT Specialist Services</h2>
               <p className="text-lg text-white/90">
-                Evidence-based ear, nose, and throat care delivered by experienced specialists using advanced diagnostic equipment.
+                Evidence-based ear, nose, and throat care delivered by experienced ENT specialists using advanced diagnostic equipment.
               </p>
             </div>
           </div>
@@ -88,7 +88,7 @@ const Services = () => {
         <div className="text-center mt-10">
           <Button asChild variant="outline" className="gap-2">
             <Link to="/ent-services">
-              Explore All ENT Services
+              Explore All ENT Specialist Services
               <ArrowRight className="h-4 w-4" />
             </Link>
           </Button>

@@ -25,7 +25,7 @@ const Hero = () => {
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Award className="h-4 w-4" />
-              Specialist-Led ENT Care
+              Uganda's Trusted ENT Specialists
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-foreground leading-tight">
@@ -39,9 +39,9 @@ const Hero = () => {
             {/* Trust Signals */}
             <div className="flex items-center gap-2 mb-8 text-sm text-muted-foreground">
               <Users className="h-4 w-4 text-primary" />
-              <span className="font-medium">1,000+ patients treated across Uganda</span>
+              <span className="font-medium">1,000+ patients treated by our ENT specialists</span>
               <span className="mx-2">•</span>
-              <span>Specialist-led care</span>
+              <span>Expert ENT specialist care</span>
             </div>
             
             {/* CTAs */}
@@ -51,7 +51,7 @@ const Hero = () => {
                 onClick={scrollToAppointment}
                 className="text-lg px-8 py-6"
               >
-                Book Consultation
+                Book ENT Specialist Consultation
               </Button>
               <Button 
                 size="lg" 
@@ -60,7 +60,7 @@ const Hero = () => {
                 className="gap-2"
               >
                 <Link to="/ent-services">
-                  Explore ENT Services
+                  Explore ENT Specialist Services
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>

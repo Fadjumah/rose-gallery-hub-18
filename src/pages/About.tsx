@@ -109,11 +109,11 @@ const About = () => {
               <p className="text-sm font-medium text-primary mb-3 uppercase tracking-wide">
                 Our Mission & Values
               </p>
-              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+              <h1 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-6 leading-tight">
                 About Eritage ENT Care
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Specialist-led ENT education and evidence-based care. Trusted by patients across Uganda for expert diagnosis and treatment.
+                Specialist-led ENT education and evidence-based care from experienced ENT specialists. Trusted by patients across Uganda for expert diagnosis and treatment.
               </p>
             </div>
           </div>
@@ -124,15 +124,15 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="max-w-3xl mx-auto">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                  Our Approach to ENT Care
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-6">
+                  Our Approach to ENT Specialist Care
                 </h2>
                 <div className="space-y-4 text-muted-foreground">
                   <p className="text-base leading-relaxed">
-                    <span className="font-semibold text-foreground">Eritage ENT Care</span> is a specialist-led medical platform dedicated to evidence-based diagnosis and treatment of ear, nose, and throat conditions. We combine clinical expertise with patient education to empower informed healthcare decisions for patients across Uganda.
+                    <span className="font-semibold text-foreground">Eritage ENT Care</span> is an ENT specialist-led medical platform dedicated to evidence-based diagnosis and treatment of ear, nose, and throat conditions. Our ENT specialists combine clinical expertise with patient education to empower informed healthcare decisions for patients across Uganda.
                   </p>
                   <p className="text-base leading-relaxed">
-                    Our team delivers personalized treatment plans designed to improve quality of life. With multiple locations and digital consultation options, we ensure expert ENT guidance is accessible to all Ugandans while maintaining the highest standards of medical care.
+                    Our team of ENT specialists delivers personalized treatment plans designed to improve quality of life. With multiple locations and digital consultation options, we ensure expert ENT specialist guidance is accessible to all Ugandans while maintaining the highest standards of medical care.
                   </p>
                 </div>
               </div>
@@ -144,8 +144,8 @@ const About = () => {
         <section className="py-16 bg-secondary/20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-                Meet Our Lead Specialist
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8">
+                Meet Our Lead ENT Specialist
               </h2>
               <Card className="bg-background max-w-2xl mx-auto">
                 <CardContent className="p-8">
@@ -155,10 +155,10 @@ const About = () => {
                   </div>
                   <p className="text-primary font-medium mb-4">ENT Specialist | Clinical Otolaryngology</p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    With over 10 years of clinical experience in ear, nose, and throat medicine, Fahad Juma leads our specialist team in delivering evidence-based diagnosis and treatment. His approach combines thorough clinical assessment with patient education to ensure informed healthcare decisions.
+                    With over 10 years of clinical experience in ear, nose, and throat medicine, Fahad Juma leads our ENT specialist team in delivering evidence-based diagnosis and treatment. His approach as an ENT specialist combines thorough clinical assessment with patient education to ensure informed healthcare decisions.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    Specializing in both medical and procedural treatments, he provides expert care through in-person consultations at our clinics and digital health guidance for patients nationwide.
+                    Specializing in both medical and procedural treatments, he provides expert ENT specialist care through in-person consultations at our clinics and digital health guidance for patients nationwide.
                   </p>
                 </CardContent>
               </Card>
@@ -170,8 +170,8 @@ const About = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
-                Our Values
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8 text-center">
+                Our ENT Specialist Values
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {values.map((value, index) => (
@@ -192,8 +192,8 @@ const About = () => {
         <section className="py-16 bg-secondary/20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
-                What We Offer
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8 text-center">
+                What Our ENT Specialists Offer
               </h2>
               <div className="grid md:grid-cols-2 gap-4 mb-8">
                 {services.map((service, index) => (
@@ -206,7 +206,7 @@ const About = () => {
               <div className="text-center">
                 <Button asChild className="gap-2">
                   <Link to="/ent-services">
-                    Explore All ENT Services
+                    Explore All ENT Specialist Services
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
@@ -270,11 +270,11 @@ const About = () => {
         <section className="py-16 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Start Your Consultation
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-4">
+                Start Your ENT Specialist Consultation
               </h2>
               <p className="text-muted-foreground mb-8">
-                Connect with our ENT specialists today. Whether you prefer an in-person visit or digital consultation, we're here to help with all your ear, nose, and throat concerns.
+                Connect with our ENT specialists today. Whether you prefer an in-person visit or digital consultation, our ENT specialists are here to help with all your ear, nose, and throat concerns.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="gap-2" asChild>

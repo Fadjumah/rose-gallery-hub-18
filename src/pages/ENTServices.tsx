@@ -152,11 +152,11 @@ const ENTServices = () => {
         <section className="relative bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+              <h1 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-6 leading-tight">
                 Comprehensive Ear, Nose & Throat Specialist Services
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-                Eritage ENT Care provides expert diagnosis and treatment for all ear, nose, and throat conditions. Our experienced ENT specialists are dedicated to improving your quality of life with evidence-based care.
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+                Eritage ENT Care provides expert ENT specialist diagnosis and treatment for all ear, nose, and throat conditions. Our experienced ENT specialists are dedicated to improving your quality of life with evidence-based care.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="gap-2" asChild>
@@ -180,7 +180,7 @@ const ENTServices = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 text-center">
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-6 text-center">
                 What is an ENT Specialist?
               </h2>
               <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -213,12 +213,12 @@ const ENTServices = () => {
           <div className="container mx-auto px-4">
             <div className="flex items-center gap-3 justify-center mb-8">
               <Ear className="h-10 w-10 text-primary" />
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                Ear Conditions We Treat
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
+                Ear Conditions Our ENT Specialists Treat
               </h2>
             </div>
-            <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Our ear specialists diagnose and treat all ear-related conditions, from common infections to complex hearing disorders.
+            <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+              Our ENT specialists diagnose and treat all ear-related conditions, from common infections to complex hearing disorders.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
               {earConditions.map((condition, index) => (
@@ -250,12 +250,12 @@ const ENTServices = () => {
           <div className="container mx-auto px-4">
             <div className="flex items-center gap-3 justify-center mb-8">
               <Wind className="h-10 w-10 text-primary" />
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                Nose & Sinus Conditions We Treat
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
+                Nose & Sinus Conditions Our ENT Specialists Treat
               </h2>
             </div>
-            <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Our nose doctors provide expert treatment for nasal and sinus problems, helping you breathe easier and live better.
+            <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+              Our ENT specialists provide expert treatment for nasal and sinus problems, helping you breathe easier and live better.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
               {noseConditions.map((condition, index) => (
@@ -283,12 +283,12 @@ const ENTServices = () => {
           <div className="container mx-auto px-4">
             <div className="flex items-center gap-3 justify-center mb-8">
               <Mic2 className="h-10 w-10 text-primary" />
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                Throat Conditions We Treat
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
+                Throat Conditions Our ENT Specialists Treat
               </h2>
             </div>
-            <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Our throat specialists offer comprehensive care for voice, swallowing, and throat disorders.
+            <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+              Our ENT specialists offer comprehensive care for voice, swallowing, and throat disorders.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
               {throatConditions.map((condition, index) => (
@@ -318,14 +318,14 @@ const ENTServices = () => {
               <CardHeader className="text-center pb-4">
                 <div className="flex items-center gap-3 justify-center mb-4">
                   <AudioLines className="h-10 w-10 text-primary" />
-                  <CardTitle className="text-2xl md:text-3xl font-bold text-foreground">
-                    Audiology & Hearing Tests
+                  <CardTitle className="text-2xl md:text-3xl font-serif font-bold text-foreground">
+                    ENT Specialist Audiology & Hearing Tests
                   </CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="space-y-6">
-                <p className="text-center text-muted-foreground max-w-3xl mx-auto">
-                  Eritage ENT Care offers comprehensive audiology services and hearing tests in partnership with certified audiology centers. Our hearing assessments help diagnose hearing loss early and guide appropriate treatment.
+                <p className="text-center text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                  Eritage ENT Care offers comprehensive audiology services and hearing tests in partnership with certified audiology centers. Our ENT specialists interpret results and guide appropriate treatment for hearing loss.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-3">
@@ -396,12 +396,12 @@ const ENTServices = () => {
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center gap-3 justify-center mb-8">
                 <AlertTriangle className="h-10 w-10 text-destructive" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                  ENT Emergencies
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
+                  ENT Specialist Emergency Care
                 </h2>
               </div>
-              <p className="text-center text-muted-foreground mb-8">
-                Some ENT conditions require urgent medical attention. If you experience any of the following, contact us immediately or visit our clinic:
+              <p className="text-center text-muted-foreground mb-8 leading-relaxed">
+                Some ENT conditions require urgent ENT specialist attention. If you experience any of the following, contact our ENT specialists immediately:
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 {entEmergencies.map((emergency, index) => (
@@ -437,12 +437,12 @@ const ENTServices = () => {
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center gap-3 justify-center mb-8">
                 <Stethoscope className="h-10 w-10 text-primary" />
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
                   When to See an ENT Specialist
                 </h2>
               </div>
-              <p className="text-center text-muted-foreground mb-8">
-                Not sure if you need to see an ENT doctor? Here are signs that indicate you should book an appointment with our ENT specialists:
+              <p className="text-center text-muted-foreground mb-8 leading-relaxed">
+                Not sure if you need to see an ENT specialist? Here are signs that indicate you should book an appointment with our ENT specialists:
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 {whenToSeeENT.map((sign, index) => (
@@ -462,18 +462,18 @@ const ENTServices = () => {
         <section className="py-16 bg-secondary/20">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
-                ENT Care for All Ages
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8 text-center">
+                ENT Specialist Care for All Ages
               </h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <Card className="bg-background">
                   <CardHeader>
                     <div className="flex items-center gap-3">
                       <Baby className="h-8 w-8 text-primary" />
-                      <CardTitle>Pediatric ENT Care</CardTitle>
+                      <CardTitle className="font-serif">Pediatric ENT Specialist Care</CardTitle>
                     </div>
                   </CardHeader>
-                  <CardContent className="text-muted-foreground">
+                  <CardContent className="text-muted-foreground leading-relaxed">
                     <p className="mb-4">
                       Children often experience ENT problems differently from adults. Our clinic provides gentle, child-friendly care for:
                     </p>
@@ -490,10 +490,10 @@ const ENTServices = () => {
                   <CardHeader>
                     <div className="flex items-center gap-3">
                       <HeartPulse className="h-8 w-8 text-primary" />
-                      <CardTitle>Adult ENT Care</CardTitle>
+                      <CardTitle className="font-serif">Adult ENT Specialist Care</CardTitle>
                     </div>
                   </CardHeader>
-                  <CardContent className="text-muted-foreground">
+                  <CardContent className="text-muted-foreground leading-relaxed">
                     <p className="mb-4">
                       Adults face unique ENT challenges that require specialized expertise. We treat:
                     </p>
@@ -515,15 +515,15 @@ const ENTServices = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-8">
-                Why Choose Eritage ENT Care?
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8">
+                Why Choose Our ENT Specialists?
               </h2>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <Card className="bg-secondary/10">
                   <CardContent className="p-6 text-center">
                     <Stethoscope className="h-12 w-12 text-primary mx-auto mb-4" />
-                    <h3 className="font-semibold text-foreground mb-2">Experienced Specialists</h3>
-                    <p className="text-muted-foreground text-sm">Over 10 years of clinical experience in ENT care</p>
+                    <h3 className="font-semibold text-foreground mb-2">Experienced ENT Specialists</h3>
+                    <p className="text-muted-foreground text-sm">Over 10 years of clinical ENT specialist experience</p>
                   </CardContent>
                 </Card>
                 <Card className="bg-secondary/10">
@@ -549,11 +549,11 @@ const ENTServices = () => {
         <section className="py-16 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Book Your ENT Consultation Today
+              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-4">
+                Book Your ENT Specialist Consultation Today
               </h2>
-              <p className="text-muted-foreground mb-8">
-                Don't let ENT problems affect your quality of life. Our ENT specialists are ready to help you. Contact us now to schedule your appointment.
+              <p className="text-muted-foreground mb-8 leading-relaxed">
+                Don't let ENT problems affect your quality of life. Our ENT specialists are ready to help you. Contact us now to schedule your appointment with an experienced ENT specialist.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="gap-2" asChild>
@@ -580,8 +580,8 @@ const ENTServices = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl font-bold text-foreground mb-6 text-center">
-                Helpful Resources
+              <h2 className="text-2xl font-serif font-bold text-foreground mb-6 text-center">
+                Helpful ENT Specialist Resources
               </h2>
               <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <Link to="/urgent-ent-guidance" className="block">
