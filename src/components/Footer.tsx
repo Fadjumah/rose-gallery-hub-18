@@ -43,14 +43,18 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Contact */}
+          {/* Locations & Contact */}
           <div className="text-center md:text-right">
-            <h4 className="font-semibold mb-4">Contact Us</h4>
-            <div className="space-y-2 text-sm mb-4">
-              <p>+256 740 166 778</p>
-              <p>Available Nationwide</p>
-              <a href="mailto:info@trendexhub.com" className="block hover:underline">info@trendexhub.com</a>
-            </div>
+            <h4 className="font-semibold mb-4">Our Locations</h4>
+            <nav className="space-y-2 text-sm mb-4">
+              <Link to="/locations/entebbe" className="block hover:underline opacity-90 hover:opacity-100">
+                Eritage ENT Care – Entebbe
+              </Link>
+              <Link to="/locations/kampala" className="block hover:underline opacity-90 hover:opacity-100">
+                Eritage ENT Care – Kampala (Coming Soon)
+              </Link>
+            </nav>
+            <p className="text-sm opacity-80 mb-4">+256 740 166 778</p>
             <div className="flex items-center justify-center md:justify-end gap-3">
               <Button 
                 variant="outline"

@@ -97,29 +97,21 @@ const Locations = () => {
                   </div>
                 </div>
 
-                {!location.isComingSoon && (
-                  <div className="flex gap-3 pt-4">
-                    <Button asChild className="flex-1">
+                <div className="flex gap-3 pt-4">
+                  <Button asChild className="flex-1">
+                    <Link to={`/locations/${location.id}`}>
+                      {location.isComingSoon ? "Learn More" : "View Location"}
+                      <ArrowRight className="h-4 w-4 ml-2" />
+                    </Link>
+                  </Button>
+                  {!location.isComingSoon && (
+                    <Button variant="outline" asChild>
                       <a href={location.mapLink} target="_blank" rel="noopener noreferrer">
-                        Get Directions
+                        Directions
                       </a>
                     </Button>
-                    <Button variant="outline" asChild>
-                      <Link to="/contact">
-                        Contact
-                        <ArrowRight className="h-4 w-4 ml-2" />
-                      </Link>
-                    </Button>
-                  </div>
-                )}
-
-                {location.isComingSoon && (
-                  <div className="pt-4">
-                    <Button variant="outline" className="w-full" disabled>
-                      Notify Me When Open
-                    </Button>
-                  </div>
-                )}
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
