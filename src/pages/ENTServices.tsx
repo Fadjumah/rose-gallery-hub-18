@@ -82,7 +82,7 @@ const ENTServices = () => {
     "@type": "MedicalOrganization",
     "name": "Eritage ENT Care",
     "description": "Specialist-led ENT care providing comprehensive ear, nose, and throat services across Uganda. Expert diagnosis and treatment for all ENT conditions.",
-    "url": "https://www.trendexhub.com/ent-services",
+    "url": "https://www.eritageentcare.com/ent-services",
     "telephone": "+256740166778",
     "areaServed": {
       "@type": "Country",
@@ -139,7 +139,7 @@ const ENTServices = () => {
         <meta property="og:description" content="Trusted ENT specialists providing expert treatment for ear infections, hearing loss, sinus problems, tonsillitis, and all ENT conditions across Uganda." />
         <meta property="og:type" content="website" />
         <meta name="keywords" content="ENT specialist Uganda, ENT clinic, ear doctor, nose doctor, throat doctor, hearing test, sinus treatment Uganda, tonsillitis treatment, audiology Uganda" />
-        <link rel="canonical" href="https://www.trendexhub.com/ent-services" />
+        <link rel="canonical" href="https://www.eritageentcare.com/ent-services" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>

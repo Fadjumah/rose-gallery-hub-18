@@ -25,15 +25,15 @@ const LocationEntebbe = () => {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
-    "@id": "https://www.trendexhub.com/locations/entebbe#business",
+    "@id": "https://www.eritageentcare.com/locations/entebbe#business",
     "name": "Eritage ENT Care – Entebbe",
     "alternateName": ["Eritage ENT Clinic Entebbe", "Eritage Ear Nose Throat Entebbe", "ENT Specialist Entebbe"],
     "description": "Professional ENT specialist clinic in Entebbe offering expert ear, nose, and throat care including hearing tests, sinus treatment, tonsillitis care, and emergency ENT services. Trusted ENT specialists serving Uganda.",
-    "url": "https://www.trendexhub.com/locations/entebbe",
+    "url": "https://www.eritageentcare.com/locations/entebbe",
     "telephone": "+256740166778",
-    "email": "info@trendexhub.com",
-    "image": "https://www.trendexhub.com/eritage-logo.png",
-    "logo": "https://www.trendexhub.com/eritage-logo.png",
+    "email": "info@eritageentcare.com",
+    "image": "https://www.eritageentcare.com/eritage-logo.png",
+    "logo": "https://www.eritageentcare.com/eritage-logo.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Along Entebbe Road",
@@ -111,9 +111,9 @@ const LocationEntebbe = () => {
     ],
     "parentOrganization": {
       "@type": "MedicalOrganization",
-      "@id": "https://www.trendexhub.com/#organization",
+      "@id": "https://www.eritageentcare.com/#organization",
       "name": "Eritage ENT Care",
-      "url": "https://www.trendexhub.com"
+      "url": "https://www.eritageentcare.com"
     },
     "sameAs": [
       "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8",
@@ -138,19 +138,19 @@ const LocationEntebbe = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.trendexhub.com"
+        "item": "https://www.eritageentcare.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Locations",
-        "item": "https://www.trendexhub.com/#locations"
+        "item": "https://www.eritageentcare.com/#locations"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Eritage ENT Care – Entebbe",
-        "item": "https://www.trendexhub.com/locations/entebbe"
+        "item": "https://www.eritageentcare.com/locations/entebbe"
       }
     ]
   };
@@ -195,13 +195,13 @@ const LocationEntebbe = () => {
         <meta property="og:title" content="Eritage ENT Care – Entebbe | ENT Specialist Clinic in Entebbe" />
         <meta property="og:description" content="Expert ENT specialist care in Entebbe. Comprehensive ear, nose, and throat services along Entebbe Road." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.trendexhub.com/locations/entebbe" />
+        <meta property="og:url" content="https://www.eritageentcare.com/locations/entebbe" />
         <meta property="og:locale" content="en_UG" />
         <meta name="geo.region" content="UG-C" />
         <meta name="geo.placename" content="Entebbe" />
         <meta name="geo.position" content="0.0527778;32.4580556" />
         <meta name="ICBM" content="0.0527778, 32.4580556" />
-        <link rel="canonical" href="https://www.trendexhub.com/locations/entebbe" />
+        <link rel="canonical" href="https://www.eritageentcare.com/locations/entebbe" />
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>
@@ -283,7 +283,7 @@ const LocationEntebbe = () => {
                           <h3 className="font-semibold text-lg">Contact ENT Specialist</h3>
                           <p className="text-muted-foreground">
                             Phone: <a href="tel:+256740166778" className="text-primary hover:underline">+256 740 166 778</a><br />
-                            Email: <a href="mailto:info@trendexhub.com" className="text-primary hover:underline">info@trendexhub.com</a>
+                            Email: <a href="mailto:info@eritageentcare.com" className="text-primary hover:underline">info@eritageentcare.com</a>
                           </p>
                         </div>
                       </div>

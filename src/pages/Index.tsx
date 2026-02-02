@@ -19,8 +19,8 @@ const Index = () => {
     "@type": "MedicalOrganization",
     "name": "Eritage ENT Care",
     "description": "Specialist-led ENT education and evidence-based ear, nose, and throat care. Expert diagnosis and treatment for patients across Uganda.",
-    "url": "https://www.trendexhub.com",
-    "logo": "https://www.trendexhub.com/eritage-logo.png",
+    "url": "https://www.eritageentcare.com",
+    "logo": "https://www.eritageentcare.com/eritage-logo.png",
     "medicalSpecialty": "Otolaryngology",
     "areaServed": {
       "@type": "Country",
@@ -36,9 +36,9 @@ const Index = () => {
     "@type": "MedicalBusiness",
     "name": "Eritage ENT Care",
     "description": "Professional ENT clinic offering expert ear, nose, and throat care including hearing tests, sinus treatment, and emergency ENT services across Uganda.",
-    "url": "https://www.trendexhub.com",
+    "url": "https://www.eritageentcare.com",
     "telephone": "+256740166778",
-    "email": "info@trendexhub.com",
+    "email": "info@eritageentcare.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "UG"
@@ -66,7 +66,7 @@ const Index = () => {
         <meta property="og:title" content="Eritage ENT Care | Expert ENT Specialists in Uganda" />
         <meta property="og:description" content="Specialist-led ENT education and evidence-based care. Expert treatment for ear, nose, and throat conditions across Uganda." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.trendexhub.com/" />
+        <link rel="canonical" href="https://www.eritageentcare.com/" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>

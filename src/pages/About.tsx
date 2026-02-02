@@ -67,7 +67,7 @@ const About = () => {
     "@type": "MedicalOrganization",
     "name": "Eritage ENT Care",
     "description": "Specialist-led ENT platform providing evidence-based ear, nose, and throat care across Uganda with over 10 years of clinical experience.",
-    "url": "https://www.trendexhub.com/about",
+    "url": "https://www.eritageentcare.com/about",
     "medicalSpecialty": "Otolaryngology",
     "areaServed": {
       "@type": "Country",
@@ -93,7 +93,7 @@ const About = () => {
         <meta property="og:description" content="Specialist-led ENT platform with over 10 years of clinical experience. Evidence-based care and patient education for all ages across Uganda." />
         <meta property="og:type" content="website" />
         <meta name="keywords" content="about Eritage ENT Care, ENT specialists Uganda, ear nose throat experts, Fahad Juma ENT, evidence-based ENT care" />
-        <link rel="canonical" href="https://www.trendexhub.com/about" />
+        <link rel="canonical" href="https://www.eritageentcare.com/about" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>

@@ -36,9 +36,9 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      primary: "info@trendexhub.com",
+      primary: "info@eritageentcare.com",
       secondary: "For inquiries and appointments",
-      action: "mailto:info@trendexhub.com",
+      action: "mailto:info@eritageentcare.com",
       actionText: "Send Email"
     },
     {
@@ -76,7 +76,7 @@ const Contact = () => {
     "@type": "MedicalOrganization",
     "name": "Eritage ENT Care",
     "description": "Professional ENT care across Uganda offering expert ear, nose, and throat services.",
-    "url": "https://www.trendexhub.com/contact",
+    "url": "https://www.eritageentcare.com/contact",
     "telephone": "+256740166778",
     "areaServed": {
       "@type": "Country",
@@ -97,7 +97,7 @@ const Contact = () => {
         <meta property="og:description" content="Get in touch with Eritage ENT Care for professional ear, nose, and throat services. Multiple locations and digital consultation options available across Uganda." />
         <meta property="og:type" content="website" />
         <meta name="keywords" content="contact ENT specialist Uganda, book ENT appointment, Eritage ENT Care contact, ENT consultation Uganda" />
-        <link rel="canonical" href="https://www.trendexhub.com/contact" />
+        <link rel="canonical" href="https://www.eritageentcare.com/contact" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>

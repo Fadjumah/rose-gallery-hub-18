@@ -76,19 +76,19 @@ const BlogArticle = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.trendexhub.com"
+        "item": "https://www.eritageentcare.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://www.trendexhub.com/blog"
+        "item": "https://www.eritageentcare.com/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": article.title,
-        "item": `https://www.trendexhub.com/blog/${article.slug}`
+        "item": `https://www.eritageentcare.com/blog/${article.slug}`
       }
     ]
   };
@@ -112,21 +112,21 @@ const BlogArticle = () => {
     "publisher": {
       "@type": "Organization",
       "name": "Eritage ENT Care – Entebbe",
-      "url": "https://www.trendexhub.com",
+      "url": "https://www.eritageentcare.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.trendexhub.com/favicon.png"
+        "url": "https://www.eritageentcare.com/favicon.png"
       }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://www.trendexhub.com/blog/${article.slug}`
+      "@id": `https://www.eritageentcare.com/blog/${article.slug}`
     },
-    "url": `https://www.trendexhub.com/blog/${article.slug}`,
+    "url": `https://www.eritageentcare.com/blog/${article.slug}`,
     "isPartOf": {
       "@type": "Blog",
       "name": "Eritage ENT Care Health Blog",
-      "url": "https://www.trendexhub.com/blog"
+      "url": "https://www.eritageentcare.com/blog"
     },
     "about": {
       "@type": "MedicalSpecialty",
@@ -155,10 +155,10 @@ const BlogArticle = () => {
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.description} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://www.trendexhub.com/blog/${article.slug}`} />
+        <meta property="og:url" content={`https://www.eritageentcare.com/blog/${article.slug}`} />
         <meta property="article:published_time" content={article.date} />
         <meta property="article:author" content={article.author} />
-        <link rel="canonical" href={`https://www.trendexhub.com/blog/${article.slug}`} />
+        <link rel="canonical" href={`https://www.eritageentcare.com/blog/${article.slug}`} />
         <script type="application/ld+json">
           {JSON.stringify(articleSchemaData)}
         </script>

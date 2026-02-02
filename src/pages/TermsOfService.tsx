@@ -9,7 +9,7 @@ const TermsOfService = () => {
       <Helmet>
         <title>Terms of Service | Eritage ENT Care</title>
         <meta name="description" content="Terms of Service for Eritage ENT Care. Read our terms and conditions for using our website and healthcare services." />
-        <link rel="canonical" href="https://www.trendexhub.com/terms-of-service" />
+        <link rel="canonical" href="https://www.eritageentcare.com/terms-of-service" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -25,7 +25,7 @@ const TermsOfService = () => {
                 <section>
                   <h2 className="text-2xl font-serif font-bold mb-4">1. Acceptance of Terms</h2>
                   <p className="text-foreground leading-relaxed">
-                    By accessing and using the Eritage ENT Care website (www.trendexhub.com), you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website or services.
+                    By accessing and using the Eritage ENT Care website (www.eritageentcare.com), you accept and agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website or services.
                   </p>
                 </section>
 
@@ -132,7 +132,7 @@ const TermsOfService = () => {
                     For questions about these Terms of Service, please contact us:
                   </p>
                   <ul className="space-y-2 text-foreground">
-                    <li><strong>Email:</strong> info@trendexhub.com</li>
+                    <li><strong>Email:</strong> info@eritageentcare.com</li>
                     <li><strong>Phone:</strong> +256 740 166 778</li>
                     <li><strong>Address:</strong> Along Entebbe Road, Entebbe, Central Region, Uganda</li>
                   </ul>

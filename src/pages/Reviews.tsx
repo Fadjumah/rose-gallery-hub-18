@@ -107,7 +107,7 @@ const Reviews = () => {
         <meta property="og:title" content="Patient Reviews – Eritage ENT Care" />
         <meta property="og:description" content="Read what our ENT patients say about Eritage ENT Care." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.trendexhub.com/reviews" />
+        <link rel="canonical" href="https://www.eritageentcare.com/reviews" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
