@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Privacy Policy | Eritage ENT Care</title>
         <meta name="description" content="Privacy Policy for Eritage ENT Care. Learn how we collect, use, and protect your personal information." />
-        <link rel="canonical" href="https://www.trendexhub.com/privacy-policy" />
+        <link rel="canonical" href="https://www.eritageentcare.com/privacy-policy" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -25,7 +25,7 @@ const PrivacyPolicy = () => {
                 <section>
                   <h2 className="text-2xl font-serif font-bold mb-4">1. Introduction</h2>
                   <p className="text-foreground leading-relaxed mb-4">
-                    Eritage ENT Care ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website www.trendexhub.com and use our healthcare services.
+                    Eritage ENT Care ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website www.eritageentcare.com and use our healthcare services.
                   </p>
                   <p className="text-foreground leading-relaxed">
                     Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site.
@@ -115,7 +115,7 @@ const PrivacyPolicy = () => {
                     If you have questions about this Privacy Policy or our privacy practices, please contact us:
                   </p>
                   <ul className="space-y-2 text-foreground">
-                    <li><strong>Email:</strong> info@trendexhub.com</li>
+                    <li><strong>Email:</strong> info@eritageentcare.com</li>
                     <li><strong>Phone:</strong> +256 740 166 778</li>
                     <li><strong>Address:</strong> Along Entebbe Road, Entebbe, Central Region, Uganda</li>
                   </ul>

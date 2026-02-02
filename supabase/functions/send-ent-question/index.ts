@@ -32,8 +32,8 @@ const handler = async (req: Request): Promise<Response> => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Eritage ENT Care <noreply@forms.trendexhub.com>",
-        to: ["info@trendexhub.com"],
+        from: "Eritage ENT Care <noreply@forms.eritageentcare.com>",
+        to: ["info@eritageentcare.com"],
         subject: `New ENT Question from ${name}`,
         html: `
           <h2>New ENT Question Submitted</h2>

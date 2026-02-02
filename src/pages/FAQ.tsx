@@ -70,7 +70,7 @@ const FAQ = () => {
         <meta property="og:title" content="FAQ – Eritage ENT Care" />
         <meta property="og:description" content="Find answers to common questions about our ENT services across Uganda." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.trendexhub.com/faq" />
+        <link rel="canonical" href="https://www.eritageentcare.com/faq" />
         <script type="application/ld+json">
           {JSON.stringify(faqSchemaData)}
         </script>

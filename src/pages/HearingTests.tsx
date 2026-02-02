@@ -66,9 +66,9 @@ const HearingTests = () => {
     "@type": "MedicalOrganization",
     "name": "Eritage ENT Care",
     "description": "Professional hearing tests including PTA, tympanometry, OAE, ABR, and full audiology screening services across Uganda.",
-    "url": "https://www.trendexhub.com/hearing-tests",
+    "url": "https://www.eritageentcare.com/hearing-tests",
     "telephone": "+256740166778",
-    "email": "info@trendexhub.com",
+    "email": "info@eritageentcare.com",
     "areaServed": {
       "@type": "Country",
       "name": "Uganda"
@@ -119,7 +119,7 @@ const HearingTests = () => {
         <meta property="og:title" content="Hearing Tests – PTA, Tympanometry & Audiology | Eritage ENT Care" />
         <meta property="og:description" content="Professional hearing tests including PTA, tympanometry, OAE, ABR, and full audiology screening across Uganda." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.trendexhub.com/hearing-tests" />
+        <link rel="canonical" href="https://www.eritageentcare.com/hearing-tests" />
         <script type="application/ld+json">
           {JSON.stringify(schemaData)}
         </script>

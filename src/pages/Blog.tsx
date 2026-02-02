@@ -35,13 +35,13 @@ const Blog = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.trendexhub.com"
+        "item": "https://www.eritageentcare.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Health Articles & Tips",
-        "item": "https://www.trendexhub.com/blog"
+        "item": "https://www.eritageentcare.com/blog"
       }
     ]
   };
@@ -51,11 +51,11 @@ const Blog = () => {
     "@type": "Blog",
     "name": "Eritage ENT Care Health Blog",
     "description": "Expert ENT health articles and tips from Eritage ENT Care specialists.",
-    "url": "https://www.trendexhub.com/blog",
+    "url": "https://www.eritageentcare.com/blog",
     "publisher": {
       "@type": "Organization",
       "name": "Eritage ENT Care",
-      "url": "https://www.trendexhub.com"
+      "url": "https://www.eritageentcare.com"
     }
   };
 
@@ -66,8 +66,8 @@ const Blog = () => {
         <meta name="description" content="Expert ENT health articles and tips from Eritage ENT Care specialists. Learn about ear infections, hearing loss prevention, allergies, and voice care." />
         <meta property="og:title" content="Health Articles & Tips | Eritage ENT Care" />
         <meta property="og:description" content="Expert ENT health articles and tips from Eritage ENT Care specialists." />
-        <meta property="og:url" content="https://www.trendexhub.com/blog" />
-        <link rel="canonical" href="https://www.trendexhub.com/blog" />
+        <meta property="og:url" content="https://www.eritageentcare.com/blog" />
+        <link rel="canonical" href="https://www.eritageentcare.com/blog" />
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchemaData)}
         </script>

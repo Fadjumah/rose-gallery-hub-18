@@ -1,5 +1,5 @@
-# Eritage ENT Care - Entebbe
-# https://www.trendexhub.com
+# Eritage ENT Care
+# https://www.eritageentcare.com
 
 User-agent: Googlebot
 Allow: /
@@ -29,7 +29,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap location
-Sitemap: https://www.trendexhub.com/sitemap.xml
+Sitemap: https://www.eritageentcare.com/sitemap.xml
 
 # Disallow admin and private paths
 Disallow: /api/

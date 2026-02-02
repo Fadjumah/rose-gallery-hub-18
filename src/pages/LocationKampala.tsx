@@ -23,7 +23,7 @@ const LocationKampala = () => {
     "@type": "MedicalBusiness",
     "name": "Eritage ENT Care – Kampala",
     "description": "Coming soon: Professional ENT clinic in Kampala offering expert ear, nose, and throat care. Join our waitlist to be notified when we open.",
-    "url": "https://www.trendexhub.com/locations/kampala",
+    "url": "https://www.eritageentcare.com/locations/kampala",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Kampala",
@@ -45,7 +45,7 @@ const LocationKampala = () => {
         <meta property="og:title" content="Eritage ENT Care – Kampala | Coming Soon" />
         <meta property="og:description" content="Expert ENT care is coming to Kampala. Join our waitlist for updates on our new clinic opening." />
         <meta property="og:type" content="website" />
-        <link rel="canonical" href="https://www.trendexhub.com/locations/kampala" />
+        <link rel="canonical" href="https://www.eritageentcare.com/locations/kampala" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>
@@ -204,7 +204,7 @@ const LocationKampala = () => {
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild className="gap-2">
-                <a href="mailto:info@trendexhub.com?subject=Kampala%20Clinic%20Waitlist">
+                <a href="mailto:info@eritageentcare.com?subject=Kampala%20Clinic%20Waitlist">
                   Email Us for Updates
                 </a>
               </Button>

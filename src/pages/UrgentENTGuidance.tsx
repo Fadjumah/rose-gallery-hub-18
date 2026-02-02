@@ -39,7 +39,7 @@ const UrgentENTGuidance = () => {
         <meta property="og:description" content="Professional ENT guidance for urgent symptoms. Review your symptoms via WhatsApp and get clear direction on next steps." />
         <meta property="og:type" content="website" />
         <meta name="keywords" content="urgent ENT help, ear pain guidance, throat bleeding help, blocked ear advice, hearing changes, ENT symptoms Uganda, ENT WhatsApp consultation" />
-        <link rel="canonical" href="https://www.trendexhub.com/urgent-ent-guidance" />
+        <link rel="canonical" href="https://www.eritageentcare.com/urgent-ent-guidance" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
