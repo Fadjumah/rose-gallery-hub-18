@@ -9,6 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingContactButtons from '@/components/FloatingContactButtons';
 import AdSense from '@/components/AdSense';
 import AuthorSection from '@/components/AuthorSection';
+import RelatedArticles from '@/components/RelatedArticles';
 import { getArticleBySlug } from '@/utils/blogLoader';
 import { Helmet } from 'react-helmet-async';
 
@@ -252,35 +253,38 @@ const BlogArticle = () => {
               {/* Strategic Ad Placement - After article content */}
               <AdSense adSlot="0987654321" adFormat="auto" className="mt-8" />
 
-              {/* Back to Blog */}
+              {/* Related Articles - Internal Linking */}
+              <RelatedArticles currentSlug={article.slug} maxArticles={3} />
+
+              {/* Related Services Section */}
               <div className="mt-12 pt-8 border-t">
+                <h2 className="text-xl font-serif font-bold mb-4">Related ENT Services</h2>
+                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                  <a href="/ent-services" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-all hover:scale-[1.02]">
+                    <span className="font-medium text-foreground">All ENT Services</span>
+                  </a>
+                  <a href="/hearing-tests" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-all hover:scale-[1.02]">
+                    <span className="font-medium text-foreground">Hearing Tests & Audiology</span>
+                  </a>
+                  <a href="/urgent-ent-guidance" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-all hover:scale-[1.02]">
+                    <span className="font-medium text-foreground">Urgent ENT Guidance</span>
+                  </a>
+                  <a href="/about" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-all hover:scale-[1.02]">
+                    <span className="font-medium text-foreground">About Our ENT Clinic</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* Back to Blog */}
+              <div className="mt-8 pt-6 border-t">
                 <Button 
                   variant="outline" 
                   onClick={() => navigate('/blog')}
                   className="w-full sm:w-auto"
                 >
                   <ArrowLeft className="mr-2 h-4 w-4" />
-                  Read More Articles
+                  Browse All Health Articles
                 </Button>
-              </div>
-
-              {/* Related Services Section */}
-              <div className="mt-12 pt-8 border-t">
-                <h2 className="text-xl font-serif font-bold mb-4">Related ENT Services</h2>
-                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-                  <a href="/ent-services" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors">
-                    <span className="font-medium text-foreground">ENT Services in Entebbe</span>
-                  </a>
-                  <a href="/hearing-tests" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors">
-                    <span className="font-medium text-foreground">Hearing Tests & Audiology</span>
-                  </a>
-                  <a href="/urgent-ent-guidance" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors">
-                    <span className="font-medium text-foreground">Urgent ENT Guidance</span>
-                  </a>
-                  <a href="/about" className="block p-4 bg-secondary/50 rounded-lg hover:bg-secondary transition-colors">
-                    <span className="font-medium text-foreground">About Our ENT Clinic</span>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
