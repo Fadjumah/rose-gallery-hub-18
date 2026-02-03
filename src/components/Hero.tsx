@@ -1,27 +1,24 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, ArrowRight, Users, Award } from "lucide-react";
+import { Phone, MessageCircle, ArrowRight, Users, Award, Stethoscope } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-doctor-patient.jpg";
 
 const Hero = () => {
-  const scrollToAppointment = () => {
-    document.getElementById('appointment')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section id="home" className="relative bg-background">
       {/* Hero Image with Overlay */}
       <div className="relative min-h-[600px] md:min-h-[700px]">
         <img 
           src={heroImage} 
-          alt="ENT specialist providing compassionate care to a young patient" 
+          alt="ENT specialist providing compassionate care to a young patient at Eritage ENT Care clinic" 
           className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
         
         {/* Content */}
         <div className="relative container mx-auto px-4 py-16 md:py-24 flex flex-col justify-center min-h-[600px] md:min-h-[700px]">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl animate-fade-in">
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Award className="h-4 w-4" />
@@ -36,23 +33,27 @@ const Hero = () => {
               Uganda's trusted ENT specialists delivering expert diagnosis and personalized treatment for ear, nose, and throat conditions—caring for adults and children across the nation.
             </p>
             
+            {/* Educational Value Proposition */}
+            <div className="bg-secondary/30 rounded-lg p-4 mb-6 border border-border/50">
+              <div className="flex items-start gap-3">
+                <Stethoscope className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-sm text-foreground font-medium mb-1">Specialist-Led Care</p>
+                  <p className="text-sm text-muted-foreground">
+                    Our qualified ENT specialists provide evidence-based treatment for hearing loss, sinusitis, tonsillitis, ear infections, and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
             {/* Trust Signals */}
             <div className="flex items-center gap-2 mb-8 text-sm text-muted-foreground">
               <Users className="h-4 w-4 text-primary" />
               <span className="font-medium">1,000+ patients treated by our ENT specialists</span>
-              <span className="mx-2">•</span>
-              <span>Expert ENT specialist care</span>
             </div>
             
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4 mb-8">
-              <Button 
-                size="lg" 
-                onClick={scrollToAppointment}
-                className="text-lg px-8 py-6"
-              >
-                Book ENT Specialist Consultation
-              </Button>
+            {/* CTAs - Less aggressive, more informational */}
+            <div className="flex flex-wrap gap-4 mb-6">
               <Button 
                 size="lg" 
                 variant="outline"
@@ -60,35 +61,48 @@ const Hero = () => {
                 className="gap-2"
               >
                 <Link to="/ent-services">
-                  Explore ENT Specialist Services
+                  Explore Our ENT Services
                   <ArrowRight className="h-5 w-5" />
+                </Link>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="ghost"
+                asChild
+                className="gap-2"
+              >
+                <Link to="/blog">
+                  Read Health Articles
                 </Link>
               </Button>
             </div>
             
-            {/* Contact Buttons */}
-            <div className="flex flex-wrap items-center gap-4">
-              <Button 
-                variant="ghost" 
-                size="sm"
-                className="gap-2 text-foreground hover:text-primary"
-                asChild
-              >
-                <a href="tel:+256740166778">
-                  <Phone className="h-4 w-4" />
-                  +256 740 166 778
-                </a>
-              </Button>
-              <Button 
-                size="sm"
-                className="bg-[#25D366] hover:bg-[#25D366]/90 text-white gap-2"
-                asChild
-              >
-                <a href="https://wa.me/256740166778" target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="h-4 w-4" />
-                  WhatsApp Us
-                </a>
-              </Button>
+            {/* Contact Info - Secondary placement */}
+            <div className="pt-4 border-t border-border/50">
+              <p className="text-sm text-muted-foreground mb-3">Need to speak with an ENT specialist?</p>
+              <div className="flex flex-wrap items-center gap-4">
+                <Button 
+                  variant="ghost" 
+                  size="sm"
+                  className="gap-2 text-foreground hover:text-primary"
+                  asChild
+                >
+                  <a href="tel:+256740166778">
+                    <Phone className="h-4 w-4" />
+                    +256 740 166 778
+                  </a>
+                </Button>
+                <Button 
+                  size="sm"
+                  className="bg-[#25D366] hover:bg-[#25D366]/90 text-white gap-2"
+                  asChild
+                >
+                  <a href="https://wa.me/256740166778" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="h-4 w-4" />
+                    WhatsApp Us
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
