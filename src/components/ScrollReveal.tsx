@@ -1,41 +1,37 @@
-import { ReactNode } from 'react';
-import { useScrollReveal } from '@/hooks/useScrollReveal';
-import { cn } from '@/lib/utils';
+import React, { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
-interface ScrollRevealProps {
-  children: ReactNode;
-  className?: string;
-  animation?: 'fade-in' | 'fade-in-up' | 'scale-in' | 'slide-in-right' | 'slide-in-left';
-  delay?: number;
-  threshold?: number;
-}
-
-const animationMap: Record<NonNullable<ScrollRevealProps['animation']>, string> = {
-  'fade-in': 'animate-fade-in',
-  'fade-in-up': 'animate-fade-in-up',
-  'scale-in': 'animate-scale-in',
-  'slide-in-right': 'animate-slide-in-right',
-  'slide-in-left': 'animate-slide-in-left',
+// Mapping of animation names to Tailwind classes
+const animationClasses = {
+  fade: 'transition-opacity duration-500 opacity-0',
+  slide: 'transition-transform duration-500 transform translate-y-4 opacity-0',
+  // add more mappings as needed
 };
 
-const ScrollReveal = ({
-  children,
-  className,
-  animation = 'fade-in-up',
-  delay = 0,
-  threshold = 0.1,
-}: ScrollRevealProps) => {
-  const { ref, isVisible } = useScrollReveal({ threshold });
+const ScrollReveal = ({ children, animation }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const { ref, inView } = useInView({ threshold: 0.1 });
 
-  const animClass = isVisible ? animationMap[animation] : undefined;
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
+
+  // Dev-only toggle button for manual testing
+  const [forceReveal, setForceReveal] = useState(false);
 
   return (
-    <div
-      ref={ref}
-      className={cn('opacity-0', animClass, className)}
-      style={{ animationDelay: `${delay}ms` }}
-    >
-      {children}
+    <div>
+      <button 
+        onClick={() => setForceReveal(prev => !prev)} 
+        className="absolute top-4 right-4 p-2 bg-blue-500 text-white rounded"
+      >
+        Toggle Force Reveal
+      </button>
+      <div ref={ref} className={`${isVisible || forceReveal ? animationClasses[animation] || '' : ''}`}>
+        {children}
+      </div>
     </div>
   );
 };
