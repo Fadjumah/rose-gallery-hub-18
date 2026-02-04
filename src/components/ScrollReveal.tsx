@@ -10,6 +10,14 @@ interface ScrollRevealProps {
   threshold?: number;
 }
 
+const animationMap: Record<NonNullable<ScrollRevealProps['animation']>, string> = {
+  'fade-in': 'animate-fade-in',
+  'fade-in-up': 'animate-fade-in-up',
+  'scale-in': 'animate-scale-in',
+  'slide-in-right': 'animate-slide-in-right',
+  'slide-in-left': 'animate-slide-in-left',
+};
+
 const ScrollReveal = ({
   children,
   className,
@@ -19,14 +27,12 @@ const ScrollReveal = ({
 }: ScrollRevealProps) => {
   const { ref, isVisible } = useScrollReveal({ threshold });
 
+  const animClass = isVisible ? animationMap[animation] : undefined;
+
   return (
     <div
       ref={ref}
-      className={cn(
-        'opacity-0',
-        isVisible && `animate-${animation}`,
-        className
-      )}
+      className={cn('opacity-0', animClass, className)}
       style={{ animationDelay: `${delay}ms` }}
     >
       {children}
