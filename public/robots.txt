@@ -1,4 +1,5 @@
-# Eritage ENT Care
+# ERITAGE ENT CARE - ENTEBBE
+# Uganda's Trusted ENT Specialists
 # https://www.eritageentcare.com
 
 User-agent: Googlebot
