@@ -21,10 +21,6 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import entSpecialistImage from "@/assets/ent-specialist-doctor.jpg";
-import earAnatomyImage from "@/assets/ear-anatomy-illustration.jpg";
-import sinusAnatomyImage from "@/assets/sinus-anatomy-illustration.jpg";
-import throatAnatomyImage from "@/assets/throat-anatomy-illustration.jpg";
-import ScrollReveal from "@/components/ScrollReveal";
 
 const ENTServices = () => {
   const earConditions = [
@@ -225,21 +221,6 @@ const ENTServices = () => {
               Our ENT specialists diagnose and treat all ear-related conditions, from common infections to complex hearing disorders.
             </p>
             
-            {/* Ear Anatomy Illustration */}
-            <ScrollReveal animation="fade-in" className="mb-10">
-              <div className="max-w-2xl mx-auto">
-                <img 
-                  src={earAnatomyImage} 
-                  alt="Ear Anatomy Diagram - Cross-section showing outer ear, ear canal, eardrum, middle ear bones, cochlea, and auditory nerve" 
-                  className="w-full rounded-xl shadow-lg"
-                  loading="lazy"
-                />
-                <p className="text-center text-sm text-muted-foreground mt-3">
-                  Understanding ear anatomy helps in identifying and treating conditions effectively
-                </p>
-              </div>
-            </ScrollReveal>
-            
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
               {earConditions.map((condition, index) => (
                 <Card key={index} className="bg-background border-border hover:shadow-md transition-shadow">
@@ -278,21 +259,6 @@ const ENTServices = () => {
               Our ENT specialists provide expert treatment for nasal and sinus problems, helping you breathe easier and live better.
             </p>
             
-            {/* Sinus Anatomy Illustration */}
-            <ScrollReveal animation="fade-in" className="mb-10">
-              <div className="max-w-2xl mx-auto">
-                <img 
-                  src={sinusAnatomyImage} 
-                  alt="Sinus Anatomy Diagram - Frontal view showing frontal sinuses, ethmoid sinuses, maxillary sinuses, sphenoid sinus, and nasal passages" 
-                  className="w-full rounded-xl shadow-lg"
-                  loading="lazy"
-                />
-                <p className="text-center text-sm text-muted-foreground mt-3">
-                  The paranasal sinuses are air-filled spaces that can become inflamed or infected
-                </p>
-              </div>
-            </ScrollReveal>
-            
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
               {noseConditions.map((condition, index) => (
                 <Card key={index} className="bg-background border-border hover:shadow-md transition-shadow">
@@ -326,21 +292,6 @@ const ENTServices = () => {
             <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               Our ENT specialists offer comprehensive care for voice, swallowing, and throat disorders.
             </p>
-            
-            {/* Throat Anatomy Illustration */}
-            <ScrollReveal animation="fade-in" className="mb-10">
-              <div className="max-w-2xl mx-auto">
-                <img 
-                  src={throatAnatomyImage} 
-                  alt="Throat and Larynx Anatomy Diagram - Sagittal view showing pharynx, tonsils, epiglottis, larynx, vocal cords, trachea, and esophagus" 
-                  className="w-full rounded-xl shadow-lg"
-                  loading="lazy"
-                />
-                <p className="text-center text-sm text-muted-foreground mt-3">
-                  The throat connects the nasal and oral cavities to the larynx and esophagus
-                </p>
-              </div>
-            </ScrollReveal>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
               {throatConditions.map((condition, index) => (
