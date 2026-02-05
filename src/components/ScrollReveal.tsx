@@ -1,39 +1,42 @@
-import React, { useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
-
-// Mapping of animation names to Tailwind classes
-const animationClasses = {
-  fade: 'transition-opacity duration-500 opacity-0',
-  slide: 'transition-transform duration-500 transform translate-y-4 opacity-0',
-  // add more mappings as needed
-};
-
-const ScrollReveal = ({ children, animation }) => {
-  const [isVisible, setIsVisible] = useState(false);
-  const { ref, inView } = useInView({ threshold: 0.1 });
-
-  useEffect(() => {
-    if (inView) {
-      setIsVisible(true);
-    }
-  }, [inView]);
-
-  // Dev-only toggle button for manual testing
-  const [forceReveal, setForceReveal] = useState(false);
-
-  return (
-    <div>
-      <button 
-        onClick={() => setForceReveal(prev => !prev)} 
-        className="absolute top-4 right-4 p-2 bg-blue-500 text-white rounded"
-      >
-        Toggle Force Reveal
-      </button>
-      <div ref={ref} className={`${isVisible || forceReveal ? animationClasses[animation] || '' : ''}`}>
-        {children}
-      </div>
-    </div>
-  );
-};
-
-export default ScrollReveal;
+ import React, { ReactNode } from 'react';
+ import { useScrollReveal } from '@/hooks/useScrollReveal';
+ import { cn } from '@/lib/utils';
+ 
+ interface ScrollRevealProps {
+   children: ReactNode;
+   animation?: 'fade-in' | 'fade-in-up' | 'slide-in-left' | 'slide-in-right';
+   delay?: number;
+   className?: string;
+ }
+ 
+ const ScrollReveal = ({ 
+   children, 
+   animation = 'fade-in', 
+   delay = 0,
+   className 
+ }: ScrollRevealProps) => {
+   const { ref, isVisible } = useScrollReveal();
+ 
+   const animationClasses: Record<string, string> = {
+     'fade-in': 'animate-fade-in',
+     'fade-in-up': 'animate-fade-in',
+     'slide-in-left': 'animate-fade-in',
+     'slide-in-right': 'animate-fade-in',
+   };
+ 
+   return (
+     <div
+       ref={ref}
+       className={cn(
+         'transition-all duration-500',
+         isVisible ? animationClasses[animation] : 'opacity-0 translate-y-4',
+         className
+       )}
+       style={{ transitionDelay: `${delay}ms` }}
+     >
+       {children}
+     </div>
+   );
+ };
+ 
+ export default ScrollReveal;
