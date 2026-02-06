@@ -3,7 +3,7 @@ const GoogleMap = () => {
     <section className="py-12 bg-accent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Visit Our Clinic</h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-4">Visit ERITAGE ENT CARE - ENTEBBE</h2>
           <p className="text-lg text-muted-foreground">
             Along Entebbe Road, Entebbe, Central Region, Uganda
           </p>
@@ -18,18 +18,20 @@ const GoogleMap = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Eritage ENT Care Location"
+            title="ERITAGE ENT CARE - ENTEBBE Location Map"
+            aria-label="Google Maps showing ERITAGE ENT CARE - ENTEBBE clinic location along Entebbe Road"
           ></iframe>
         </div>
         
         <div className="text-center mt-6">
+          <p className="text-sm text-muted-foreground mb-2">ERITAGE ENT CARE - ENTEBBE</p>
           <a
             href="https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:underline font-semibold"
           >
-            Open in Google Maps →
+            Get Directions to ERITAGE ENT CARE - ENTEBBE →
           </a>
         </div>
       </div>
