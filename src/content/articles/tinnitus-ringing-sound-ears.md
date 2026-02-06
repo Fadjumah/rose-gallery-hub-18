@@ -1,16 +1,17 @@
- ---
- title: "Tinnitus: Understanding Ringing or Sounds in Your Ears"
- slug: "tinnitus-ringing-sound-ears"
- excerpt: "Are you hearing ringing, buzzing, or other sounds that others can't hear? Learn about tinnitus - what causes it, when to seek help, and how to manage it effectively."
- category: "Ear Health"
- author: "Dr. Joan Kiggundu"
- authorTitle: "ENT Specialist"
- authorExperience: "Over 10 years of experience in Otolaryngology"
- date: "2026-02-05"
- readTime: "8 min read"
- featured: true
- image: "/placeholder.svg"
- ---
+---
+title: "Tinnitus: Understanding Ringing or Sounds in Your Ears"
+slug: "tinnitus-ringing-sound-ears"
+description: "Are you hearing ringing, buzzing, or other sounds that others can't hear? Learn about tinnitus - what causes it, when to seek help, and how to manage it effectively."
+icon: "Ear"
+category: "Ear Health"
+author: "Dr. Joan Kiggundu"
+authorTitle: "ENT Specialist"
+authorExperience: "Over 10 years of experience in Otolaryngology"
+date: "2026-02-05"
+readTime: "8 min read"
+featured: true
+image: "/placeholder.svg"
+---
  
  ## What is Tinnitus?
  
