@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContactButtons from "@/components/FloatingContactButtons";
+import Specialist from "@/components/Specialist";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
@@ -140,31 +141,8 @@ const About = () => {
           </div>
         </section>
 
-        {/* Meet the Specialist */}
-        <section className="py-16 bg-secondary/20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-8">
-                Meet Our Lead ENT Specialist
-              </h2>
-              <Card className="bg-background max-w-2xl mx-auto">
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-3 justify-center mb-4">
-                    <Stethoscope className="h-8 w-8 text-primary" />
-                    <h3 className="text-xl font-bold text-foreground">Fahad Juma</h3>
-                  </div>
-                  <p className="text-primary font-medium mb-4">ENT Specialist | Clinical Otolaryngology</p>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    With over 10 years of clinical experience in ear, nose, and throat medicine, Fahad Juma leads our ENT specialist team in delivering evidence-based diagnosis and treatment. His approach as an ENT specialist combines thorough clinical assessment with patient education to ensure informed healthcare decisions.
-                  </p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Specializing in both medical and procedural treatments, he provides expert ENT specialist care through in-person consultations at our clinics and digital health guidance for patients nationwide.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
+        {/* Meet Our Specialists - Full Component */}
+        <Specialist />
 
         {/* Our Values */}
         <section className="py-16 bg-background">

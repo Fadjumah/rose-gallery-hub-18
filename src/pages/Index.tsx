@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import About from "@/components/About";
-import Specialist from "@/components/Specialist";
 import Locations from "@/components/Locations";
 import HealthTips from "@/components/HealthTips";
 import AppointmentForm from "@/components/AppointmentForm";
@@ -19,13 +18,30 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "MedicalOrganization",
     "name": "Eritage ENT Care",
-    "description": "Specialist-led ENT education and evidence-based ear, nose, and throat care. Expert diagnosis and treatment for patients across Uganda.",
+    "description": "Uganda's leading ENT specialists providing expert diagnosis and treatment for ear, nose, and throat conditions. Over 10 years clinical experience serving patients nationwide.",
     "url": "https://www.eritageentcare.com",
     "logo": "https://www.eritageentcare.com/eritage-logo.png",
     "medicalSpecialty": "Otolaryngology",
+    "knowsAbout": [
+      "Ear infections",
+      "Hearing loss",
+      "Sinusitis",
+      "Tonsillitis",
+      "Allergic rhinitis",
+      "Vertigo and balance disorders",
+      "Voice disorders",
+      "Sleep apnea",
+      "Nasal polyps"
+    ],
     "areaServed": {
       "@type": "Country",
       "name": "Uganda"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+256740166778",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Luganda"]
     },
     "sameAs": [
       "https://maps.app.goo.gl/jyV5xBRkD95u2i4B8"
@@ -50,6 +66,33 @@ const Index = () => {
     },
     "medicalSpecialty": "Otolaryngology",
     "priceRange": "$$",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "ENT Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "MedicalProcedure",
+            "name": "Hearing Tests (Pure Tone Audiometry)"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "MedicalProcedure",
+            "name": "Ear Wax Removal"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "MedicalProcedure",
+            "name": "Sinusitis Treatment"
+          }
+        }
+      ]
+    },
     "parentOrganization": {
       "@type": "MedicalOrganization",
       "name": "Eritage ENT Care"
@@ -59,20 +102,38 @@ const Index = () => {
     ]
   };
 
-  return (
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Eritage ENT Care",
+    "url": "https://www.eritageentcare.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.eritageentcare.com/blog?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+   return (
     <>
       <Helmet>
         <title>Eritage ENT Care | Expert Ear, Nose & Throat Specialists in Uganda</title>
-        <meta name="description" content="Evidence-based ENT care from experienced specialists across Uganda. Expert diagnosis and treatment for ear, nose, and throat conditions for adults and children. Book your consultation today." />
+        <meta name="description" content="Uganda's leading ENT specialists providing expert diagnosis and treatment for ear infections, hearing loss, sinusitis, tonsillitis, and more. Over 10 years clinical experience. Book your consultation today." />
         <meta property="og:title" content="Eritage ENT Care | Expert ENT Specialists in Uganda" />
-        <meta property="og:description" content="Specialist-led ENT education and evidence-based care. Expert treatment for ear, nose, and throat conditions across Uganda." />
+        <meta property="og:description" content="Uganda's trusted ENT specialists. Expert diagnosis and treatment for ear, nose, and throat conditions for adults and children nationwide." />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.eritageentcare.com/eritage-logo.png" />
+        <meta name="keywords" content="ENT specialist Uganda, ear doctor Uganda, nose doctor Uganda, throat doctor Uganda, hearing test Uganda, sinusitis treatment, tonsillitis treatment, ear infection treatment, Eritage ENT Care" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.eritageentcare.com/" />
         <script type="application/ld+json">
           {JSON.stringify(organizationSchema)}
         </script>
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(webSiteSchema)}
         </script>
       </Helmet>
       
@@ -92,7 +153,6 @@ const Index = () => {
         
         <Services />
         <About />
-        <Specialist />
         
         {/* Second Image Showcase - Grid Style */}
         <section className="py-12 bg-muted/50">
