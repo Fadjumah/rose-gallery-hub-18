@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, ArrowRight, Users, Award, Stethoscope } from "lucide-react";
+import { Phone, MessageCircle, ArrowRight, Users, Stethoscope } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-doctor-patient.jpg";
 
@@ -52,12 +52,6 @@ const Hero = () => {
         {/* Content */}
         <div className="relative container mx-auto px-4 py-16 md:py-24 flex flex-col justify-center min-h-[600px] md:min-h-[700px]">
           <div className="max-w-2xl animate-fade-in">
-            {/* Trust Badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Award className="h-4 w-4" />
-              Uganda's Trusted ENT Specialists
-            </div>
-            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6 text-foreground leading-tight">
               <span className="text-primary">Eritage</span> ENT Care
             </h1>
