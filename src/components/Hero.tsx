@@ -6,6 +6,39 @@ import heroImage from "@/assets/hero-doctor-patient.jpg";
 const Hero = () => {
   return (
     <section id="home" className="relative bg-background">
+      {/* Top Contact Bar */}
+      <div className="bg-primary text-primary-foreground py-3">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 text-sm md:text-base font-medium">
+            <a 
+              href="tel:+256740166778" 
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            >
+              <Phone className="h-4 w-4" />
+              <span>+256 740 166 778</span>
+            </a>
+            <span className="hidden md:inline text-primary-foreground/50">|</span>
+            <a 
+              href="tel:+256769616091" 
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            >
+              <Phone className="h-4 w-4" />
+              <span>+256 769 616 091</span>
+            </a>
+            <span className="hidden md:inline text-primary-foreground/50">|</span>
+            <a 
+              href="https://wa.me/256740166778" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-[#25D366] px-3 py-1 rounded-full hover:bg-[#25D366]/90 transition-colors"
+            >
+              <MessageCircle className="h-4 w-4" />
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Image with Overlay */}
       <div className="relative min-h-[600px] md:min-h-[700px]">
         <img 
