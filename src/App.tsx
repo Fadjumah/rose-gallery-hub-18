@@ -2,7 +2,6 @@ import React from "react";
 import SEO from "./components/SEO";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
 
 const schema = {
   "@context": "https://schema.org",
@@ -72,8 +71,7 @@ const App: React.FC = () => {
           the country.
         </p>
 
-        {/* Gallery Section */}
-        <Gallery />
+        {/* Gallery removed for now */}
 
         {/* Urgent care CTA */}
         <div className="mt-12 text-center">
