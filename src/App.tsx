@@ -71,9 +71,8 @@ const App: React.FC = () => {
           the country.
         </p>
 
-        {/* Gallery removed for now */}
+        {/* Gallery removed */}
 
-        {/* Urgent care CTA */}
         <div className="mt-12 text-center">
           <a
             href="https://wa.me/256740166778"
