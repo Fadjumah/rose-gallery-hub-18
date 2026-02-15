@@ -72,9 +72,10 @@ const App: React.FC = () => {
           the country.
         </p>
 
+        {/* Gallery Section */}
         <Gallery />
 
-        {/* Optional urgent care CTA section */}
+        {/* Urgent care CTA */}
         <div className="mt-12 text-center">
           <a
             href="https://wa.me/256740166778"
