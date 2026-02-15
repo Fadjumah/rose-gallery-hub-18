@@ -1,60 +1,67 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { Analytics } from "@vercel/analytics/react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
-import { HelmetProvider } from "react-helmet-async";
-import Index from "./pages/Index";
-import Blog from "./pages/Blog";
-import BlogArticle from "./pages/BlogArticle";
-import HearingTests from "./pages/HearingTests";
-import ENTServices from "./pages/ENTServices";
-import UrgentENTGuidance from "./pages/UrgentENTGuidance";
-import Reviews from "./pages/Reviews";
-import FAQ from "./pages/FAQ";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import LocationEntebbe from "./pages/LocationEntebbe";
-import LocationKampala from "./pages/LocationKampala";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import TermsOfService from "./pages/TermsOfService";
-import NotFound from "./pages/NotFound";
+import React from "react";
+import SEO from "./components/SEO";
 
-const queryClient = new QueryClient();
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  name: "Eritage ENT Care - Entebbe",
+  url: "https://www.eritageentcare.com/locations/entebbe",
+  logo: "https://www.eritageentcare.com/logo.png",
+  image: "https://www.eritageentcare.com/clinic.jpg",
+  description:
+    "Eritage ENT Care is a leading ENT specialist medical brand in Uganda, delivering advanced diagnosis and treatment for ear, nose, throat, sinus, allergy and hearing disorders across multiple regions of the country. Our main clinic is located in Entebbe at Plot 34, Entebbe–Entebbe Road, 48 Berkeley Rd, offering 24/7 expert ENT care.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Plot 34, Entebbe–Entebbe Road, 48 Berkeley Rd",
+    addressLocality: "Entebbe",
+    addressRegion: "Central Region",
+    addressCountry: "UG"
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 0.0643346,
+    longitude: 32.4752337
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      opens: "00:00",
+      closes: "23:59"
+    }
+  ],
+  priceRange: "$$",
+  areaServed: { "@type": "Country", name: "Uganda" },
+  medicalSpecialty: ["Otolaryngology", "Audiology", "Allergy"],
+  sameAs: ["https://www.google.com/maps?q=0.0643346,32.4752337"]
+};
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/ent-services" element={<ENTServices />} />
-            <Route path="/urgent-ent-guidance" element={<UrgentENTGuidance />} />
-            <Route path="/hearing-tests" element={<HearingTests />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/locations/entebbe" element={<LocationEntebbe />} />
-            <Route path="/locations/kampala" element={<LocationKampala />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogArticle />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-        <Analytics />
-      </TooltipProvider>
-    </HelmetProvider>
-  </QueryClientProvider>
-);
+const App: React.FC = () => {
+  return (
+    <>
+      <SEO
+        title="Eritage ENT Care – ENT Specialist Clinic in Entebbe, Uganda"
+        description="Leading ENT specialist clinic in Uganda providing 24/7 advanced care for ear, nose, throat, sinus, allergy and hearing conditions. Based in Entebbe."
+        url="https://www.eritageentcare.com/locations/entebbe"
+        canonical="https://www.eritageentcare.com/locations/entebbe"
+        image="https://www.eritageentcare.com/clinic.jpg"
+        schema={schema}
+      />
+      <main>
+        <h1>Welcome to Eritage ENT Care – Entebbe</h1>
+        <p>Your trusted ENT specialists in Uganda, providing expert 24/7 care for ear, nose, throat, sinus, allergy, and hearing disorders across the country.</p>
+        <a href="/urgent-ent-care">Book Urgent ENT Care</a>
+      </main>
+    </>
+  );
+};
 
 export default App;
