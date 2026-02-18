@@ -1,6 +1,5 @@
 import { Phone, MessageCircle, Shield, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import MedicalDisclaimer from "./MedicalDisclaimer";
 
 const Footer = () => {
@@ -25,18 +24,18 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <h4 className="font-semibold mb-4">ENT Services</h4>
               <nav className="space-y-2 text-sm">
-                <Link to="/ent-services" className="block hover:underline opacity-90 hover:opacity-100">
+                <a href="/ent-services" className="block hover:underline opacity-90 hover:opacity-100">
                   All ENT Services
-                </Link>
-                <Link to="/hearing-tests" className="block hover:underline opacity-90 hover:opacity-100">
+                </a>
+                <a href="/hearing-tests" className="block hover:underline opacity-90 hover:opacity-100">
                   Hearing Tests & Audiology
-                </Link>
-                <Link to="/urgent-ent-guidance" className="block hover:underline opacity-90 hover:opacity-100">
+                </a>
+                <a href="/urgent-ent-guidance" className="block hover:underline opacity-90 hover:opacity-100">
                   Urgent ENT Guidance
-                </Link>
-                <Link to="/faq" className="block hover:underline opacity-90 hover:opacity-100">
+                </a>
+                <a href="/faq" className="block hover:underline opacity-90 hover:opacity-100">
                   Frequently Asked Questions
-                </Link>
+                </a>
               </nav>
             </div>
 
@@ -44,18 +43,18 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <h4 className="font-semibold mb-4">Resources</h4>
               <nav className="space-y-2 text-sm">
-                <Link to="/blog" className="block hover:underline opacity-90 hover:opacity-100">
+                <a href="/blog" className="block hover:underline opacity-90 hover:opacity-100">
                   Health Articles & Education
-                </Link>
-                <Link to="/about" className="block hover:underline opacity-90 hover:opacity-100">
+                </a>
+                <a href="/about" className="block hover:underline opacity-90 hover:opacity-100">
                   About Our Specialists
-                </Link>
-                <Link to="/reviews" className="block hover:underline opacity-90 hover:opacity-100">
+                </a>
+                <a href="/reviews" className="block hover:underline opacity-90 hover:opacity-100">
                   Patient Reviews
-                </Link>
-                <Link to="/contact" className="block hover:underline opacity-90 hover:opacity-100">
+                </a>
+                <a href="/contact" className="block hover:underline opacity-90 hover:opacity-100">
                   Contact Us
-                </Link>
+                </a>
               </nav>
             </div>
 
@@ -63,12 +62,12 @@ const Footer = () => {
             <div className="text-center md:text-right">
               <h4 className="font-semibold mb-4">Our Locations</h4>
               <nav className="space-y-2 text-sm mb-4">
-                <Link to="/locations/entebbe" className="block hover:underline opacity-90 hover:opacity-100">
+                <a href="/locations/entebbe" className="block hover:underline opacity-90 hover:opacity-100">
                   Eritage ENT Care – Entebbe
-                </Link>
-                <Link to="/locations/kampala" className="block hover:underline opacity-90 hover:opacity-100">
+                </a>
+                <a href="/locations/kampala" className="block hover:underline opacity-90 hover:opacity-100">
                   Eritage ENT Care – Kampala (Coming Soon)
-                </Link>
+                </a>
               </nav>
               <p className="text-sm opacity-80 mb-4">+256 740 166 778</p>
               <div className="flex items-center justify-center md:justify-end gap-3">
@@ -104,14 +103,14 @@ const Footer = () => {
                 © {new Date().getFullYear()} Eritage ENT Care. All rights reserved. Serving patients across Uganda.
               </p>
               <nav className="flex items-center gap-6 text-sm">
-                <Link to="/privacy-policy" className="flex items-center gap-2 opacity-90 hover:opacity-100 hover:underline">
+                <a href="/privacy-policy" className="flex items-center gap-2 opacity-90 hover:opacity-100 hover:underline">
                   <Shield className="h-4 w-4" />
                   Privacy Policy
-                </Link>
-                <Link to="/terms-of-service" className="flex items-center gap-2 opacity-90 hover:opacity-100 hover:underline">
+                </a>
+                <a href="/terms-of-service" className="flex items-center gap-2 opacity-90 hover:opacity-100 hover:underline">
                   <FileText className="h-4 w-4" />
                   Terms of Service
-                </Link>
+                </a>
               </nav>
             </div>
           </div>
